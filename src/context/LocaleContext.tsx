@@ -13,25 +13,19 @@ const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
 
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('pt-BR');
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Load locale from localStorage
+    // Load locale from localStorage on client-side only
     const savedLocale = localStorage.getItem('locale') as Locale | null;
     if (savedLocale && ['pt-BR', 'en-US', 'es-ES'].includes(savedLocale)) {
       setLocaleState(savedLocale);
     }
-    setMounted(true);
   }, []);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
     localStorage.setItem('locale', newLocale);
   };
-
-  if (!mounted) {
-    return <>{children}</>;
-  }
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
