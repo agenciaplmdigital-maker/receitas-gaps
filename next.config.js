@@ -7,7 +7,6 @@ const withPWA = require('next-pwa')({
     document: '/offline.html',
   },
   cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
 })
 
 const nextConfig = withPWA({
