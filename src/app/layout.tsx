@@ -36,7 +36,7 @@ export const viewport: Viewport = {
   minimumScale: 1,
   maximumScale: 5,
   userScalable: true,
-  viewportFitCover: true,
+  viewportFit: 'cover',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#F5F5DC' },
     { media: '(prefers-color-scheme: dark)', color: '#556B2F' },
