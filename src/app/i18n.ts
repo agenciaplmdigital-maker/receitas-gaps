@@ -6,10 +6,10 @@ import messages_en_US from '../locales/en-US/common.json';
 import messages_es_ES from '../locales/es-ES/common.json';
 
 const messagesByLocale = {
-  'pt-BR': messages_pt_BR,
-  'en-US': messages_en_US,
-  'es-ES': messages_es_ES,
-} as const;
+  'pt-BR': messages_pt_BR as any,
+  'en-US': messages_en_US as any,
+  'es-ES': messages_es_ES as any,
+};
 
 export default getRequestConfig(async ({ locale }) => {
   const messages = messagesByLocale[locale as keyof typeof messagesByLocale] || messagesByLocale['pt-BR'];
