@@ -1,0 +1,2101 @@
+{
+  "recipes": [
+    {
+      "id": "ovos-cozidos-caldo",
+      "title": "Ovos Cozidos com Caldo",
+      "description": "Café da manhã simples com ovos cozidos e caldo nutritivo para começar o dia com energia.",
+      "ingredients": [
+        {
+          "id": "ing-ovos-001",
+          "name": "Ovos orgânicos",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-caldo-001",
+          "name": "Caldo de carne caseiro",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-001",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Ferva água em uma panela",
+        "Coloque os ovos e cozinhe por 10 minutos",
+        "Retire e coloque em água fria",
+        "Descasque os ovos",
+        "Aqueça o caldo e sirva com os ovos"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Ovos possuem aminoácidos essenciais. O caldo fornece colágeno para cicatrização intestinal.",
+      "gapsDifficulty": "easy",
+      "tags": ["café", "proteína", "colágeno"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "mingau-abobora",
+      "title": "Mingau de Abóbora",
+      "description": "Café da manhã reconfortante com abóbora cozida e caldo, perfeito para intestino sensível.",
+      "ingredients": [
+        {
+          "id": "ing-abobora-001",
+          "name": "Abóbora",
+          "amount": 200,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-caldo-002",
+          "name": "Caldo de frango",
+          "amount": 250,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-001",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-canela-001",
+          "name": "Canela em pó",
+          "amount": 0.25,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte a abóbora em cubos",
+        "Cozinhe em caldo de frango até ficar morna",
+        "Amasse a abóbora no caldo",
+        "Adicione ghee e canela",
+        "Sirva morno"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 20,
+      "nutritionTip": "Abóbora é rica em carotenóides que favorecem a mucosa intestinal. Fácil de digerir.",
+      "gapsDifficulty": "easy",
+      "tags": ["café", "abóbora", "morno", "suave"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frutas-cozidas",
+      "title": "Frutas Cozidas",
+      "description": "Café da manhã com frutas cozidas em caldo para melhor digestão.",
+      "ingredients": [
+        {
+          "id": "ing-maca-001",
+          "name": "Maçã",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-pera-001",
+          "name": "Pera",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-agua-001",
+          "name": "Água filtrada",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gengibre-001",
+          "name": "Gengibre fresco",
+          "amount": 5,
+          "unit": "g",
+          "category": "Hortifruti"
+        }
+      ],
+      "instructions": [
+        "Corte as frutas em pedaços pequenos",
+        "Coloque em uma panela com água",
+        "Adicione fatias de gengibre",
+        "Cozinhe por 15 minutos",
+        "Sirva morno"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Frutas cozidas são mais digeríveis que cruas. Gengibre auxilia na digestão.",
+      "gapsDifficulty": "easy",
+      "tags": ["café", "frutas", "cozido"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "omelete-ervas",
+      "title": "Omelete com Ervas",
+      "description": "Café rápido e proteico com omelete fresca e ervas aromáticas.",
+      "ingredients": [
+        {
+          "id": "ing-ovos-002",
+          "name": "Ovos orgânicos",
+          "amount": 3,
+          "unit": "unidades",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-ghee-002",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-salsinha-001",
+          "name": "Salsa fresca",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Hortifruti",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-cebolinha-001",
+          "name": "Cebolinha",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-sal-002",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Bata os ovos com sal",
+        "Aqueça a ghee em uma frigideira",
+        "Despeje os ovos",
+        "Deixe cozinhar por 2 minutos",
+        "Adicione ervas e dobre a omelete",
+        "Cozinhe mais 1 minuto"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 5,
+      "nutritionTip": "Ovos são fonte completa de proteína e colina. Ervas adicionam minerais.",
+      "gapsDifficulty": "easy",
+      "tags": ["café", "proteína", "rápido", "ovos"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "papa-banana",
+      "title": "Papa de Banana",
+      "description": "Café reconfortante com banana cozida, gentil para o intestino.",
+      "ingredients": [
+        {
+          "id": "ing-banana-001",
+          "name": "Banana madura",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-caldo-003",
+          "name": "Caldo de frango morno",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-003",
+          "name": "Ghee",
+          "amount": 0.5,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cozinhe banana inteira por 5 minutos em água",
+        "Descasque e amasse",
+        "Misture com caldo morno",
+        "Adicione ghee",
+        "Sirva imediatamente"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "Banana cozida fornece potássio e é facilmente digerida. Amido resistente favorece bactérias boas.",
+      "gapsDifficulty": "easy",
+      "tags": ["café", "banana", "morno"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-legumes",
+      "title": "Caldo de Legumes",
+      "description": "Lanche matinal nutritivo com caldo caseiro de legumes.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-001",
+          "name": "Cenoura",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-abobora-002",
+          "name": "Abóbora",
+          "amount": 100,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-aipo-001",
+          "name": "Aipo",
+          "amount": 1,
+          "unit": "ramo",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-agua-002",
+          "name": "Água filtrada",
+          "amount": 500,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-003",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte os legumes em cubos pequenos",
+        "Coloque na água fervente",
+        "Cozinhe por 20 minutos",
+        "Coe se preferir apenas o caldo",
+        "Tempere com sal"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Legumes cozidos liberam nutrientes no caldo. Rico em minerais e baixo em carboidratos.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "caldo", "legumes"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-frango-gengibre",
+      "title": "Caldo de Frango com Gengibre",
+      "description": "Caldo terapêutico com propriedades anti-inflamatórias para lanche matinal.",
+      "ingredients": [
+        {
+          "id": "ing-frango-001",
+          "name": "Peito de frango",
+          "amount": 200,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-agua-003",
+          "name": "Água filtrada",
+          "amount": 400,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gengibre-002",
+          "name": "Gengibre fresco",
+          "amount": 10,
+          "unit": "g",
+          "category": "Hortifruti",
+          "notes": "Fatias"
+        },
+        {
+          "id": "ing-limao-001",
+          "name": "Suco de limão",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-004",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cozinhe frango em água por 20 minutos",
+        "Adicione fatias de gengibre",
+        "Cozinhe mais 10 minutos",
+        "Retire o frango e desfie",
+        "Tempere com limão e sal",
+        "Sirva morno"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "Gengibre reduz inflamação. Frango fornece proteína e colágeno facilmente absorvido.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "caldo", "frango", "gengibre"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "cha-maca",
+      "title": "Chá de Maçã",
+      "description": "Bebida morna e reconfortante com maçã cozida para lanche matinal.",
+      "ingredients": [
+        {
+          "id": "ing-maca-002",
+          "name": "Maçã",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-agua-004",
+          "name": "Água filtrada",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-canela-002",
+          "name": "Canela em pó",
+          "amount": 0.25,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-mel-001",
+          "name": "Mel puro",
+          "amount": 1,
+          "unit": "colher de chá",
+          "category": "Fermentados"
+        }
+      ],
+      "instructions": [
+        "Corte a maçã em pedaços",
+        "Cozinhe em água por 10 minutos",
+        "Coe o chá",
+        "Adicione canela e mel",
+        "Sirva morno"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "Maçã cozida fornece pectina que favorece bactérias benéficas. Canela regula açúcar no sangue.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "chá", "maçã"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "broto-alfalfa",
+      "title": "Broto de Alfalfa",
+      "description": "Lanche leve com broto nutritivo rico em enzimas vivas.",
+      "ingredients": [
+        {
+          "id": "ing-broto-001",
+          "name": "Broto de alfalfa",
+          "amount": 100,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-oleo-coco-001",
+          "name": "Óleo de coco",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-002",
+          "name": "Suco de limão",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-005",
+          "name": "Sal marinho",
+          "amount": 0.25,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Lave bem o broto",
+        "Coloque em uma tigela",
+        "Tempere com óleo de coco",
+        "Adicione limão e sal",
+        "Misture bem"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Brotos contêm enzimas vivas que facilitam digestão. Rico em vitaminas B.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "broto", "cru", "enzimas"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "almondega-carne-abobora",
+      "title": "Almôndega de Carne com Abóbora",
+      "description": "Almoço protéico com almôndega caseira e acompanhamento de abóbora cozida.",
+      "ingredients": [
+        {
+          "id": "ing-carne-001",
+          "name": "Carne moída magra",
+          "amount": 300,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-cebola-001",
+          "name": "Cebola",
+          "amount": 0.5,
+          "unit": "unidade",
+          "category": "Hortifruti",
+          "notes": "Picada fina"
+        },
+        {
+          "id": "ing-alho-001",
+          "name": "Alho",
+          "amount": 2,
+          "unit": "dentes",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-004",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-abobora-003",
+          "name": "Abóbora",
+          "amount": 200,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-006",
+          "name": "Sal marinho",
+          "amount": 1,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Misture carne com cebola e alho",
+        "Forme almôndegas",
+        "Doure em ghee quente por 10 minutos",
+        "Cozinhe abóbora em água separadamente por 15 minutos",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 25,
+      "nutritionTip": "Proteína de qualidade com minerais. Carne nutre intestino com L-glutamina.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "carne", "protéico"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-brocolis",
+      "title": "Frango com Brócolis",
+      "description": "Almoço simples com frango cozido e brócolis al dente.",
+      "ingredients": [
+        {
+          "id": "ing-frango-002",
+          "name": "Peito de frango",
+          "amount": 300,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-brocolis-001",
+          "name": "Brócolis",
+          "amount": 250,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-005",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-003",
+          "name": "Suco de limão",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-007",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cozinhe frango em água por 20 minutos",
+        "Corte em pedaços",
+        "Cozinhe brócolis por 8 minutos",
+        "Aqueça ghee e tempere frango com limão e sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "Brócolis é rico em sulforafano que protege a mucosa intestinal. Frango fornece aminoácidos essenciais.",
+      "gapsDifficulty": "easy",
+      "tags": ["almoço", "frango", "brócolis"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peixe-cenoura",
+      "title": "Peixe com Cenoura",
+      "description": "Almoço delicado com peixe cozido e cenoura morna.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-001",
+          "name": "Filé de peixe branco",
+          "amount": 300,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-cenoura-002",
+          "name": "Cenoura",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-006",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-alho-002",
+          "name": "Alho",
+          "amount": 2,
+          "unit": "dentes",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-008",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura em rodelas",
+        "Cozinhe cenoura em água por 15 minutos",
+        "Aqueça ghee com alho",
+        "Cozinhe peixe por 10 minutos",
+        "Tempere com sal",
+        "Sirva junto com cenoura"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 25,
+      "nutritionTip": "Peixe é rico em ômega-3 que reduz inflamação intestinal. Cenoura fornece beta-caroteno.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "peixe", "delicado"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "carne-desfiada-refogada",
+      "title": "Carne Desfiada Refogada",
+      "description": "Almoço reconfortante com carne desfiada em molho suave.",
+      "ingredients": [
+        {
+          "id": "ing-carne-002",
+          "name": "Carne para desfiada",
+          "amount": 400,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-cebola-002",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-tomate-001",
+          "name": "Tomate",
+          "amount": 200,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-007",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-004",
+          "name": "Caldo de carne",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-009",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cozinhe carne em água por 1 hora",
+        "Desfie com garfo",
+        "Refogue cebola em ghee",
+        "Adicione tomate picado",
+        "Misture carne desfiada e caldo",
+        "Cozinhe por 15 minutos",
+        "Tempere com sal"
+      ],
+      "servings": 3,
+      "prepTime": 10,
+      "cookTime": 90,
+      "nutritionTip": "Carne cozida lentamente libera colágeno e nutrientes. Tomate fornece licopeno antioxidante.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "carne", "molho"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "broto-oleo-coco",
+      "title": "Broto com Óleo de Coco",
+      "description": "Lanche da tarde leve com broto e gordura de qualidade.",
+      "ingredients": [
+        {
+          "id": "ing-broto-002",
+          "name": "Broto de alfalfa",
+          "amount": 80,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-oleo-coco-002",
+          "name": "Óleo de coco virgem",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-010",
+          "name": "Sal marinho",
+          "amount": 0.25,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Lave bem o broto",
+        "Coloque em tigela",
+        "Adicione óleo de coco em temperatura ambiente",
+        "Tempere com sal",
+        "Coma imediatamente"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Óleo de coco é antiinflamatório. Brotos fornecem enzimas vivas para ótima digestão.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "broto", "óleo", "cru"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "suco-cenoura-beterraba",
+      "title": "Suco de Cenoura e Beterraba",
+      "description": "Suco fresco cozido para lanche da tarde com tons de terra.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-003",
+          "name": "Cenoura",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-beterraba-001",
+          "name": "Beterraba",
+          "amount": 100,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-agua-005",
+          "name": "Água filtrada",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gengibre-003",
+          "name": "Gengibre",
+          "amount": 5,
+          "unit": "g",
+          "category": "Hortifruti"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura e beterraba em pequenos pedaços",
+        "Cozinhe em água com gengibre por 10 minutos",
+        "Coe para obter suco",
+        "Sirva morno"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "Beterraba contém betaína que melhora digestão. Cenoura fornece carotenóides protetores.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "suco", "cozido"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "agua-aromatizada",
+      "title": "Água Aromatizada",
+      "description": "Bebida refrescante com ervas para lanche da tarde.",
+      "ingredients": [
+        {
+          "id": "ing-agua-006",
+          "name": "Água filtrada",
+          "amount": 500,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-menta-001",
+          "name": "Folhas de hortelã",
+          "amount": 5,
+          "unit": "folhas",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-limao-004",
+          "name": "Limão",
+          "amount": 0.5,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        }
+      ],
+      "instructions": [
+        "Coloque água em uma jarra",
+        "Adicione folhas de hortelã",
+        "Esprema suco de limão",
+        "Deixe repousar por 15 minutos",
+        "Coe se preferir",
+        "Sirva"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Hortelã favorece digestão. Limão auxilia absorção de minerais.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "bebida", "ervas"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-frango-alecrim",
+      "title": "Caldo de Frango com Alecrim",
+      "description": "Caldo aromaático para lanche da tarde com propriedades calmantes.",
+      "ingredients": [
+        {
+          "id": "ing-frango-003",
+          "name": "Ossos de frango",
+          "amount": 300,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-agua-007",
+          "name": "Água filtrada",
+          "amount": 400,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-alecrim-001",
+          "name": "Ramo de alecrim",
+          "amount": 1,
+          "unit": "ramo",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-011",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque ossos em água quente",
+        "Leve ao fogo alto até fervir",
+        "Reduza fogo e adicione alecrim",
+        "Cozinhe por 30 minutos",
+        "Coe e tempere com sal",
+        "Sirva morno"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 35,
+      "nutritionTip": "Alecrim possui antioxidantes. Frango oferece gelatina para saúde intestinal.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "caldo", "erva"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "carne-caldo",
+      "title": "Carne em Caldo",
+      "description": "Jantar nutritivo e reconfortante com carne cozida em seu próprio caldo.",
+      "ingredients": [
+        {
+          "id": "ing-carne-003",
+          "name": "Carne para caldo",
+          "amount": 400,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-agua-008",
+          "name": "Água filtrada",
+          "amount": 800,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-cenoura-004",
+          "name": "Cenoura",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-cebola-003",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-012",
+          "name": "Sal marinho",
+          "amount": 1,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque carne em água fria",
+        "Leve ao fogo alto até fervir",
+        "Retire espuma",
+        "Adicione cenoura e cebola",
+        "Cozinhe por 1,5 hora em fogo baixo",
+        "Tempere com sal",
+        "Sirva a carne em seu próprio caldo"
+      ],
+      "servings": 3,
+      "prepTime": 5,
+      "cookTime": 100,
+      "nutritionTip": "Caldo caseiro é fundação da cura intestinal. Colágeno e L-glutamina máximos.",
+      "gapsDifficulty": "easy",
+      "tags": ["jantar", "carne", "caldo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-couve-flor",
+      "title": "Frango com Couve-Flor",
+      "description": "Jantar leve com frango e couve-flor assada delicadamente.",
+      "ingredients": [
+        {
+          "id": "ing-frango-004",
+          "name": "Peito de frango",
+          "amount": 350,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-couve-flor-001",
+          "name": "Couve-flor",
+          "amount": 300,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-008",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-alho-003",
+          "name": "Alho",
+          "amount": 3,
+          "unit": "dentes",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-013",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte couve-flor em floretas",
+        "Cozinhe em água por 8 minutos",
+        "Cozinhe frango em água por 20 minutos",
+        "Aqueça ghee e doure alho",
+        "Misture frango e couve-flor",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "Couve-flor é rico em enxofre que melhora desintoxicação. Baixa em carboidratos.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "frango", "legume"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peixe-aspargos",
+      "title": "Peixe com Aspargos",
+      "description": "Jantar elegante e nutritivo com peixe cozido e aspargo morno.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-002",
+          "name": "Filé de peixe",
+          "amount": 350,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-aspargo-001",
+          "name": "Aspargo fresco",
+          "amount": 200,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-009",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-005",
+          "name": "Limão",
+          "amount": 0.5,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-014",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cozinhe aspargo em água por 8 minutos",
+        "Cozinhe peixe em água com limão por 12 minutos",
+        "Aqueça ghee em frigideira",
+        "Saltear aspargo em ghee por 3 minutos",
+        "Tempere com sal",
+        "Sirva peixe com aspargo"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 25,
+      "nutritionTip": "Aspargo é diurético natural. Peixe branco é delicado para intestinos sensíveis.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "peixe", "aspargo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-nutritivo-carne",
+      "title": "Caldo Nutritivo de Carne",
+      "description": "Caldo concentrado para jantar com máxima concentração de nutrientes.",
+      "ingredients": [
+        {
+          "id": "ing-carne-004",
+          "name": "Ossos com tutano",
+          "amount": 500,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-agua-009",
+          "name": "Água filtrada",
+          "amount": 1,
+          "unit": "L",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-cenoura-005",
+          "name": "Cenoura",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-aipo-002",
+          "name": "Aipo",
+          "amount": 2,
+          "unit": "ramos",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-gengibre-004",
+          "name": "Gengibre",
+          "amount": 10,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-015",
+          "name": "Sal marinho",
+          "amount": 1,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque ossos em água fria",
+        "Leve ao fogo alto até fervir",
+        "Retire espuma",
+        "Adicione vegetais e gengibre",
+        "Reduza fogo e cozinhe por 4-6 horas",
+        "Coe",
+        "Tempere com sal"
+      ],
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 360,
+      "nutritionTip": "Caldo longo extrai colágeno, minerais e L-glutamina essencial para cicatrização intestinal profunda.",
+      "gapsDifficulty": "easy",
+      "tags": ["jantar", "caldo", "longo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peru-legumes-raiz",
+      "title": "Peru com Legumes-Raiz",
+      "description": "Jantar reconfortante com peru cozido e legumes-raiz nutritivos.",
+      "ingredients": [
+        {
+          "id": "ing-peru-001",
+          "name": "Peito de peru",
+          "amount": 350,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-batata-doce-001",
+          "name": "Batata-doce",
+          "amount": 200,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-nabo-001",
+          "name": "Nabo",
+          "amount": 150,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-010",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-016",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cozinhe peru em água por 25 minutos",
+        "Corte legumes-raiz em cubos",
+        "Cozinhe legumes em água por 20 minutos",
+        "Aqueça ghee",
+        "Misture peru e legumes",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 45,
+      "nutritionTip": "Batata-doce fornece amido resistente para bactérias benéficas. Peru é proteína magra nutritiva.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "peru", "legume"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-curry-abobora",
+      "title": "Frango ao Curry com Abóbora e Caldo de Carne",
+      "description": "Receita do e-book com frango macio em molho de curry aromático com abóbora doce.",
+      "ingredients": [
+        {
+          "id": "ing-frango-005",
+          "name": "Frango desfiado",
+          "amount": 400,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-abobora-004",
+          "name": "Abóbora",
+          "amount": 300,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-caldo-005",
+          "name": "Caldo de carne caseiro",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-curry-001",
+          "name": "Pó de curry",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-cebola-004",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-011",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-017",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Refogue cebola em ghee até dourar",
+        "Adicione pó de curry e mexa por 1 minuto",
+        "Adicione frango desfiado",
+        "Despeje caldo de carne",
+        "Adicione abóbora em cubos",
+        "Cozinhe por 20 minutos até abóbora ficar morna",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 3,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Curry é anti-inflamatório potente. Abóbora fornece carotenóides. Caldo nutre a recuperação intestinal.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "frango", "curry", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "fricasse-frango",
+      "title": "Fricassé de Frango (GAPS)",
+      "description": "Receita tradicional do e-book com frango cozido em molho cremoso de caldo.",
+      "ingredients": [
+        {
+          "id": "ing-frango-006",
+          "name": "Frango cortado em pedaços",
+          "amount": 400,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-caldo-006",
+          "name": "Caldo de frango caseiro",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gema-001",
+          "name": "Gema de ovo",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-ghee-012",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-006",
+          "name": "Suco de limão",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-018",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Aqueça ghee em panela",
+        "Doure frango em pedaços",
+        "Despeje caldo e cozinhe por 20 minutos",
+        "Bata gema com limão",
+        "Retire panela do fogo",
+        "Adicione gema lentamente enquanto mexe",
+        "Tempere com sal",
+        "Sirva quente com caldo"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Gema fornece colina para saúde cerebral e intestinal. Caldo oferece gelatina curativa.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "frango", "cremoso", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "almondega-frango-hortela",
+      "title": "Almôndega de Frango com Hortelã (GAPS)",
+      "description": "Almôndegas delicadas do e-book com frango e aroma refrescante de hortelã.",
+      "ingredients": [
+        {
+          "id": "ing-frango-007",
+          "name": "Frango moído",
+          "amount": 350,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-hortela-001",
+          "name": "Folhas de hortelã",
+          "amount": 3,
+          "unit": "colher de sopa",
+          "category": "Hortifruti",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-cebola-005",
+          "name": "Cebola",
+          "amount": 0.5,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-013",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-019",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Misture frango moído com hortelã e cebola picada",
+        "Tempere com sal",
+        "Forme almôndegas",
+        "Aqueça ghee em frigideira",
+        "Doure almôndegas por 12 minutos",
+        "Cozinhe até ficarem bem passadas",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 15,
+      "nutritionTip": "Hortelã favorece digestão e reduz inflamação. Frango oferece proteína facilmente absorvida.",
+      "gapsDifficulty": "easy",
+      "tags": ["almoço", "frango", "hortelã", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-grelhado-alecrim",
+      "title": "Frango Grelhado com Alecrim e Limão (GAPS)",
+      "description": "Frango simples e saudável do e-book com aroma de ervas mediterrâneas.",
+      "ingredients": [
+        {
+          "id": "ing-frango-008",
+          "name": "Peito de frango",
+          "amount": 350,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-alecrim-002",
+          "name": "Ramos de alecrim",
+          "amount": 2,
+          "unit": "ramos",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-limao-007",
+          "name": "Suco de limão",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-014",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-020",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque frango em panela com ghee",
+        "Adicione alecrim",
+        "Cozinhe em fogo médio-alto por 20 minutos",
+        "Soque para ter crosta leve",
+        "Finalize com suco de limão fresco",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Alecrim é antioxidante potente. Limão facilita absorção de ferro. Frango oferece vitamina B12.",
+      "gapsDifficulty": "easy",
+      "tags": ["jantar", "frango", "alecrim", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-mexicano-gaps",
+      "title": "Frango Mexicano GAPS com Pimentões e Coentro Fresco",
+      "description": "Frango do e-book com toque latino nutritivo respeitando protocolo GAPS.",
+      "ingredients": [
+        {
+          "id": "ing-frango-009",
+          "name": "Frango cortado em cubos",
+          "amount": 400,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-pimentao-001",
+          "name": "Pimentão vermelho",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-pimentao-002",
+          "name": "Pimentão amarelo",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-coentro-001",
+          "name": "Folhas de coentro",
+          "amount": 3,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-cebola-006",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-015",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-007",
+          "name": "Caldo de frango",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-021",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Refogue cebola e pimentões em ghee",
+        "Adicione frango em cubos",
+        "Doure por 8 minutos",
+        "Despeje caldo",
+        "Cozinhe por 15 minutos até frango cozinhar",
+        "Finalize com coentro fresco",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Pimentões oferecem vitamina C antioxidante. Coentro auxilia na quelação de metais pesados.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "frango", "mexicano", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-recheado",
+      "title": "Frango Recheado com Vegetais e Ervas",
+      "description": "Frango inteiro recheado do e-book com vegetais nutritivos para refeição completa.",
+      "ingredients": [
+        {
+          "id": "ing-frango-010",
+          "name": "Frango inteiro",
+          "amount": 1200,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-cenoura-006",
+          "name": "Cenoura ralada",
+          "amount": 100,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-cebola-007",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-salsinha-002",
+          "name": "Salsa",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-016",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-022",
+          "name": "Sal marinho",
+          "amount": 1,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Misture cenoura, cebola e salsa",
+        "Tempere recheio com sal",
+        "Preencha cavidade do frango com recheio",
+        "Feche com palitinhos",
+        "Aqueça ghee em panela",
+        "Doure frango de todos os lados",
+        "Cozinhe em fogo baixo por 1,5 hora",
+        "Deixe descansar 10 minutos antes de servir"
+      ],
+      "servings": 3,
+      "prepTime": 15,
+      "cookTime": 100,
+      "nutritionTip": "Refeição completa com proteína, vegetais e gordura de qualidade. Caldo da cocção é nutritivo.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "frango", "recheado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "lombo-recheado",
+      "title": "Lombo Recheado com Espinafre, Alho e Hortelã",
+      "description": "Corte premium do e-book recheado com vegetais verdes para jantar elegante.",
+      "ingredients": [
+        {
+          "id": "ing-lombo-001",
+          "name": "Lombo de carne",
+          "amount": 600,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-espinafre-001",
+          "name": "Espinafre fresco",
+          "amount": 150,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-alho-004",
+          "name": "Dentes de alho",
+          "amount": 4,
+          "unit": "dentes",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-hortela-002",
+          "name": "Folhas de hortelã",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-017",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-023",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Refogue espinafre com alho em ghee",
+        "Adicione hortelã",
+        "Faça incisão no lombo",
+        "Preencha com recheio",
+        "Prenda com barbante",
+        "Aqueça ghee e doure lombo",
+        "Cozinhe em fogo baixo por 45 minutos",
+        "Deixe descansar 10 minutos",
+        "Sirva quente"
+      ],
+      "servings": 3,
+      "prepTime": 15,
+      "cookTime": 50,
+      "nutritionTip": "Carne vermelha oferece ferro, B12 e creatina. Espinafre fornece magnésio e vitaminas.",
+      "gapsDifficulty": "advanced",
+      "tags": ["jantar", "carne", "recheado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "carne-porco-desfiada",
+      "title": "Carne de Porco Desfiada ao Molho de Tomate (Pulled Pork com toque caseiro)",
+      "description": "Carne do e-book cozida lentamente em molho GAPS para textura morna e suave.",
+      "ingredients": [
+        {
+          "id": "ing-porco-001",
+          "name": "Paleta de porco",
+          "amount": 800,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-tomate-002",
+          "name": "Tomate cozido",
+          "amount": 300,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-cebola-008",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-alho-005",
+          "name": "Alho",
+          "amount": 3,
+          "unit": "dentes",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-018",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-008",
+          "name": "Caldo de carne",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-024",
+          "name": "Sal marinho",
+          "amount": 1,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte porco em 2-3 pedaços grandes",
+        "Doure em ghee de todos os lados",
+        "Refogue cebola e alho",
+        "Adicione tomate cozido e caldo",
+        "Reduza fogo e cozinhe por 3 horas cobertin",
+        "Desfie a carne com garfo",
+        "Continue cozinhando por 30 minutos mais",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 210,
+      "nutritionTip": "Cozimento longo extrai colágeno. Tomate oferece licopeno. Perfeito para intestino sensível.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "porco", "desfiado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "lombinho-porco-mostarda",
+      "title": "Lombinho de Porco ao Molho de Mostarda",
+      "description": "Corte suculento do e-book com molho aromático natural para jantar fino.",
+      "ingredients": [
+        {
+          "id": "ing-porco-002",
+          "name": "Lombinho de porco",
+          "amount": 500,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-mostarda-001",
+          "name": "Mostarda pura",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-009",
+          "name": "Caldo de carne",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-019",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-008",
+          "name": "Suco de limão",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-025",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Doure lombinho em ghee de ambos os lados",
+        "Retire e reserve",
+        "Misture mostarda com caldo",
+        "Despeje sobre carne",
+        "Cozinhe em fogo baixo por 30 minutos",
+        "Finalize com limão",
+        "Tempere com sal",
+        "Sirva quente com seu molho"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 35,
+      "nutritionTip": "Mostarda auxilia digestão. Porco oferece vitaminas B. Caldo fornece colágeno.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "porco", "mostarda", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "camaroes-alho-ghee",
+      "title": "Camarões ao Alho com Ghee e Limão",
+      "description": "Marisco delicado do e-book cozido em ghee com aroma de alho e limão.",
+      "ingredients": [
+        {
+          "id": "ing-camarao-001",
+          "name": "Camarões frescos",
+          "amount": 350,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-alho-006",
+          "name": "Dentes de alho",
+          "amount": 5,
+          "unit": "dentes",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-020",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-009",
+          "name": "Suco de limão",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-salsinha-003",
+          "name": "Salsa fresca",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-026",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Aqueça ghee em frigideira",
+        "Doure alho fatiado por 1 minuto",
+        "Adicione camarões",
+        "Cozinhe por 3-4 minutos até ficarem rosa",
+        "Finalize com suco de limão",
+        "Polvilhe salsa",
+        "Tempere com sal",
+        "Sirva imediatamente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 8,
+      "nutritionTip": "Camarão é rico em minerais e baixo em carboidratos. Ótimo para intestinos sensíveis.",
+      "gapsDifficulty": "easy",
+      "tags": ["almoço", "camarão", "alho", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "moqueca-peixe",
+      "title": "Moqueca de Peixe Tradicional",
+      "description": "Prato tradicional do e-book com peixe em molho aromático suave.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-003",
+          "name": "Filé de peixe",
+          "amount": 400,
+          "unit": "g",
+          "category": "Açougue"
+        },
+        {
+          "id": "ing-cebola-009",
+          "name": "Cebola",
+          "amount": 1,
+          "unit": "unidade",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-tomate-003",
+          "name": "Tomate fresco",
+          "amount": 200,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-021",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-010",
+          "name": "Caldo de peixe ou carne",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-010",
+          "name": "Suco de limão",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-sal-027",
+          "name": "Sal marinho",
+          "amount": 0.5,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Refogue cebola em ghee",
+        "Adicione tomate picado",
+        "Cozinhe por 5 minutos",
+        "Adicione peixe em pedaços",
+        "Despeje caldo",
+        "Cozinhe por 12 minutos até peixe cozinhar",
+        "Finalize com limão",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 25,
+      "nutritionTip": "Peixe oferece ômega-3 anti-inflamatório. Tomate fornece licopeno. Molho nutre intestino.",
+      "gapsDifficulty": "medium",
+      "tags": ["almoço", "peixe", "molho", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "pure-abobrinha",
+      "title": "Purê de Abobrinha com Ghee",
+      "description": "Acompanhamento cremoso do e-book com abobrinha cozida.",
+      "ingredients": [
+        {
+          "id": "ing-abobrinha-001",
+          "name": "Abobrinha",
+          "amount": 400,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-ghee-022",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-011",
+          "name": "Caldo morno",
+          "amount": 100,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-028",
+          "name": "Sal marinho",
+          "amount": 0.25,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte abobrinha em cubos",
+        "Cozinhe em caldo por 15 minutos",
+        "Amasse com garfo",
+        "Adicione ghee",
+        "Misture bem até ficar cremoso",
+        "Tempere com sal",
+        "Sirva morno"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Abobrinha é hidratante e fácil de digerir. Ghee fornece gordura anti-inflamatória.",
+      "gapsDifficulty": "easy",
+      "tags": ["acompanhamento", "abobrinha", "purê", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "pure-cenoura-caldo",
+      "title": "Purê de Cenoura com Caldo de Carne",
+      "description": "Acompanhamento nutritivo do e-book com cenoura em caldo.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-007",
+          "name": "Cenoura",
+          "amount": 500,
+          "unit": "g",
+          "category": "Hortifruti"
+        },
+        {
+          "id": "ing-caldo-012",
+          "name": "Caldo de carne",
+          "amount": 150,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-023",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "colher de sopa",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-029",
+          "name": "Sal marinho",
+          "amount": 0.25,
+          "unit": "colher de chá",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura em rodelas",
+        "Cozinhe em caldo por 20 minutos",
+        "Amasse até ficar morna",
+        "Adicione ghee",
+        "Misture bem",
+        "Tempere com sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Cenoura cozida libera beta-caroteno. Caldo fornece minerais e gelatina curativa.",
+      "gapsDifficulty": "easy",
+      "tags": ["acompanhamento", "cenoura", "purê", "ebook"],
+      "publishedDate": "2026-03-01"
+    }
+  ],
+  "weeklyMealPlan": [
+    {
+      "dayOfWeek": 0,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "ovos-cozidos-caldo" },
+        { "mealType": "lanche-manha", "recipeId": "caldo-legumes" },
+        { "mealType": "almoco", "recipeId": "frango-curry-abobora" },
+        { "mealType": "lanche-tarde", "recipeId": "broto-oleo-coco" },
+        { "mealType": "jantar", "recipeId": "carne-caldo" }
+      ]
+    },
+    {
+      "dayOfWeek": 1,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "mingau-abobora" },
+        { "mealType": "lanche-manha", "recipeId": "caldo-frango-gengibre" },
+        { "mealType": "almoco", "recipeId": "fricasse-frango" },
+        { "mealType": "lanche-tarde", "recipeId": "suco-cenoura-beterraba" },
+        { "mealType": "jantar", "recipeId": "frango-couve-flor" }
+      ]
+    },
+    {
+      "dayOfWeek": 2,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "frutas-cozidas" },
+        { "mealType": "lanche-manha", "recipeId": "cha-maca" },
+        { "mealType": "almoco", "recipeId": "almondega-frango-hortela" },
+        { "mealType": "lanche-tarde", "recipeId": "agua-aromatizada" },
+        { "mealType": "jantar", "recipeId": "peixe-aspargos" }
+      ]
+    },
+    {
+      "dayOfWeek": 3,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "omelete-ervas" },
+        { "mealType": "lanche-manha", "recipeId": "broto-alfalfa" },
+        { "mealType": "almoco", "recipeId": "frango-grelhado-alecrim" },
+        { "mealType": "lanche-tarde", "recipeId": "caldo-frango-alecrim" },
+        { "mealType": "jantar", "recipeId": "caldo-nutritivo-carne" }
+      ]
+    },
+    {
+      "dayOfWeek": 4,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "papa-banana" },
+        { "mealType": "lanche-manha", "recipeId": "caldo-legumes" },
+        { "mealType": "almoco", "recipeId": "frango-mexicano-gaps" },
+        { "mealType": "lanche-tarde", "recipeId": "broto-oleo-coco" },
+        { "mealType": "jantar", "recipeId": "peru-legumes-raiz" }
+      ]
+    },
+    {
+      "dayOfWeek": 5,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "ovos-cozidos-caldo" },
+        { "mealType": "lanche-manha", "recipeId": "caldo-frango-gengibre" },
+        { "mealType": "almoco", "recipeId": "frango-recheado" },
+        { "mealType": "lanche-tarde", "recipeId": "suco-cenoura-beterraba" },
+        { "mealType": "jantar", "recipeId": "lombo-recheado" }
+      ]
+    },
+    {
+      "dayOfWeek": 6,
+      "meals": [
+        { "mealType": "cafe", "recipeId": "mingau-abobora" },
+        { "mealType": "lanche-manha", "recipeId": "cha-maca" },
+        { "mealType": "almoco", "recipeId": "carne-porco-desfiada" },
+        { "mealType": "lanche-tarde", "recipeId": "agua-aromatizada" },
+        { "mealType": "jantar", "recipeId": "camaroes-alho-ghee" }
+      ]
+    }
+  ]
+}
