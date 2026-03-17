@@ -1,12 +1,9 @@
-import type { IngredientCategory, MealType } from '@/types/recipe'
+import type { MealType } from '@/types/recipe'
 
-export const INGREDIENT_CATEGORIES: IngredientCategory[] = [
-  'Açougue',
-  'Hortifruti',
-  'Despensa GAPS',
-  'Fermentados',
-]
-
+/**
+ * Meal type identifiers used in the application
+ * Labels are now managed via i18n in meal_types namespace
+ */
 export const MEAL_TYPES: MealType[] = [
   'cafe',
   'lanche-manha',
@@ -15,31 +12,11 @@ export const MEAL_TYPES: MealType[] = [
   'jantar',
 ]
 
-export const MEAL_LABELS: Record<MealType, string> = {
-  cafe: '☕ Café da Manhã',
-  'lanche-manha': '🥤 Lanche Manhã',
-  almoco: '🍽️ Almoço',
-  'lanche-tarde': '🍪 Lanche Tarde',
-  jantar: '🌙 Jantar',
-}
-
-export const DAY_NAMES = [
-  'Segunda',
-  'Terça',
-  'Quarta',
-  'Quinta',
-  'Sexta',
-  'Sábado',
-  'Domingo',
-]
-
-export const CATEGORY_ICONS: Record<IngredientCategory, string> = {
-  'Açougue': '🥩',
-  'Hortifruti': '🥬',
-  'Despensa GAPS': '🥫',
-  'Fermentados': '🫙',
-}
-
+/**
+ * Emoji icons for ingredient categories mapped by category key
+ * Use with: useTranslations('common').t(`categories.${key}`)
+ * to get the localized category name
+ */
 export const CATEGORY_ICONS_BY_KEY: Record<string, string> = {
   'acougue': '🥩',
   'hortifruti': '🥬',
