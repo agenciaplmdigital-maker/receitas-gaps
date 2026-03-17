@@ -1,13 +1,14 @@
 'use client'
 
-import type { ShoppingListItem, IngredientCategory } from '@/types/recipe'
-import { CATEGORY_ICONS } from '@/utils/constants'
+import { useTranslations } from 'next-intl'
+import type { ShoppingListItem } from '@/types/recipe'
+import { CATEGORY_ICONS_BY_KEY } from '@/utils/constants'
 import { IngredientItem } from './IngredientItem'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import { useState } from 'react'
 
 interface CategorySectionProps {
-  category: IngredientCategory
+  category: string
   items: ShoppingListItem[]
   onToggleItem: (itemId: string) => void
 }
@@ -17,12 +18,13 @@ export function CategorySection({
   items,
   onToggleItem,
 }: CategorySectionProps) {
+  const t = useTranslations('common')
   const [isExpanded, setIsExpanded] = useState(true)
 
   if (items.length === 0) return null
 
   const checkedCount = items.filter((item) => item.checked).length
-  const icon = CATEGORY_ICONS[category]
+  const icon = CATEGORY_ICONS_BY_KEY[category]
 
   return (
     <div className="rounded-lg border border-olive/10 bg-white">
@@ -34,9 +36,11 @@ export function CategorySection({
           <div className="flex items-center gap-3">
             <span className="text-2xl">{icon}</span>
             <div>
-              <h4 className="font-serif font-bold text-olive">{category}</h4>
+              <h4 className="font-serif font-bold text-olive">
+                {t(`categories.${category}`)}
+              </h4>
               <p className="text-sm text-gray-600">
-                {checkedCount} de {items.length} itens
+                {checkedCount} de {items.length} {items.length === 1 ? t('item') : t('items')}
               </p>
             </div>
           </div>

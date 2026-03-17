@@ -15,5 +15,7 @@
     "Compre productos frescos al final",
     "Prefiera productos orgánicos cuando sea posible",
     "Negocie descuentos por cantidad con el vendedor"
-  ]
+  ],
+  "uncheck": "Desmarcar",
+  "mark_as_bought": "Marcar como comprado"
 }

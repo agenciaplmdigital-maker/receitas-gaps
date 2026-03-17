@@ -1,9 +1,9 @@
 'use client'
 
 import { useRecipeContext } from '@/context/RecipeContext'
+import { useTranslations, useLocale } from 'next-intl'
 import { RecipeModal } from '../Shared/RecipeModal'
 import { MealList } from './MealList'
-import { DAY_NAMES } from '@/utils/constants'
 
 export function DashboardContainer() {
   const {
@@ -17,6 +17,10 @@ export function DashboardContainer() {
     isLoading,
   } = useRecipeContext()
 
+  const t = useTranslations('dashboard')
+  const tDays = useTranslations('common')
+  const locale = useLocale()
+
   if (isLoading) {
     return (
       <div className="flex min-h-screen items-center justify-center">
@@ -28,7 +32,8 @@ export function DashboardContainer() {
   const today = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1
   const todayMeals = weeklyMealPlan.filter((meal) => meal.dayOfWeek === today)
 
-  const formattedDate = new Date().toLocaleDateString('pt-BR', {
+  const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+  const formattedDate = new Date().toLocaleDateString(locale === 'pt-BR' ? 'pt-BR' : locale === 'en-US' ? 'en-US' : 'es-ES', {
     weekday: 'long',
     day: 'numeric',
     month: 'long',
@@ -38,10 +43,10 @@ export function DashboardContainer() {
     <main className="mx-auto max-w-4xl px-4 pb-24 pt-6">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-olive capitalize">
-          Cardápio de Hoje
+          {t('title')}
         </h2>
         <p className="text-lg text-sage">
-          {DAY_NAMES[today]}, {formattedDate}
+          {tDays(`days.${dayNames[today]}`)}, {formattedDate}
         </p>
       </div>
 

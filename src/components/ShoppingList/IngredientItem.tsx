@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import type { ShoppingListItem } from '@/types/recipe'
 import { Check } from 'lucide-react'
 
@@ -9,6 +10,7 @@ interface IngredientItemProps {
 }
 
 export function IngredientItem({ item, onToggle }: IngredientItemProps) {
+  const t = useTranslations('shopping')
   return (
     <li className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-beige/50">
       <button
@@ -18,7 +20,7 @@ export function IngredientItem({ item, onToggle }: IngredientItemProps) {
             ? 'border-olive bg-olive'
             : 'border-olive/30 hover:border-olive'
         }`}
-        aria-label={item.checked ? 'Desmarcar' : 'Marcar como comprado'}
+        aria-label={item.checked ? t('uncheck') : t('mark_as_bought')}
       >
         {item.checked && <Check size={16} className="text-white" />}
       </button>

@@ -73,5 +73,9 @@
     "easy": "Fácil",
     "medium": "Medio",
     "advanced": "Avanzado"
-  }
+  },
+  "meal": "comida",
+  "meals": "comidas",
+  "item": "artículo",
+  "items": "artículos"
 }

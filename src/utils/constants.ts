@@ -40,6 +40,13 @@ export const CATEGORY_ICONS: Record<IngredientCategory, string> = {
   'Fermentados': '🫙',
 }
 
+export const CATEGORY_ICONS_BY_KEY: Record<string, string> = {
+  'acougue': '🥩',
+  'hortifruti': '🥬',
+  'despensa_gaps': '🥫',
+  'fermentados': '🫙',
+}
+
 export const COLORS = {
   olive: '#556B2F',
   beige: '#F5F5DC',

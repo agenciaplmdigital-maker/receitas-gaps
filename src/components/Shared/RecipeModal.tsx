@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useRecipeContext } from '@/context/RecipeContext'
 import type { Recipe } from '@/types/recipe'
 import { X, Clock, Users } from 'lucide-react'
@@ -11,6 +12,9 @@ interface RecipeModalProps {
 }
 
 export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
+  const t = useTranslations('recipe_modal')
+  const tDifficulty = useTranslations('common')
+
   if (!isOpen || !recipe) return null
 
   const totalTime = recipe.prepTime + recipe.cookTime
@@ -30,7 +34,7 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
           <button
             onClick={onClose}
             className="rounded-lg p-2 hover:bg-gray-100"
-            aria-label="Fechar"
+            aria-label={t('close')}
           >
             <X size={24} className="text-gray-600" />
           </button>
@@ -43,29 +47,29 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
               <Clock size={20} className="text-terracotta" />
               <span className="text-sm font-semibold text-sage">{totalTime}m</span>
             </div>
-            <p className="text-xs text-gray-600">Tempo total</p>
+            <p className="text-xs text-gray-600">{t('total_time')}</p>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2">
               <Users size={20} className="text-terracotta" />
               <span className="text-sm font-semibold text-sage">{recipe.servings}</span>
             </div>
-            <p className="text-xs text-gray-600">Porções</p>
+            <p className="text-xs text-gray-600">{t('servings')}</p>
           </div>
           <div className="text-center">
             <span className="inline-block rounded-full bg-olive/10 px-3 py-1 text-xs font-semibold text-olive">
               {recipe.gapsDifficulty === 'easy'
-                ? 'Fácil'
+                ? tDifficulty('difficulty.easy')
                 : recipe.gapsDifficulty === 'medium'
-                  ? 'Médio'
-                  : 'Avançado'}
+                  ? tDifficulty('difficulty.medium')
+                  : tDifficulty('difficulty.advanced')}
             </span>
           </div>
         </div>
 
         {/* Ingredients */}
         <div className="mb-6">
-          <h3 className="mb-3 text-xl font-bold text-olive">Ingredientes</h3>
+          <h3 className="mb-3 text-xl font-bold text-olive">{t('ingredients')}</h3>
           <ul className="space-y-2">
             {recipe.ingredients.map((ingredient) => (
               <li key={ingredient.id} className="flex items-start gap-3">
@@ -84,7 +88,7 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
 
         {/* Instructions */}
         <div className="mb-6">
-          <h3 className="mb-3 text-xl font-bold text-olive">Modo de Preparo</h3>
+          <h3 className="mb-3 text-xl font-bold text-olive">{t('instructions')}</h3>
           <ol className="space-y-3">
             {recipe.instructions.map((instruction, index) => (
               <li key={index} className="flex gap-3">
@@ -99,7 +103,7 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
 
         {/* Nutrition Tip */}
         <div className="rounded-lg border-l-4 border-terracotta bg-cream p-4">
-          <h4 className="mb-2 font-bold text-olive">💡 Dica Nutritiva</h4>
+          <h4 className="mb-2 font-bold text-olive">💡 {t('nutrition_tip')}</h4>
           <p className="text-sm text-gray-700">{recipe.nutritionTip}</p>
         </div>
 

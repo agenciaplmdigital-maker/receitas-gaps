@@ -1,6 +1,6 @@
 'use client'
 
-import { DAY_NAMES } from '@/utils/constants'
+import { useTranslations, useLocale } from 'next-intl'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
 interface DayCardProps {
@@ -16,13 +16,19 @@ export function DayCard({
   isSelected,
   onClick,
 }: DayCardProps) {
+  const t = useTranslations('common')
+  const locale = useLocale()
+
   const date = new Date()
   date.setDate(date.getDate() + (dayOfWeek - (date.getDay() === 0 ? 6 : date.getDay() - 1)))
 
-  const dayDate = date.toLocaleDateString('pt-BR', {
-    day: 'numeric',
-    month: 'numeric',
-  })
+  const dayDate = date.toLocaleDateString(
+    locale === 'pt-BR' ? 'pt-BR' : locale === 'en-US' ? 'en-US' : 'es-ES',
+    {
+      day: 'numeric',
+      month: 'numeric',
+    }
+  )
 
   return (
     <button
@@ -36,11 +42,11 @@ export function DayCard({
       <div className="flex items-start justify-between">
         <div>
           <h3 className="font-serif text-lg font-bold text-olive">
-            {DAY_NAMES[dayOfWeek]}
+            {t(`days.${['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][dayOfWeek]}`)}
           </h3>
           <p className="text-sm text-sage">{dayDate}</p>
           <p className="mt-2 text-xs text-gray-600">
-            {mealCount} refeições
+            {mealCount} {mealCount === 1 ? t('meal') : t('meals')}
           </p>
         </div>
         <div className="text-2xl">

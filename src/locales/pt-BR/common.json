@@ -73,5 +73,9 @@
     "easy": "Fácil",
     "medium": "Médio",
     "advanced": "Avançado"
-  }
+  },
+  "meal": "refeição",
+  "meals": "refeições",
+  "item": "item",
+  "items": "itens"
 }

@@ -15,5 +15,7 @@
     "Buy fresh products last",
     "Prefer organic products when possible",
     "Negotiate bulk discounts with the seller"
-  ]
+  ],
+  "uncheck": "Uncheck",
+  "mark_as_bought": "Mark as bought"
 }

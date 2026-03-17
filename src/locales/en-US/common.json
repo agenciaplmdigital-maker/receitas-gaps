@@ -73,5 +73,9 @@
     "easy": "Easy",
     "medium": "Medium",
     "advanced": "Advanced"
-  }
+  },
+  "meal": "meal",
+  "meals": "meals",
+  "item": "item",
+  "items": "items"
 }
