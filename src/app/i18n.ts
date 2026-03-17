@@ -1,34 +1,37 @@
 import { getRequestConfig } from 'next-intl/server';
 
-const supportedLocales = ['pt-BR', 'en-US', 'es-ES'];
+// Import all translation files statically
+import commonPT from '../locales/pt-BR/common.json';
+import dashboardPT from '../locales/pt-BR/dashboard.json';
+import shoppingPT from '../locales/pt-BR/shopping.json';
 
-export default getRequestConfig(async ({ locale }) => {
-  // Validate locale and fallback to Portuguese if invalid
-  const validLocale = supportedLocales.includes(locale) ? locale : 'pt-BR';
+import commonEN from '../locales/en-US/common.json';
+import dashboardEN from '../locales/en-US/dashboard.json';
+import shoppingEN from '../locales/en-US/shopping.json';
 
-  try {
-    // Load all translation files for the locale
-    const common = (await import(`../locales/${validLocale}/common.json`))
-      .default;
-    const dashboard = (await import(`../locales/${validLocale}/dashboard.json`))
-      .default;
-    const shopping = (await import(`../locales/${validLocale}/shopping.json`))
-      .default;
+import commonES from '../locales/es-ES/common.json';
+import dashboardES from '../locales/es-ES/dashboard.json';
+import shoppingES from '../locales/es-ES/shopping.json';
 
-    // Merge all messages into a single object with namespace keys
-    return {
-      messages: {
-        ...common,
-        dashboard,
-        shopping,
-      },
-    };
-  } catch (error) {
-    console.error(`Failed to load translations for locale: ${validLocale}`, error);
-    // Fallback to Portuguese if loading fails
-    const common = (await import('../locales/pt-BR/common.json')).default;
-    return {
-      messages: common,
-    };
-  }
-});
+// Map locales to their translations
+const translations = {
+  'pt-BR': {
+    ...commonPT,
+    dashboard: dashboardPT,
+    shopping: shoppingPT,
+  },
+  'en-US': {
+    ...commonEN,
+    dashboard: dashboardEN,
+    shopping: shoppingEN,
+  },
+  'es-ES': {
+    ...commonES,
+    dashboard: dashboardES,
+    shopping: shoppingES,
+  },
+};
+
+export default getRequestConfig(async ({ locale }) => ({
+  messages: translations[locale as keyof typeof translations] || translations['pt-BR'],
+}));
