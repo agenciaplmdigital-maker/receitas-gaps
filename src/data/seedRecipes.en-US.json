@@ -1,0 +1,2101 @@
+{
+  "recipes": [
+    {
+      "id": "ovos-cozidos-caldo",
+      "title": "Boiled Eggs with Broth",
+      "description": "Simple breakfast with boiled eggs and nutritious broth to start your day with energy.",
+      "ingredients": [
+        {
+          "id": "ing-ovos-001",
+          "name": "Organic eggs",
+          "amount": 2,
+          "unit": "units",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-caldo-001",
+          "name": "Homemade beef broth",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-001",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Boil water in a pot",
+        "Place eggs and cook for 10 minutes",
+        "Remove and place in cold water",
+        "Descasque os ovos",
+        "Heat the broth and serve with the eggs"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Eggs contain essential amino acids. The broth provides collagen for intestinal healing.",
+      "gapsDifficulty": "easy",
+      "tags": ["breakfast", "protein", "collagen"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "mingau-abobora",
+      "title": "Squash Porridge",
+      "description": "Comforting breakfast with cooked squash and broth, perfect for sensitive intestines.",
+      "ingredients": [
+        {
+          "id": "ing-abobora-001",
+          "name": "Squash",
+          "amount": 200,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-caldo-002",
+          "name": "Chicken broth",
+          "amount": 250,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-ghee-001",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-canela-001",
+          "name": "Ground cinnamon",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cut squash into cubes",
+        "Cook in chicken broth until warm",
+        "Mash squash in broth",
+        "Adicione ghee e canela",
+        "Serve warm"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 20,
+      "nutritionTip": "Squash is rich in carotenoids that promote intestinal mucosa. Easy to digest.",
+      "gapsDifficulty": "easy",
+      "tags": ["breakfast", "squash", "morno", "suave"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frutas-cozidas",
+      "title": "Cooked Fruits",
+      "description": "Breakfast with fruits cooked in broth for better digestion.",
+      "ingredients": [
+        {
+          "id": "ing-maca-001",
+          "name": "Apple",
+          "amount": 2,
+          "unit": "units",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-pera-001",
+          "name": "Pera",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-agua-001",
+          "name": "Filtered water",
+          "amount": 300,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-gengibre-001",
+          "name": "Gengibre fresco",
+          "amount": 5,
+          "unit": "g",
+          "category": "Produce"
+        }
+      ],
+      "instructions": [
+        "Cut fruits into small pieces",
+        "Place in a pot with water",
+        "Add ginger slices",
+        "Cook for 15 minutes",
+        "Serve warm"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Cooked fruits are more digestible than raw. Ginger aids digestion.",
+      "gapsDifficulty": "easy",
+      "tags": ["breakfast", "frutas", "cozido"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "omelete-ervas",
+      "title": "Herb Omelet",
+      "description": "Quick and protein-rich breakfast with fresh omelet and aromatic herbs.",
+      "ingredients": [
+        {
+          "id": "ing-ovos-002",
+          "name": "Organic eggs",
+          "amount": 3,
+          "unit": "units",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-ghee-002",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-salsinha-001",
+          "name": "Salsa fresca",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "Produce",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-cebolinha-001",
+          "name": "Cebolinha",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-sal-002",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Beat eggs with salt",
+        "Heat ghee in a frying pan",
+        "Despeje os ovos",
+        "Let cook for 2 minutes",
+        "Add herbs and fold omelet",
+        "Cook 1 more minute"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 5,
+      "nutritionTip": "Eggs are complete source of protein and choline. Herbs add minerals.",
+      "gapsDifficulty": "easy",
+      "tags": ["breakfast", "protein", "quick", "ovos"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "papa-banana",
+      "title": "Papa de Banana",
+      "description": "Comforting breakfast with cooked banana, gentle for the intestines.",
+      "ingredients": [
+        {
+          "id": "ing-banana-001",
+          "name": "Banana madura",
+          "amount": 2,
+          "unit": "units",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-caldo-003",
+          "name": "Warm chicken broth",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-ghee-003",
+          "name": "Ghee",
+          "amount": 0.5,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cook whole banana for 5 minutes in water",
+        "Descasque e amasse",
+        "Mix with warm broth",
+        "Add ghee",
+        "Serve immediately"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "Cooked banana provides potassium and is easily digested. Resistant starch favors good bacteria.",
+      "gapsDifficulty": "easy",
+      "tags": ["breakfast", "banana", "morno"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-legumes",
+      "title": "Vegetable Broth",
+      "description": "Lanche matinal nutritivo com caldo caseiro de legumes.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-001",
+          "name": "Carrot",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-abobora-002",
+          "name": "Squash",
+          "amount": 100,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-aipo-001",
+          "name": "Aipo",
+          "amount": 1,
+          "unit": "ramo",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-agua-002",
+          "name": "Filtered water",
+          "amount": 500,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-003",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cut vegetables into small cubes",
+        "Place in boiling water",
+        "Cozinhe por 20 minutos",
+        "Strain if you prefer just broth",
+        "Season with salt"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Legumes cozidos liberam nutrientes no caldo. Rico em minerais e baixo em carboidratos.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "caldo", "legumes"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-frango-gengibre",
+      "title": "Chicken Broth with Ginger",
+      "description": "Therapeutic broth with anti-inflammatory properties for morning snack.",
+      "ingredients": [
+        {
+          "id": "ing-frango-001",
+          "name": "Chicken breast",
+          "amount": 200,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-agua-003",
+          "name": "Filtered water",
+          "amount": 400,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-gengibre-002",
+          "name": "Gengibre fresco",
+          "amount": 10,
+          "unit": "g",
+          "category": "Produce",
+          "notes": "Fatias"
+        },
+        {
+          "id": "ing-limao-001",
+          "name": "Lemon juice",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-004",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cook chicken in water for 20 minutes",
+        "Add ginger slices",
+        "Cozinhe mais 10 minutos",
+        "Retire o frango e desfie",
+        "Season with lemon and salt",
+        "Serve warm"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "Ginger reduces inflammation. Chicken provides protein and easily absorbed collagen.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "caldo", "frango", "gengibre"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "cha-maca",
+      "title": "Apple Tea",
+      "description": "Warm and comforting drink with cooked apple for morning snack.",
+      "ingredients": [
+        {
+          "id": "ing-maca-002",
+          "name": "Apple",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-agua-004",
+          "name": "Filtered water",
+          "amount": 300,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-canela-002",
+          "name": "Ground cinnamon",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-mel-001",
+          "name": "Mel puro",
+          "amount": 1,
+          "unit": "teaspoon",
+          "category": "Fermentados"
+        }
+      ],
+      "instructions": [
+        "Cut apple into pieces",
+        "Cook in water for 10 minutes",
+        "Strain the tea",
+        "Adicione canela e mel",
+        "Serve warm"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "Cooked apple provides pectin that favors beneficial bacteria. Cinnamon regulates blood sugar.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "tea", "apple"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "broto-alfalfa",
+      "title": "Alfalfa Sprouts",
+      "description": "Lanche leve com broto nutritivo rico em enzimas vivas.",
+      "ingredients": [
+        {
+          "id": "ing-broto-001",
+          "name": "Alfalfa sprouts",
+          "amount": 100,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-oleo-coco-001",
+          "name": "Coconut oil",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-002",
+          "name": "Lemon juice",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-005",
+          "name": "Sea salt",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Lave bem o broto",
+        "Coloque em uma tigela",
+        "Season with coconut oil",
+        "Add lemon and salt",
+        "Mix well"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Sprouts contain live enzymes that facilitate digestion. Rich in B vitamins.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "broto", "cru", "enzimas"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "almondega-carne-abobora",
+      "title": "Meat Meatballs with Squash",
+      "description": "Protein-rich lunch with homemade meatball and cooked squash side.",
+      "ingredients": [
+        {
+          "id": "ing-carne-001",
+          "name": "Lean Ground Meat",
+          "amount": 300,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-cebola-001",
+          "name": "Onion",
+          "amount": 0.5,
+          "unit": "unit",
+          "category": "Produce",
+          "notes": "Finely chopped"
+        },
+        {
+          "id": "ing-alho-001",
+          "name": "Garlic",
+          "amount": 2,
+          "unit": "cloves",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-004",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-abobora-003",
+          "name": "Squash",
+          "amount": 200,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-006",
+          "name": "Sea salt",
+          "amount": 1,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Misture carne com cebola e alho",
+        "Form meatballs",
+        "Doure em ghee quente por 10 minutos",
+        "Cook squash in water separately for 15 minutes",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 25,
+      "nutritionTip": "Quality protein with minerals. Meat nourishes intestines with L-glutamine.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "carne", "protein-rich"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-brocolis",
+      "title": "Chicken with Broccoli",
+      "description": "Simple lunch with cooked chicken and al dente broccoli.",
+      "ingredients": [
+        {
+          "id": "ing-frango-002",
+          "name": "Chicken breast",
+          "amount": 300,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-brocolis-001",
+          "name": "Broccoli",
+          "amount": 250,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-005",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-003",
+          "name": "Lemon juice",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-007",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cook chicken in water for 20 minutes",
+        "Cut into pieces",
+        "Cook broccoli for 8 minutes",
+        "Heat ghee and season chicken with lemon and salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "Broccoli is rich in sulforaphane that protects intestinal mucosa. Chicken provides essential amino acids.",
+      "gapsDifficulty": "easy",
+      "tags": ["lunch", "frango", "broccoli"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peixe-cenoura",
+      "title": "Fish with Carrot",
+      "description": "Delicate lunch with cooked fish and warm carrot.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-001",
+          "name": "White Fish Fillet",
+          "amount": 300,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-cenoura-002",
+          "name": "Carrot",
+          "amount": 2,
+          "unit": "units",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-006",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-alho-002",
+          "name": "Garlic",
+          "amount": 2,
+          "unit": "cloves",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-008",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura em rodelas",
+        "Cook carrot in water for 15 minutes",
+        "Heat ghee with garlic",
+        "Cozinhe peixe por 10 minutos",
+        "Season with salt",
+        "Sirva junto com cenoura"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 25,
+      "nutritionTip": "Fish is rich in omega-3 that reduces intestinal inflammation. Carrot provides beta-carotene.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "peixe", "delicado"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "carne-desfiada-refogada",
+      "title": "Shredded Meat Sauté",
+      "description": "Comforting lunch with shredded meat in mild sauce.",
+      "ingredients": [
+        {
+          "id": "ing-carne-002",
+          "name": "Carne para desfiada",
+          "amount": 400,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-cebola-002",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-tomate-001",
+          "name": "Tomato",
+          "amount": 200,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-007",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-caldo-004",
+          "name": "Beef broth",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-009",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cook meat in water for 1 hour",
+        "Desfie com garfo",
+        "Refogue cebola em ghee",
+        "Adicione tomate picado",
+        "Misture carne desfiada e caldo",
+        "Cook for 15 minutes",
+        "Season with salt"
+      ],
+      "servings": 3,
+      "prepTime": 10,
+      "cookTime": 90,
+      "nutritionTip": "Slowly cooked meat releases collagen and nutrients. Tomato provides antioxidant lycopene.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "carne", "molho"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "broto-oleo-coco",
+      "title": "Sprout with Coconut Oil",
+      "description": "Lanche da tarde leve com broto e gordura de qualidade.",
+      "ingredients": [
+        {
+          "id": "ing-broto-002",
+          "name": "Alfalfa sprouts",
+          "amount": 80,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-oleo-coco-002",
+          "name": "Virgin Coconut Oil",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-010",
+          "name": "Sea salt",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Lave bem o broto",
+        "Coloque em tigela",
+        "Add coconut oil at room temperature",
+        "Season with salt",
+        "Coma imediatamente"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Coconut oil is anti-inflammatory. Sprouts provide live enzymes for excellent digestion.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "broto", "oil", "cru"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "suco-cenoura-beterraba",
+      "title": "Carrot and Beet Juice",
+      "description": "Suco fresco cozido para lanche da tarde com tons de terra.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-003",
+          "name": "Carrot",
+          "amount": 2,
+          "unit": "units",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-beterraba-001",
+          "name": "Beet",
+          "amount": 100,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-agua-005",
+          "name": "Filtered water",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-gengibre-003",
+          "name": "Ginger",
+          "amount": 5,
+          "unit": "g",
+          "category": "Produce"
+        }
+      ],
+      "instructions": [
+        "Cut carrot and beet into small pieces",
+        "Cook in water with ginger for 10 minutes",
+        "Coe para obter suco",
+        "Serve warm"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "Beet contains betaine that improves digestion. Carrot provides protective carotenoids.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "suco", "cozido"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "agua-aromatizada",
+      "title": "Flavored Water",
+      "description": "Bebida refrescante com ervas para lanche da tarde.",
+      "ingredients": [
+        {
+          "id": "ing-agua-006",
+          "name": "Filtered water",
+          "amount": 500,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-menta-001",
+          "name": "Mint Leaves",
+          "amount": 5,
+          "unit": "folhas",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-limao-004",
+          "name": "Lemon",
+          "amount": 0.5,
+          "unit": "unit",
+          "category": "Produce"
+        }
+      ],
+      "instructions": [
+        "Place water in a pitcher",
+        "Add mint leaves",
+        "Squeeze lemon juice",
+        "Deixe repousar por 15 minutos",
+        "Coe se preferir",
+        "Sirva"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Mint promotes digestion. Lemon aids mineral absorption.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "bebida", "ervas"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-frango-alecrim",
+      "title": "Chicken Broth with Rosemary",
+      "description": "Aromatic broth for afternoon snack with calming properties.",
+      "ingredients": [
+        {
+          "id": "ing-frango-003",
+          "name": "Ossos de frango",
+          "amount": 300,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-agua-007",
+          "name": "Filtered water",
+          "amount": 400,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-alecrim-001",
+          "name": "Ramo de alecrim",
+          "amount": 1,
+          "unit": "ramo",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-011",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Place bones in hot water",
+        "Bring to high heat until boiling",
+        "Reduza fogo e adicione alecrim",
+        "Cozinhe por 30 minutos",
+        "Coe e tempere com sal",
+        "Serve warm"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 35,
+      "nutritionTip": "Rosemary has antioxidants. Chicken offers gelatin for intestinal health.",
+      "gapsDifficulty": "easy",
+      "tags": ["snack", "caldo", "erva"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "carne-caldo",
+      "title": "Meat in Broth",
+      "description": "Nutritious and comforting dinner with meat cooked in its own broth.",
+      "ingredients": [
+        {
+          "id": "ing-carne-003",
+          "name": "Carne para caldo",
+          "amount": 400,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-agua-008",
+          "name": "Filtered water",
+          "amount": 800,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-cenoura-004",
+          "name": "Carrot",
+          "amount": 2,
+          "unit": "units",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-cebola-003",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-012",
+          "name": "Sea salt",
+          "amount": 1,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Place meat in cold water",
+        "Bring to high heat until boiling",
+        "Retire espuma",
+        "Adicione cenoura e cebola",
+        "Cozinhe por 1,5 hora em fogo baixo",
+        "Season with salt",
+        "Serve meat in its own broth"
+      ],
+      "servings": 3,
+      "prepTime": 5,
+      "cookTime": 100,
+      "nutritionTip": "Homemade broth is foundation of intestinal healing. Maximum collagen and L-glutamine.",
+      "gapsDifficulty": "easy",
+      "tags": ["dinner", "carne", "caldo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-couve-flor",
+      "title": "Chicken with Cauliflower",
+      "description": "Jantar leve com frango e couve-flor assada delicadamente.",
+      "ingredients": [
+        {
+          "id": "ing-frango-004",
+          "name": "Chicken breast",
+          "amount": 350,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-couve-flor-001",
+          "name": "Cauliflower",
+          "amount": 300,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-008",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-alho-003",
+          "name": "Garlic",
+          "amount": 3,
+          "unit": "cloves",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-013",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Corte couve-flor em floretas",
+        "Cook in water for 8 minutes",
+        "Cook chicken in water for 20 minutes",
+        "Heat ghee and brown garlic",
+        "Misture frango e couve-flor",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "Cauliflower is rich in sulfur that improves detoxification. Low in carbs.",
+      "gapsDifficulty": "medium",
+      "tags": ["dinner", "frango", "legume"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peixe-aspargos",
+      "title": "Fish with Asparagus",
+      "description": "Jantar elegante e nutritivo com peixe cozido e aspargo morno.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-002",
+          "name": "Fish Fillet",
+          "amount": 350,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-aspargo-001",
+          "name": "Aspargo fresco",
+          "amount": 200,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-009",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-005",
+          "name": "Lemon",
+          "amount": 0.5,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-014",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cook asparagus in water for 8 minutes",
+        "Cook fish in water with lemon for 12 minutes",
+        "Heat ghee in frying pan",
+        "Saltear aspargo em ghee por 3 minutos",
+        "Season with salt",
+        "Sirva peixe com aspargo"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 25,
+      "nutritionTip": "Asparagus is natural diuretic. White fish is delicate for sensitive intestines.",
+      "gapsDifficulty": "medium",
+      "tags": ["dinner", "peixe", "aspargo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-nutritivo-carne",
+      "title": "Nutritious Beef Broth",
+      "description": "Concentrated broth for dinner with maximum nutrient concentration.",
+      "ingredients": [
+        {
+          "id": "ing-carne-004",
+          "name": "Ossos com tutano",
+          "amount": 500,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-agua-009",
+          "name": "Filtered water",
+          "amount": 1,
+          "unit": "L",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-cenoura-005",
+          "name": "Carrot",
+          "amount": 2,
+          "unit": "units",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-aipo-002",
+          "name": "Aipo",
+          "amount": 2,
+          "unit": "ramos",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-gengibre-004",
+          "name": "Ginger",
+          "amount": 10,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-015",
+          "name": "Sea salt",
+          "amount": 1,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Place bones in cold water",
+        "Bring to high heat until boiling",
+        "Retire espuma",
+        "Adicione vegetais e gengibre",
+        "Reduza fogo e cozinhe por 4-6 horas",
+        "Coe",
+        "Season with salt"
+      ],
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 360,
+      "nutritionTip": "Long-cooked broth extracts collagen, minerals and essential L-glutamine for deep intestinal healing.",
+      "gapsDifficulty": "easy",
+      "tags": ["dinner", "caldo", "longo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peru-legumes-raiz",
+      "title": "Peru com Legumes-Raiz",
+      "description": "Jantar reconfortante com peru cozido e legumes-raiz nutritivos.",
+      "ingredients": [
+        {
+          "id": "ing-peru-001",
+          "name": "Peito de peru",
+          "amount": 350,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-batata-doce-001",
+          "name": "Batata-doce",
+          "amount": 200,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-nabo-001",
+          "name": "Turnip",
+          "amount": 150,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-010",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-016",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cook turkey in water for 25 minutes",
+        "Corte legumes-raiz em cubos",
+        "Cook vegetables in water for 20 minutes",
+        "Heat ghee",
+        "Misture peru e legumes",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 45,
+      "nutritionTip": "Sweet potato provides resistant starch for beneficial bacteria. Turkey is nutritious lean protein.",
+      "gapsDifficulty": "medium",
+      "tags": ["dinner", "peru", "legume"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-curry-abobora",
+      "title": "Chicken Curry with Squash and Beef Broth",
+      "description": "Recipe from the e-book with tender chicken in aromatic curry sauce with sweet squash.",
+      "ingredients": [
+        {
+          "id": "ing-frango-005",
+          "name": "Frango desfiado",
+          "amount": 400,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-abobora-004",
+          "name": "Squash",
+          "amount": 300,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-caldo-005",
+          "name": "Homemade beef broth",
+          "amount": 300,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-curry-001",
+          "name": "Curry powder",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-cebola-004",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-011",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-017",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Sauté onion in ghee until golden",
+        "Add curry powder and stir for 1 minute",
+        "Adicione frango desfiado",
+        "Despeje caldo de carne",
+        "Add squash cubes",
+        "Cook for 20 minutes until squash is warm",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 3,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Curry is potent anti-inflammatory. Squash provides carotenoids. Broth nourishes intestinal recovery.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "frango", "curry", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "fricasse-frango",
+      "title": "Chicken Fricassee (GAPS)",
+      "description": "Receita tradicional do e-book com frango cozido em molho cremoso de caldo.",
+      "ingredients": [
+        {
+          "id": "ing-frango-006",
+          "name": "Chicken cut into pieces",
+          "amount": 400,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-caldo-006",
+          "name": "Homemade chicken broth",
+          "amount": 300,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-gema-001",
+          "name": "Gema de ovo",
+          "amount": 2,
+          "unit": "units",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-ghee-012",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-006",
+          "name": "Lemon juice",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-018",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Heat ghee in pan",
+        "Brown chicken pieces",
+        "Despeje caldo e cozinhe por 20 minutos",
+        "Beat yolk with lemon",
+        "Retire panela do fogo",
+        "Adicione gema lentamente enquanto mexe",
+        "Season with salt",
+        "Sirva quente com caldo"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Yolk provides choline for brain and intestinal health. Broth offers healing gelatin.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "frango", "cremoso", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "almondega-frango-hortela",
+      "title": "Chicken Meatballs with Mint (GAPS)",
+      "description": "Delicate meatballs from the e-book with chicken and refreshing mint aroma.",
+      "ingredients": [
+        {
+          "id": "ing-frango-007",
+          "name": "Ground chicken",
+          "amount": 350,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-hortela-001",
+          "name": "Mint Leaves",
+          "amount": 3,
+          "unit": "tablespoon",
+          "category": "Produce",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-cebola-005",
+          "name": "Onion",
+          "amount": 0.5,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-013",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-019",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Mix ground chicken with mint and chopped onion",
+        "Season with salt",
+        "Form meatballs",
+        "Heat ghee in frying pan",
+        "Brown meatballs for 12 minutes",
+        "Cook until well done",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 15,
+      "nutritionTip": "Mint promotes digestion and reduces inflammation. Chicken offers easily absorbed protein.",
+      "gapsDifficulty": "easy",
+      "tags": ["lunch", "frango", "mint", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-grelhado-alecrim",
+      "title": "Grilled Chicken with Rosemary and Lemon (GAPS)",
+      "description": "Simple and healthy chicken from the e-book with Mediterranean herb aroma.",
+      "ingredients": [
+        {
+          "id": "ing-frango-008",
+          "name": "Chicken breast",
+          "amount": 350,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-alecrim-002",
+          "name": "Ramos de alecrim",
+          "amount": 2,
+          "unit": "ramos",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-limao-007",
+          "name": "Lemon juice",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-014",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-020",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Coloque frango em panela com ghee",
+        "Adicione alecrim",
+        "Cook on medium-high heat for 20 minutes",
+        "Soque para ter crosta leve",
+        "Finish with fresh lemon juice",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Rosemary is potent antioxidant. Lemon facilitates iron absorption. Chicken offers vitamin B12.",
+      "gapsDifficulty": "easy",
+      "tags": ["dinner", "frango", "alecrim", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-mexicano-gaps",
+      "title": "Mexican Chicken GAPS with Peppers and Fresh Cilantro",
+      "description": "Frango do e-book com toque latino nutritivo respeitando protocolo GAPS.",
+      "ingredients": [
+        {
+          "id": "ing-frango-009",
+          "name": "Frango cortado em cubos",
+          "amount": 400,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-pimentao-001",
+          "name": "Red pepper",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-pimentao-002",
+          "name": "Yellow pepper",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-coentro-001",
+          "name": "Folhas de coentro",
+          "amount": 3,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-cebola-006",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-015",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-caldo-007",
+          "name": "Chicken broth",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-021",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Sauté onion and peppers in ghee",
+        "Adicione frango em cubos",
+        "Doure por 8 minutos",
+        "Despeje caldo",
+        "Cook for 15 minutes until chicken is done",
+        "Finalize com coentro fresco",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Peppers offer antioxidant vitamin C. Cilantro aids in heavy metal chelation.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "frango", "mexicano", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-recheado",
+      "title": "Frango Recheado com Vegetais e Ervas",
+      "description": "Whole stuffed chicken from the e-book with nutritious vegetables for complete meal.",
+      "ingredients": [
+        {
+          "id": "ing-frango-010",
+          "name": "Frango inteiro",
+          "amount": 1200,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-cenoura-006",
+          "name": "Cenoura ralada",
+          "amount": 100,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-cebola-007",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-salsinha-002",
+          "name": "Salsa",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-016",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-022",
+          "name": "Sea salt",
+          "amount": 1,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Misture cenoura, cebola e salsa",
+        "Tempere recheio com sal",
+        "Preencha cavidade do frango com recheio",
+        "Feche com palitinhos",
+        "Heat ghee in pan",
+        "Doure frango de todos os lados",
+        "Cozinhe em fogo baixo por 1,5 hora",
+        "Deixe descansar 10 minutos antes de servir"
+      ],
+      "servings": 3,
+      "prepTime": 15,
+      "cookTime": 100,
+      "nutritionTip": "Complete meal with protein, vegetables and quality fat. Cooking broth is nutritious.",
+      "gapsDifficulty": "medium",
+      "tags": ["dinner", "frango", "recheado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "lombo-recheado",
+      "title": "Loin Stuffed with Spinach, Garlic and Mint",
+      "description": "Corte premium do e-book recheado com vegetais verdes para jantar elegante.",
+      "ingredients": [
+        {
+          "id": "ing-lombo-001",
+          "name": "Meat loin",
+          "amount": 600,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-espinafre-001",
+          "name": "Espinafre fresco",
+          "amount": 150,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-alho-004",
+          "name": "Dentes de alho",
+          "amount": 4,
+          "unit": "cloves",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-hortela-002",
+          "name": "Mint Leaves",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-017",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-023",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Refogue espinafre com alho em ghee",
+        "Add mint",
+        "Make incision in loin",
+        "Preencha com recheio",
+        "Prenda com barbante",
+        "Heat ghee and brown loin",
+        "Cozinhe em fogo baixo por 45 minutos",
+        "Deixe descansar 10 minutos",
+        "Sirva quente"
+      ],
+      "servings": 3,
+      "prepTime": 15,
+      "cookTime": 50,
+      "nutritionTip": "Red meat offers iron, B12 and creatine. Spinach provides magnesium and vitamins.",
+      "gapsDifficulty": "advanced",
+      "tags": ["dinner", "carne", "recheado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "carne-porco-desfiada",
+      "title": "Carne de Porco Desfiada ao Molho de Tomate (Pulled Pork com toque caseiro)",
+      "description": "Carne do e-book cozida lentamente em molho GAPS para textura morna e suave.",
+      "ingredients": [
+        {
+          "id": "ing-porco-001",
+          "name": "Paleta de porco",
+          "amount": 800,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-tomate-002",
+          "name": "Tomate cozido",
+          "amount": 300,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-cebola-008",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-alho-005",
+          "name": "Garlic",
+          "amount": 3,
+          "unit": "cloves",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-018",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-caldo-008",
+          "name": "Beef broth",
+          "amount": 300,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-024",
+          "name": "Sea salt",
+          "amount": 1,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Cut pork into 2-3 large pieces",
+        "Doure em ghee de todos os lados",
+        "Refogue cebola e alho",
+        "Adicione tomate cozido e caldo",
+        "Reduza fogo e cozinhe por 3 horas cobertin",
+        "Desfie a carne com garfo",
+        "Continue cozinhando por 30 minutos mais",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 210,
+      "nutritionTip": "Long cooking extracts collagen. Tomato offers lycopene. Perfect for sensitive intestines.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "porco", "desfiado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "lombinho-porco-mostarda",
+      "title": "Lombinho de Porco ao Molho de Mostarda",
+      "description": "Succulent cut from the e-book with natural aromatic sauce for fine dinner.",
+      "ingredients": [
+        {
+          "id": "ing-porco-002",
+          "name": "Lombinho de porco",
+          "amount": 500,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-mostarda-001",
+          "name": "Mostarda pura",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-caldo-009",
+          "name": "Beef broth",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-ghee-019",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-008",
+          "name": "Lemon juice",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-025",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Doure lombinho em ghee de ambos os lados",
+        "Retire e reserve",
+        "Misture mostarda com caldo",
+        "Despeje sobre carne",
+        "Cozinhe em fogo baixo por 30 minutos",
+        "Finish with lemon",
+        "Season with salt",
+        "Sirva quente com seu molho"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 35,
+      "nutritionTip": "Mustard aids digestion. Pork offers B vitamins. Broth provides collagen.",
+      "gapsDifficulty": "medium",
+      "tags": ["dinner", "porco", "mostarda", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "camaroes-alho-ghee",
+      "title": "Shrimp with Garlic, Ghee and Lemon",
+      "description": "Delicate shellfish from the e-book cooked in ghee with garlic and lemon aroma.",
+      "ingredients": [
+        {
+          "id": "ing-camarao-001",
+          "name": "Fresh Shrimp",
+          "amount": 350,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-alho-006",
+          "name": "Dentes de alho",
+          "amount": 5,
+          "unit": "cloves",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-020",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-009",
+          "name": "Lemon juice",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-salsinha-003",
+          "name": "Salsa fresca",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-026",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Heat ghee in frying pan",
+        "Doure alho fatiado por 1 minuto",
+        "Add shrimp",
+        "Cook for 3-4 minutes until pink",
+        "Finish with lemon juice",
+        "Polvilhe salsa",
+        "Season with salt",
+        "Serve immediately"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 8,
+      "nutritionTip": "Shrimp is rich in minerals and low in carbs. Great for sensitive intestines.",
+      "gapsDifficulty": "easy",
+      "tags": ["lunch", "shrimp", "alho", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "moqueca-peixe",
+      "title": "Fish Stew Traditional",
+      "description": "Traditional dish from the e-book with fish in mild aromatic sauce.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-003",
+          "name": "Fish Fillet",
+          "amount": 400,
+          "unit": "g",
+          "category": "Meat"
+        },
+        {
+          "id": "ing-cebola-009",
+          "name": "Onion",
+          "amount": 1,
+          "unit": "unit",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-tomate-003",
+          "name": "Fresh tomato",
+          "amount": 200,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-021",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-caldo-010",
+          "name": "Fish or beef broth",
+          "amount": 200,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-limao-010",
+          "name": "Lemon juice",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-sal-027",
+          "name": "Sea salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Refogue cebola em ghee",
+        "Adicione tomate picado",
+        "Cozinhe por 5 minutos",
+        "Add fish pieces",
+        "Despeje caldo",
+        "Cook for 12 minutes until fish is done",
+        "Finish with lemon",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 25,
+      "nutritionTip": "Fish offers anti-inflammatory omega-3. Tomato provides lycopene. Sauce nourishes intestines.",
+      "gapsDifficulty": "medium",
+      "tags": ["lunch", "peixe", "molho", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "pure-abobrinha",
+      "title": "Zucchini Puree with Ghee",
+      "description": "Acompanhamento cremoso do e-book com abobrinha cozida.",
+      "ingredients": [
+        {
+          "id": "ing-abobrinha-001",
+          "name": "Zucchini",
+          "amount": 400,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-ghee-022",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-caldo-011",
+          "name": "Caldo morno",
+          "amount": 100,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-028",
+          "name": "Sea salt",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Corte abobrinha em cubos",
+        "Cozinhe em caldo por 15 minutos",
+        "Amasse com garfo",
+        "Add ghee",
+        "Mix well until creamy",
+        "Season with salt",
+        "Serve warm"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Zucchini is hydrating and easy to digest. Ghee provides anti-inflammatory fat.",
+      "gapsDifficulty": "easy",
+      "tags": ["acompanhamento", "abobrinha", "puree", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "pure-cenoura-caldo",
+      "title": "Carrot Puree with Beef Broth",
+      "description": "Acompanhamento nutritivo do e-book com cenoura em caldo.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-007",
+          "name": "Carrot",
+          "amount": 500,
+          "unit": "g",
+          "category": "Produce"
+        },
+        {
+          "id": "ing-caldo-012",
+          "name": "Beef broth",
+          "amount": 150,
+          "unit": "ml",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-ghee-023",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "tablespoon",
+          "category": "GAPS Pantry"
+        },
+        {
+          "id": "ing-sal-029",
+          "name": "Sea salt",
+          "amount": 0.25,
+          "unit": "teaspoon",
+          "category": "GAPS Pantry"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura em rodelas",
+        "Cozinhe em caldo por 20 minutos",
+        "Mash until warm",
+        "Add ghee",
+        "Mix well",
+        "Season with salt",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Cenoura cozida libera beta-caroteno. Caldo fornece minerais e gelatina curativa.",
+      "gapsDifficulty": "easy",
+      "tags": ["acompanhamento", "cenoura", "puree", "ebook"],
+      "publishedDate": "2026-03-01"
+    }
+  ],
+  "weeklyMealPlan": [
+    {
+      "dayOfWeek": 0,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "ovos-cozidos-caldo" },
+        { "mealType": "morning-snack", "recipeId": "caldo-legumes" },
+        { "mealType": "almoco", "recipeId": "frango-curry-abobora" },
+        { "mealType": "afternoon-snack", "recipeId": "broto-oleo-coco" },
+        { "mealType": "dinner", "recipeId": "carne-caldo" }
+      ]
+    },
+    {
+      "dayOfWeek": 1,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "mingau-abobora" },
+        { "mealType": "morning-snack", "recipeId": "caldo-frango-gengibre" },
+        { "mealType": "almoco", "recipeId": "fricasse-frango" },
+        { "mealType": "afternoon-snack", "recipeId": "suco-cenoura-beterraba" },
+        { "mealType": "dinner", "recipeId": "frango-couve-flor" }
+      ]
+    },
+    {
+      "dayOfWeek": 2,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "frutas-cozidas" },
+        { "mealType": "morning-snack", "recipeId": "cha-maca" },
+        { "mealType": "almoco", "recipeId": "almondega-frango-hortela" },
+        { "mealType": "afternoon-snack", "recipeId": "agua-aromatizada" },
+        { "mealType": "dinner", "recipeId": "peixe-aspargos" }
+      ]
+    },
+    {
+      "dayOfWeek": 3,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "omelete-ervas" },
+        { "mealType": "morning-snack", "recipeId": "broto-alfalfa" },
+        { "mealType": "almoco", "recipeId": "frango-grelhado-alecrim" },
+        { "mealType": "afternoon-snack", "recipeId": "caldo-frango-alecrim" },
+        { "mealType": "dinner", "recipeId": "caldo-nutritivo-carne" }
+      ]
+    },
+    {
+      "dayOfWeek": 4,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "papa-banana" },
+        { "mealType": "morning-snack", "recipeId": "caldo-legumes" },
+        { "mealType": "almoco", "recipeId": "frango-mexicano-gaps" },
+        { "mealType": "afternoon-snack", "recipeId": "broto-oleo-coco" },
+        { "mealType": "dinner", "recipeId": "peru-legumes-raiz" }
+      ]
+    },
+    {
+      "dayOfWeek": 5,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "ovos-cozidos-caldo" },
+        { "mealType": "morning-snack", "recipeId": "caldo-frango-gengibre" },
+        { "mealType": "almoco", "recipeId": "frango-recheado" },
+        { "mealType": "afternoon-snack", "recipeId": "suco-cenoura-beterraba" },
+        { "mealType": "dinner", "recipeId": "lombo-recheado" }
+      ]
+    },
+    {
+      "dayOfWeek": 6,
+      "meals": [
+        { "mealType": "breakfast", "recipeId": "mingau-abobora" },
+        { "mealType": "morning-snack", "recipeId": "cha-maca" },
+        { "mealType": "almoco", "recipeId": "carne-porco-desfiada" },
+        { "mealType": "afternoon-snack", "recipeId": "agua-aromatizada" },
+        { "mealType": "dinner", "recipeId": "camaroes-alho-ghee" }
+      ]
+    }
+  ]
+}

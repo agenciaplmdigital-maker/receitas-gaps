@@ -9,12 +9,14 @@ const withPWA = require('next-pwa')({
   cacheOnFrontEndNav: true,
 })
 
-const nextConfig = withPWA({
+const withNextIntl = require('next-intl/config');
+
+const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
     unoptimized: true,
   },
-})
+}
 
-module.exports = nextConfig
+module.exports = withNextIntl(withPWA(nextConfig))

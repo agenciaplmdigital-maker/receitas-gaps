@@ -1,0 +1,77 @@
+{
+  "app_name": "GAPS Recipes",
+  "app_description": "Weekly meal planner",
+  "language": "English (US)",
+  "navigation": {
+    "dashboard": "Dashboard",
+    "week": "Week",
+    "shopping": "Shopping"
+  },
+  "header": {
+    "title": "GAPS Recipes",
+    "subtitle": "Weekly meal planner"
+  },
+  "dashboard": {
+    "title": "Today's Menu",
+    "mark_as_done": "Mark as done",
+    "mark_as_undone": "Mark as not done",
+    "portions": "servings"
+  },
+  "week": {
+    "title": "Weekly Meals",
+    "description": "Monday to Sunday",
+    "no_meals": "No meals for this day",
+    "meals_count": "{count} meals"
+  },
+  "shopping": {
+    "title": "Shopping List",
+    "description": "Weekly meals",
+    "no_ingredients": "No ingredients for this week",
+    "add_meals_hint": "Add meals to generate the shopping list",
+    "shopping_tips": "📝 Shopping Tips",
+    "items_count": "{count} of {total} items"
+  },
+  "recipe_modal": {
+    "close": "Close",
+    "total_time": "Total time",
+    "servings": "Servings",
+    "ingredients": "Ingredients",
+    "instructions": "Preparation",
+    "nutrition_tip": "💡 Nutrition Tip"
+  },
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "meal_types": {
+    "cafe": "☕ Breakfast",
+    "lanche_manha": "🥤 Morning Snack",
+    "almoco": "🍽️ Lunch",
+    "lanche_tarde": "🍪 Afternoon Snack",
+    "jantar": "🌙 Dinner"
+  },
+  "categories": {
+    "acougue": "Meat",
+    "hortifruti": "Produce",
+    "despensa_gaps": "GAPS Pantry",
+    "fermentados": "Fermented Foods"
+  },
+  "units": {
+    "g": "g",
+    "ml": "ml",
+    "xicara": "cup",
+    "colher_cha": "teaspoon",
+    "colher_sopa": "tablespoon",
+    "unidades": "units"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "advanced": "Advanced"
+  }
+}

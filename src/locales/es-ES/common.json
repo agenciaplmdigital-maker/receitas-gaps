@@ -1,0 +1,77 @@
+{
+  "app_name": "Recetas GAPS",
+  "app_description": "Planificador de comidas semanal",
+  "language": "Español (España)",
+  "navigation": {
+    "dashboard": "Inicio",
+    "week": "Semana",
+    "shopping": "Compras"
+  },
+  "header": {
+    "title": "Recetas GAPS",
+    "subtitle": "Planificador de comidas semanal"
+  },
+  "dashboard": {
+    "title": "Menú de Hoy",
+    "mark_as_done": "Marcar como hecho",
+    "mark_as_undone": "Marcar como no hecho",
+    "portions": "porciones"
+  },
+  "week": {
+    "title": "Comidas de la Semana",
+    "description": "Lunes a domingo",
+    "no_meals": "Sin comidas para este día",
+    "meals_count": "{count} comidas"
+  },
+  "shopping": {
+    "title": "Lista de Compras",
+    "description": "Comidas de la semana",
+    "no_ingredients": "Sin ingredientes para esta semana",
+    "add_meals_hint": "Agregue comidas para generar la lista de compras",
+    "shopping_tips": "📝 Consejos de Compras",
+    "items_count": "{count} de {total} artículos"
+  },
+  "recipe_modal": {
+    "close": "Cerrar",
+    "total_time": "Tiempo total",
+    "servings": "Porciones",
+    "ingredients": "Ingredientes",
+    "instructions": "Preparación",
+    "nutrition_tip": "💡 Consejo Nutricional"
+  },
+  "days": {
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles",
+    "thursday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo"
+  },
+  "meal_types": {
+    "cafe": "☕ Desayuno",
+    "lanche_manha": "🥤 Almuerzo Temprano",
+    "almoco": "🍽️ Comida",
+    "lanche_tarde": "🍪 Merienda",
+    "jantar": "🌙 Cena"
+  },
+  "categories": {
+    "acougue": "Carnes",
+    "hortifruti": "Productos",
+    "despensa_gaps": "Despensa GAPS",
+    "fermentados": "Alimentos Fermentados"
+  },
+  "units": {
+    "g": "g",
+    "ml": "ml",
+    "xicara": "taza",
+    "colher_cha": "cucharadita",
+    "colher_sopa": "cucharada",
+    "unidades": "unidades"
+  },
+  "difficulty": {
+    "easy": "Fácil",
+    "medium": "Medio",
+    "advanced": "Avanzado"
+  }
+}

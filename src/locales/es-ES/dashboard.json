@@ -1,0 +1,14 @@
+{
+  "title": "Menú de Hoy",
+  "subtitle": "Sus comidas para el día",
+  "date_format": "{date, date, full}",
+  "mark_as_done": "Marcar como hecho",
+  "mark_as_undone": "Marcar como no hecho",
+  "portions": "porciones",
+  "prep_time": "Tiempo de preparación",
+  "cook_time": "Tiempo de cocción",
+  "total_time": "Tiempo total",
+  "minutes": "min",
+  "empty_state": "Sin comidas para hoy",
+  "add_meals": "Agregue comidas para comenzar"
+}

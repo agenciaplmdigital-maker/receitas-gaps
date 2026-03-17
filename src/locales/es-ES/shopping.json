@@ -1,0 +1,19 @@
+{
+  "title": "Lista de Compras",
+  "subtitle": "Ingredientes semanales",
+  "empty_state": "Sin ingredientes para esta semana",
+  "add_meals_hint": "Agregue comidas para generar la lista de compras",
+  "shopping_tips": "📝 Consejos de Compras",
+  "items_count": "{count} de {total} artículos",
+  "all_items_checked": "¡Felicidades! ¡Todas las compras realizadas!",
+  "week_of": "Semana de {date}",
+  "uncheck_all": "Desmarcar todos",
+  "check_all": "Marcar todos",
+  "tips": [
+    "Revise su refrigerador antes de salir",
+    "Lleve una lista impresa o digital",
+    "Compre productos frescos al final",
+    "Prefiera productos orgánicos cuando sea posible",
+    "Negocie descuentos por cantidad con el vendedor"
+  ]
+}

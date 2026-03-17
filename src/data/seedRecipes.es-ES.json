@@ -1,0 +1,2101 @@
+{
+  "recipes": [
+    {
+      "id": "ovos-cozidos-caldo",
+      "title": "Huevos Cocidos con Caldo",
+      "description": "Desayuno simple con huevos cocidos y caldo nutritivo para comenzar el día con energía.",
+      "ingredients": [
+        {
+          "id": "ing-ovos-001",
+          "name": "Huevos orgánicos",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-caldo-001",
+          "name": "Caldo de carne casero",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-001",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Hierva agua en una olla",
+        "Coloque huevos y cocine durante 10 minutos",
+        "Retire e coloque em água fria",
+        "Descasque os ovos",
+        "Caliente el caldo y sirva con los huevos"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Los huevos contienen aminoácidos esenciales. El caldo proporciona colágeno para la cicatrización intestinal.",
+      "gapsDifficulty": "easy",
+      "tags": ["desayuno", "proteína", "colágeno"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "mingau-abobora",
+      "title": "Gachas de Calabaza",
+      "description": "Desayuno reconfortante con calabaza cocida y caldo, perfecto para intestinos sensibles.",
+      "ingredients": [
+        {
+          "id": "ing-abobora-001",
+          "name": "Calabaza",
+          "amount": 200,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-caldo-002",
+          "name": "Caldo de pollo",
+          "amount": 250,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-001",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-canela-001",
+          "name": "Canela molida",
+          "amount": 0.25,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte la calabaza en cubos",
+        "Cocine en caldo de pollo hasta que esté tibio",
+        "Aplaste la calabaza en el caldo",
+        "Adicione ghee e canela",
+        "Sirva tibio"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 20,
+      "nutritionTip": "La calabaza es rica en carotenoides que favorecen la mucosa intestinal. Fácil de digerir.",
+      "gapsDifficulty": "easy",
+      "tags": ["desayuno", "calabaza", "morno", "suave"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frutas-cozidas",
+      "title": "Frutas Cocidas",
+      "description": "Desayuno con frutas cocidas en caldo para mejor digestión.",
+      "ingredients": [
+        {
+          "id": "ing-maca-001",
+          "name": "Manzana",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-pera-001",
+          "name": "Pera",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-agua-001",
+          "name": "Agua filtrada",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gengibre-001",
+          "name": "Gengibre fresco",
+          "amount": 5,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        }
+      ],
+      "instructions": [
+        "Corte las frutas en pequeños pedazos",
+        "Coloque en una olla con agua",
+        "Agregue rodajas de jengibre",
+        "Cocine durante 15 minutos",
+        "Sirva tibio"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "Las frutas cocidas son más digeribles que crudas. El jengibre ayuda en la digestión.",
+      "gapsDifficulty": "easy",
+      "tags": ["desayuno", "frutas", "cozido"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "omelete-ervas",
+      "title": "Tortilla con Hierbas",
+      "description": "Desayuno rápido y proteico con tortilla fresca y hierbas aromáticas.",
+      "ingredients": [
+        {
+          "id": "ing-ovos-002",
+          "name": "Huevos orgánicos",
+          "amount": 3,
+          "unit": "unidades",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-ghee-002",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-salsinha-001",
+          "name": "Salsa fresca",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-cebolinha-001",
+          "name": "Cebolinha",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-sal-002",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Bata huevos con sal",
+        "Caliente ghee en una sartén",
+        "Despeje os ovos",
+        "Deje cocinar durante 2 minutos",
+        "Agregue hierbas y doble la tortilla",
+        "Cocine 1 minuto más"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 5,
+      "nutritionTip": "Los huevos son fuente completa de proteína y colina. Las hierbas agregan minerales.",
+      "gapsDifficulty": "easy",
+      "tags": ["desayuno", "proteína", "rápido", "ovos"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "papa-banana",
+      "title": "Papa de Banana",
+      "description": "Desayuno reconfortante con plátano cocido, amable para el intestino.",
+      "ingredients": [
+        {
+          "id": "ing-banana-001",
+          "name": "Banana madura",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-caldo-003",
+          "name": "Caldo de pollo tibio",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-003",
+          "name": "Ghee",
+          "amount": 0.5,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cocine plátano entero durante 5 minutos en agua",
+        "Descasque e amasse",
+        "Mezcle con caldo tibio",
+        "Agregue ghee",
+        "Sirva inmediatamente"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "El plátano cocido proporciona potasio y se digiere fácilmente. El almidón resistente favorece bacterias buenas.",
+      "gapsDifficulty": "easy",
+      "tags": ["desayuno", "banana", "morno"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-legumes",
+      "title": "Caldo de Vegetales",
+      "description": "Lanche matinal nutritivo com caldo caseiro de legumes.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-001",
+          "name": "Zanahoria",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-abobora-002",
+          "name": "Calabaza",
+          "amount": 100,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-aipo-001",
+          "name": "Aipo",
+          "amount": 1,
+          "unit": "ramo",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-agua-002",
+          "name": "Agua filtrada",
+          "amount": 500,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-003",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte los vegetales en pequeños cubos",
+        "Coloque en agua hirviendo",
+        "Cozinhe por 20 minutos",
+        "Cuela si prefieres solo el caldo",
+        "Condimente con sal"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Legumes cozidos liberam nutrientes no caldo. Rico em minerais e baixo em carboidratos.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "caldo", "legumes"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-frango-gengibre",
+      "title": "Caldo de Pollo con Jengibre",
+      "description": "Caldo terapéutico con propiedades antiinflamatorias para refrigerio matinal.",
+      "ingredients": [
+        {
+          "id": "ing-frango-001",
+          "name": "Pechuga de pollo",
+          "amount": 200,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-agua-003",
+          "name": "Agua filtrada",
+          "amount": 400,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gengibre-002",
+          "name": "Gengibre fresco",
+          "amount": 10,
+          "unit": "g",
+          "category": "Frutas y Verduras",
+          "notes": "Fatias"
+        },
+        {
+          "id": "ing-limao-001",
+          "name": "Jugo de limón",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-004",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cocine pollo en agua durante 20 minutos",
+        "Agregue rodajas de jengibre",
+        "Cozinhe mais 10 minutos",
+        "Retire o frango e desfie",
+        "Condimente con limón y sal",
+        "Sirva tibio"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "El jengibre reduce la inflamación. El pollo proporciona proteína y colágeno fácilmente absorbidos.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "caldo", "frango", "gengibre"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "cha-maca",
+      "title": "Té de Manzana",
+      "description": "Bebida tibia y reconfortante con manzana cocida para refrigerio matinal.",
+      "ingredients": [
+        {
+          "id": "ing-maca-002",
+          "name": "Manzana",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-agua-004",
+          "name": "Agua filtrada",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-canela-002",
+          "name": "Canela molida",
+          "amount": 0.25,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-mel-001",
+          "name": "Mel puro",
+          "amount": 1,
+          "unit": "cucharadita",
+          "category": "Fermentados"
+        }
+      ],
+      "instructions": [
+        "Corte la manzana en pedazos",
+        "Cocine en agua durante 10 minutos",
+        "Cuela el té",
+        "Adicione canela e mel",
+        "Sirva tibio"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "La manzana cocida proporciona pectina que favorece bacterias benéficas. La canela regula el azúcar en sangre.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "té", "manzana"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "broto-alfalfa",
+      "title": "Brotes de Alfalfa",
+      "description": "Lanche leve com broto nutritivo rico em enzimas vivas.",
+      "ingredients": [
+        {
+          "id": "ing-broto-001",
+          "name": "Brotes de alfalfa",
+          "amount": 100,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-oleo-coco-001",
+          "name": "Aceite de coco",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-002",
+          "name": "Jugo de limón",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-005",
+          "name": "Sal marina",
+          "amount": 0.25,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Lave bem o broto",
+        "Coloque em uma tigela",
+        "Condimente con aceite de coco",
+        "Agregue limón y sal",
+        "Mezcle bien"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "Los brotes contienen enzimas vivas que facilitan la digestión. Rico en vitaminas B.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "broto", "cru", "enzimas"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "almondega-carne-abobora",
+      "title": "Albondiga de Carne con Calabaza",
+      "description": "Almuerzo proteico con albondiga casera y acompañamiento de calabaza cocida.",
+      "ingredients": [
+        {
+          "id": "ing-carne-001",
+          "name": "Carne molida magra",
+          "amount": 300,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-cebola-001",
+          "name": "Cebolla",
+          "amount": 0.5,
+          "unit": "unidad",
+          "category": "Frutas y Verduras",
+          "notes": "Picado fino"
+        },
+        {
+          "id": "ing-alho-001",
+          "name": "Ajo",
+          "amount": 2,
+          "unit": "dientes",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-004",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-abobora-003",
+          "name": "Calabaza",
+          "amount": 200,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-006",
+          "name": "Sal marina",
+          "amount": 1,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Misture carne com cebola e alho",
+        "Forme albóndigas",
+        "Doure em ghee quente por 10 minutos",
+        "Cocine calabaza en agua separadamente durante 15 minutos",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 25,
+      "nutritionTip": "Proteína de calidad con minerales. La carne nutre el intestino con L-glutamina.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "carne", "proteico"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-brocolis",
+      "title": "Pollo con Brócoli",
+      "description": "Almuerzo simple con pollo cocido y brócoli al dente.",
+      "ingredients": [
+        {
+          "id": "ing-frango-002",
+          "name": "Pechuga de pollo",
+          "amount": 300,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-brocolis-001",
+          "name": "Brócoli",
+          "amount": 250,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-005",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-003",
+          "name": "Jugo de limón",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-007",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cocine pollo en agua durante 20 minutos",
+        "Corte en pedazos",
+        "Cocine brócoli durante 8 minutos",
+        "Caliente ghee y sazone pollo con limón y sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "El brócoli es rico en sulforafano que protege la mucosa intestinal. El pollo proporciona aminoácidos esenciales.",
+      "gapsDifficulty": "easy",
+      "tags": ["almuerzo", "frango", "brócoli"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peixe-cenoura",
+      "title": "Pescado con Zanahoria",
+      "description": "Almuerzo delicado con pescado cocido y zanahoria tibia.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-001",
+          "name": "Filete de pescado blanco",
+          "amount": 300,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-cenoura-002",
+          "name": "Zanahoria",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-006",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-alho-002",
+          "name": "Ajo",
+          "amount": 2,
+          "unit": "dientes",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-008",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura em rodelas",
+        "Cocine zanahoria en agua durante 15 minutos",
+        "Caliente ghee con ajo",
+        "Cozinhe peixe por 10 minutos",
+        "Condimente con sal",
+        "Sirva junto com cenoura"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 25,
+      "nutritionTip": "El pescado es rico en omega-3 que reduce la inflamación intestinal. La zanahoria proporciona betacaroteno.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "peixe", "delicado"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "carne-desfiada-refogada",
+      "title": "Carne Deshilachada Salteada",
+      "description": "Almuerzo reconfortante con carne deshilachada en salsa suave.",
+      "ingredients": [
+        {
+          "id": "ing-carne-002",
+          "name": "Carne para desfiada",
+          "amount": 400,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-cebola-002",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-tomate-001",
+          "name": "Tomate",
+          "amount": 200,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-007",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-004",
+          "name": "Caldo de carne",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-009",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cocine carne en agua durante 1 hora",
+        "Desfie com garfo",
+        "Refogue cebola em ghee",
+        "Adicione tomate picado",
+        "Misture carne desfiada e caldo",
+        "Cocine durante 15 minutos",
+        "Condimente con sal"
+      ],
+      "servings": 3,
+      "prepTime": 10,
+      "cookTime": 90,
+      "nutritionTip": "La carne cocida lentamente libera colágeno y nutrientes. El tomate proporciona licopeno antioxidante.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "carne", "molho"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "broto-oleo-coco",
+      "title": "Brote con Aceite de Coco",
+      "description": "Lanche da tarde leve com broto e gordura de qualidade.",
+      "ingredients": [
+        {
+          "id": "ing-broto-002",
+          "name": "Brotes de alfalfa",
+          "amount": 80,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-oleo-coco-002",
+          "name": "Aceite de Coco Virgen",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-010",
+          "name": "Sal marina",
+          "amount": 0.25,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Lave bem o broto",
+        "Coloque em tigela",
+        "Agregue aceite de coco a temperatura ambiente",
+        "Condimente con sal",
+        "Coma imediatamente"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "El aceite de coco es antiinflamatorio. Los brotes proporcionan enzimas vivas para excelente digestión.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "broto", "aceite", "cru"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "suco-cenoura-beterraba",
+      "title": "Jugo de Zanahoria y Remolacha",
+      "description": "Suco fresco cozido para lanche da tarde com tons de terra.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-003",
+          "name": "Zanahoria",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-beterraba-001",
+          "name": "Remolacha",
+          "amount": 100,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-agua-005",
+          "name": "Agua filtrada",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gengibre-003",
+          "name": "Jengibre",
+          "amount": 5,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        }
+      ],
+      "instructions": [
+        "Corte zanahoria y remolacha en pequeños pedazos",
+        "Cocine en agua con jengibre durante 10 minutos",
+        "Coe para obter suco",
+        "Sirva tibio"
+      ],
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "nutritionTip": "La remolacha contiene betaína que mejora la digestión. La zanahoria proporciona carotenoides protectores.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "suco", "cozido"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "agua-aromatizada",
+      "title": "Agua Aromatizada",
+      "description": "Bebida refrescante com ervas para lanche da tarde.",
+      "ingredients": [
+        {
+          "id": "ing-agua-006",
+          "name": "Agua filtrada",
+          "amount": 500,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-menta-001",
+          "name": "Hojas de menta",
+          "amount": 5,
+          "unit": "folhas",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-limao-004",
+          "name": "Limón",
+          "amount": 0.5,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        }
+      ],
+      "instructions": [
+        "Coloque agua en una jarra",
+        "Agregue hojas de menta",
+        "Exprima jugo de limón",
+        "Deixe repousar por 15 minutos",
+        "Coe se preferir",
+        "Sirva"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 0,
+      "nutritionTip": "La menta favorece la digestión. El limón ayuda a la absorción de minerales.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "bebida", "ervas"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-frango-alecrim",
+      "title": "Caldo de Pollo con Romero",
+      "description": "Caldo aromático para refrigerio de la tarde con propiedades calmantes.",
+      "ingredients": [
+        {
+          "id": "ing-frango-003",
+          "name": "Ossos de frango",
+          "amount": 300,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-agua-007",
+          "name": "Agua filtrada",
+          "amount": 400,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-alecrim-001",
+          "name": "Ramo de alecrim",
+          "amount": 1,
+          "unit": "ramo",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-011",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque huesos en agua caliente",
+        "Lleve a fuego alto hasta hervir",
+        "Reduza fogo e adicione alecrim",
+        "Cozinhe por 30 minutos",
+        "Coe e tempere com sal",
+        "Sirva tibio"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 35,
+      "nutritionTip": "El romero posee antioxidantes. El pollo ofrece gelatina para la salud intestinal.",
+      "gapsDifficulty": "easy",
+      "tags": ["lanche", "caldo", "erva"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "carne-caldo",
+      "title": "Carne en Caldo",
+      "description": "Cena nutritiva y reconfortante con carne cocida en su propio caldo.",
+      "ingredients": [
+        {
+          "id": "ing-carne-003",
+          "name": "Carne para caldo",
+          "amount": 400,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-agua-008",
+          "name": "Agua filtrada",
+          "amount": 800,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-cenoura-004",
+          "name": "Zanahoria",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-cebola-003",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-012",
+          "name": "Sal marina",
+          "amount": 1,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque carne en agua fría",
+        "Lleve a fuego alto hasta hervir",
+        "Retire espuma",
+        "Adicione cenoura e cebola",
+        "Cozinhe por 1,5 hora em fogo baixo",
+        "Condimente con sal",
+        "Sirva la carne en su propio caldo"
+      ],
+      "servings": 3,
+      "prepTime": 5,
+      "cookTime": 100,
+      "nutritionTip": "El caldo casero es la base de la curación intestinal. Máximo colágeno y L-glutamina.",
+      "gapsDifficulty": "easy",
+      "tags": ["jantar", "carne", "caldo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-couve-flor",
+      "title": "Pollo con Coliflor",
+      "description": "Jantar leve com frango e couve-flor assada delicadamente.",
+      "ingredients": [
+        {
+          "id": "ing-frango-004",
+          "name": "Pechuga de pollo",
+          "amount": 350,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-couve-flor-001",
+          "name": "Coliflor",
+          "amount": 300,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-008",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-alho-003",
+          "name": "Ajo",
+          "amount": 3,
+          "unit": "dientes",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-013",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte couve-flor em floretas",
+        "Cocine en agua durante 8 minutos",
+        "Cocine pollo en agua durante 20 minutos",
+        "Caliente ghee y dore ajo",
+        "Misture frango e couve-flor",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 30,
+      "nutritionTip": "La coliflor es rica en azufre que mejora la desintoxicación. Baja en carbohidratos.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "frango", "legume"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peixe-aspargos",
+      "title": "Pescado con Espárragos",
+      "description": "Jantar elegante e nutritivo com peixe cozido e aspargo morno.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-002",
+          "name": "Filete de pescado",
+          "amount": 350,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-aspargo-001",
+          "name": "Aspargo fresco",
+          "amount": 200,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-009",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-005",
+          "name": "Limón",
+          "amount": 0.5,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-014",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cocine espárragos en agua durante 8 minutos",
+        "Cocine pescado en agua con limón durante 12 minutos",
+        "Caliente ghee en sartén",
+        "Saltear aspargo em ghee por 3 minutos",
+        "Condimente con sal",
+        "Sirva peixe com aspargo"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 25,
+      "nutritionTip": "El espárrago es diurético natural. El pescado blanco es delicado para intestinos sensibles.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "peixe", "aspargo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "caldo-nutritivo-carne",
+      "title": "Caldo Nutritivo de Carne",
+      "description": "Caldo concentrado para cena con máxima concentración de nutrientes.",
+      "ingredients": [
+        {
+          "id": "ing-carne-004",
+          "name": "Ossos com tutano",
+          "amount": 500,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-agua-009",
+          "name": "Agua filtrada",
+          "amount": 1,
+          "unit": "L",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-cenoura-005",
+          "name": "Zanahoria",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-aipo-002",
+          "name": "Aipo",
+          "amount": 2,
+          "unit": "ramos",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-gengibre-004",
+          "name": "Jengibre",
+          "amount": 10,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-015",
+          "name": "Sal marina",
+          "amount": 1,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque huesos en agua fría",
+        "Lleve a fuego alto hasta hervir",
+        "Retire espuma",
+        "Adicione vegetais e gengibre",
+        "Reduza fogo e cozinhe por 4-6 horas",
+        "Coe",
+        "Condimente con sal"
+      ],
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 360,
+      "nutritionTip": "El caldo largo extrae colágeno, minerales y L-glutamina esencial para cicatrización intestinal profunda.",
+      "gapsDifficulty": "easy",
+      "tags": ["jantar", "caldo", "longo"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "peru-legumes-raiz",
+      "title": "Peru com Legumes-Raiz",
+      "description": "Jantar reconfortante com peru cozido e legumes-raiz nutritivos.",
+      "ingredients": [
+        {
+          "id": "ing-peru-001",
+          "name": "Peito de peru",
+          "amount": 350,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-batata-doce-001",
+          "name": "Batata-doce",
+          "amount": 200,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-nabo-001",
+          "name": "Nabo",
+          "amount": 150,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-010",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-016",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Cocine pavo en agua durante 25 minutos",
+        "Corte legumes-raiz em cubos",
+        "Cocine vegetales en agua durante 20 minutos",
+        "Caliente ghee",
+        "Misture peru e legumes",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 45,
+      "nutritionTip": "La batata dulce proporciona almidón resistente para bacterias benéficas. El pavo es proteína magra nutritiva.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "peru", "legume"],
+      "publishedDate": "2026-03-16"
+    },
+    {
+      "id": "frango-curry-abobora",
+      "title": "Pollo al Curry con Calabaza y Caldo de Carne",
+      "description": "Receta del e-book con pollo tierno en salsa de curry aromática con calabaza dulce.",
+      "ingredients": [
+        {
+          "id": "ing-frango-005",
+          "name": "Frango desfiado",
+          "amount": 400,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-abobora-004",
+          "name": "Calabaza",
+          "amount": 300,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-caldo-005",
+          "name": "Caldo de carne casero",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-curry-001",
+          "name": "Polvo de curry",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-cebola-004",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-011",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-017",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Saltee cebolla en ghee hasta que esté dorada",
+        "Agregue polvo de curry y revuelva durante 1 minuto",
+        "Adicione frango desfiado",
+        "Despeje caldo de carne",
+        "Agregue cubos de calabaza",
+        "Cocine durante 20 minutos hasta que la calabaza esté tibia",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 3,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "El curry es un potente antiinflamatorio. La calabaza proporciona carotenoides. El caldo nutre la recuperación intestinal.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "frango", "curry", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "fricasse-frango",
+      "title": "Fricasé de Pollo (GAPS)",
+      "description": "Receita tradicional do e-book com frango cozido em molho cremoso de caldo.",
+      "ingredients": [
+        {
+          "id": "ing-frango-006",
+          "name": "Pollo cortado en pedazos",
+          "amount": 400,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-caldo-006",
+          "name": "Caldo de pollo casero",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-gema-001",
+          "name": "Gema de ovo",
+          "amount": 2,
+          "unit": "unidades",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-ghee-012",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-006",
+          "name": "Jugo de limón",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-018",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Caliente ghee en olla",
+        "Dore pollo en pedazos",
+        "Despeje caldo e cozinhe por 20 minutos",
+        "Bate yema con limón",
+        "Retire panela do fogo",
+        "Adicione gema lentamente enquanto mexe",
+        "Condimente con sal",
+        "Sirva quente com caldo"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "La yema proporciona colina para la salud cerebral e intestinal. El caldo ofrece gelatina curativa.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "frango", "cremoso", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "almondega-frango-hortela",
+      "title": "Albondiga de Pollo con Menta (GAPS)",
+      "description": "Albóndigas delicadas del e-book con pollo y aroma refrescante de menta.",
+      "ingredients": [
+        {
+          "id": "ing-frango-007",
+          "name": "Pollo molido",
+          "amount": 350,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-hortela-001",
+          "name": "Hojas de menta",
+          "amount": 3,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras",
+          "notes": "Picada"
+        },
+        {
+          "id": "ing-cebola-005",
+          "name": "Cebolla",
+          "amount": 0.5,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-013",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-019",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Mezcle pollo molido con menta y cebolla picada",
+        "Condimente con sal",
+        "Forme albóndigas",
+        "Caliente ghee en sartén",
+        "Dore albóndigas durante 12 minutos",
+        "Cocine hasta que estén bien hechas",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 15,
+      "nutritionTip": "La menta favorece la digestión y reduce la inflamación. El pollo ofrece proteína fácilmente absorbida.",
+      "gapsDifficulty": "easy",
+      "tags": ["almuerzo", "frango", "menta", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-grelhado-alecrim",
+      "title": "Pollo a la Parrilla con Romero y Limón (GAPS)",
+      "description": "Pollo simple y saludable del e-book con aroma de hierbas mediterráneas.",
+      "ingredients": [
+        {
+          "id": "ing-frango-008",
+          "name": "Pechuga de pollo",
+          "amount": 350,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-alecrim-002",
+          "name": "Ramos de alecrim",
+          "amount": 2,
+          "unit": "ramos",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-limao-007",
+          "name": "Jugo de limón",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-014",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-020",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Coloque frango em panela com ghee",
+        "Adicione alecrim",
+        "Cocine a fuego medio-alto durante 20 minutos",
+        "Soque para ter crosta leve",
+        "Termine con jugo de limón fresco",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "El romero es un antioxidante potente. El limón facilita la absorción de hierro. El pollo ofrece vitamina B12.",
+      "gapsDifficulty": "easy",
+      "tags": ["jantar", "frango", "alecrim", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-mexicano-gaps",
+      "title": "Pollo Mexicano GAPS con Pimientos y Cilantro Fresco",
+      "description": "Frango do e-book com toque latino nutritivo respeitando protocolo GAPS.",
+      "ingredients": [
+        {
+          "id": "ing-frango-009",
+          "name": "Frango cortado em cubos",
+          "amount": 400,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-pimentao-001",
+          "name": "Pimiento rojo",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-pimentao-002",
+          "name": "Pimiento amarillo",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-coentro-001",
+          "name": "Folhas de coentro",
+          "amount": 3,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-cebola-006",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-015",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-007",
+          "name": "Caldo de pollo",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-021",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Saltee cebolla y pimientos en ghee",
+        "Adicione frango em cubos",
+        "Doure por 8 minutos",
+        "Despeje caldo",
+        "Cocine durante 15 minutos hasta que el pollo esté hecho",
+        "Finalize com coentro fresco",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "nutritionTip": "Los pimientos ofrecen vitamina C antioxidante. El cilantro ayuda en la quelación de metales pesados.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "frango", "mexicano", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "frango-recheado",
+      "title": "Frango Recheado com Vegetais e Ervas",
+      "description": "Pollo entero relleno del e-book con vegetales nutritivos para comida completa.",
+      "ingredients": [
+        {
+          "id": "ing-frango-010",
+          "name": "Frango inteiro",
+          "amount": 1200,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-cenoura-006",
+          "name": "Cenoura ralada",
+          "amount": 100,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-cebola-007",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-salsinha-002",
+          "name": "Salsa",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-016",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-022",
+          "name": "Sal marina",
+          "amount": 1,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Misture cenoura, cebola e salsa",
+        "Tempere recheio com sal",
+        "Preencha cavidade do frango com recheio",
+        "Feche com palitinhos",
+        "Caliente ghee en olla",
+        "Doure frango de todos os lados",
+        "Cozinhe em fogo baixo por 1,5 hora",
+        "Deixe descansar 10 minutos antes de servir"
+      ],
+      "servings": 3,
+      "prepTime": 15,
+      "cookTime": 100,
+      "nutritionTip": "Comida completa con proteína, vegetales y grasa de calidad. El caldo de cocción es nutritivo.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "frango", "recheado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "lombo-recheado",
+      "title": "Lomo Relleno con Espinaca, Ajo y Menta",
+      "description": "Corte premium do e-book recheado com vegetais verdes para jantar elegante.",
+      "ingredients": [
+        {
+          "id": "ing-lombo-001",
+          "name": "Lomo de carne",
+          "amount": 600,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-espinafre-001",
+          "name": "Espinafre fresco",
+          "amount": 150,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-alho-004",
+          "name": "Dentes de alho",
+          "amount": 4,
+          "unit": "dientes",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-hortela-002",
+          "name": "Hojas de menta",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-017",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-023",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Refogue espinafre com alho em ghee",
+        "Agregue menta",
+        "Haga una incisión en el lomo",
+        "Preencha com recheio",
+        "Prenda com barbante",
+        "Caliente ghee y dore lomo",
+        "Cozinhe em fogo baixo por 45 minutos",
+        "Deixe descansar 10 minutos",
+        "Sirva quente"
+      ],
+      "servings": 3,
+      "prepTime": 15,
+      "cookTime": 50,
+      "nutritionTip": "La carne roja ofrece hierro, B12 y creatina. La espinaca proporciona magnesio y vitaminas.",
+      "gapsDifficulty": "advanced",
+      "tags": ["jantar", "carne", "recheado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "carne-porco-desfiada",
+      "title": "Carne de Porco Desfiada ao Molho de Tomate (Pulled Pork com toque caseiro)",
+      "description": "Carne do e-book cozida lentamente em molho GAPS para textura morna e suave.",
+      "ingredients": [
+        {
+          "id": "ing-porco-001",
+          "name": "Paleta de porco",
+          "amount": 800,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-tomate-002",
+          "name": "Tomate cozido",
+          "amount": 300,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-cebola-008",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-alho-005",
+          "name": "Ajo",
+          "amount": 3,
+          "unit": "dientes",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-018",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-008",
+          "name": "Caldo de carne",
+          "amount": 300,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-024",
+          "name": "Sal marina",
+          "amount": 1,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte cerdo en 2-3 pedazos grandes",
+        "Doure em ghee de todos os lados",
+        "Refogue cebola e alho",
+        "Adicione tomate cozido e caldo",
+        "Reduza fogo e cozinhe por 3 horas cobertin",
+        "Desfie a carne com garfo",
+        "Continue cozinhando por 30 minutos mais",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 210,
+      "nutritionTip": "La cocción larga extrae colágeno. El tomate ofrece licopeno. Perfecto para intestino sensible.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "porco", "desfiado", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "lombinho-porco-mostarda",
+      "title": "Lombinho de Porco ao Molho de Mostarda",
+      "description": "Corte suculento del e-book con salsa aromática natural para cena fina.",
+      "ingredients": [
+        {
+          "id": "ing-porco-002",
+          "name": "Lombinho de porco",
+          "amount": 500,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-mostarda-001",
+          "name": "Mostarda pura",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-009",
+          "name": "Caldo de carne",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-019",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-008",
+          "name": "Jugo de limón",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-025",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Doure lombinho em ghee de ambos os lados",
+        "Retire e reserve",
+        "Misture mostarda com caldo",
+        "Despeje sobre carne",
+        "Cozinhe em fogo baixo por 30 minutos",
+        "Termine con limón",
+        "Condimente con sal",
+        "Sirva quente com seu molho"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 35,
+      "nutritionTip": "La mostaza ayuda a la digestión. El cerdo ofrece vitaminas B. El caldo proporciona colágeno.",
+      "gapsDifficulty": "medium",
+      "tags": ["jantar", "porco", "mostarda", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "camaroes-alho-ghee",
+      "title": "Camarones al Ajo con Ghee y Limón",
+      "description": "Marisco delicado del e-book cocido en ghee con aroma de ajo y limón.",
+      "ingredients": [
+        {
+          "id": "ing-camarao-001",
+          "name": "Camarones frescos",
+          "amount": 350,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-alho-006",
+          "name": "Dentes de alho",
+          "amount": 5,
+          "unit": "dientes",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-020",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-009",
+          "name": "Jugo de limón",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-salsinha-003",
+          "name": "Salsa fresca",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-026",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Caliente ghee en sartén",
+        "Doure alho fatiado por 1 minuto",
+        "Agregue camarones",
+        "Cocine durante 3-4 minutos hasta que estén rosados",
+        "Termine con jugo de limón",
+        "Polvilhe salsa",
+        "Condimente con sal",
+        "Sirva inmediatamente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 8,
+      "nutritionTip": "El camarón es rico en minerales y bajo en carbohidratos. Excelente para intestinos sensibles.",
+      "gapsDifficulty": "easy",
+      "tags": ["almuerzo", "camarón", "alho", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "moqueca-peixe",
+      "title": "Moqueca de Pescado Tradicional",
+      "description": "Plato tradicional del e-book con pescado en salsa aromática suave.",
+      "ingredients": [
+        {
+          "id": "ing-peixe-003",
+          "name": "Filete de pescado",
+          "amount": 400,
+          "unit": "g",
+          "category": "Carnes"
+        },
+        {
+          "id": "ing-cebola-009",
+          "name": "Cebolla",
+          "amount": 1,
+          "unit": "unidad",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-tomate-003",
+          "name": "Tomate fresco",
+          "amount": 200,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-021",
+          "name": "Ghee",
+          "amount": 2,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-010",
+          "name": "Caldo de pescado o carne",
+          "amount": 200,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-limao-010",
+          "name": "Jugo de limón",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-sal-027",
+          "name": "Sal marina",
+          "amount": 0.5,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Refogue cebola em ghee",
+        "Adicione tomate picado",
+        "Cozinhe por 5 minutos",
+        "Agregue pescado en pedazos",
+        "Despeje caldo",
+        "Cocine durante 12 minutos hasta que el pescado esté hecho",
+        "Termine con limón",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 25,
+      "nutritionTip": "El pescado ofrece omega-3 antiinflamatorio. El tomate proporciona licopeno. La salsa nutre el intestino.",
+      "gapsDifficulty": "medium",
+      "tags": ["almuerzo", "peixe", "molho", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "pure-abobrinha",
+      "title": "Puré de Calabacín con Ghee",
+      "description": "Acompanhamento cremoso do e-book com abobrinha cozida.",
+      "ingredients": [
+        {
+          "id": "ing-abobrinha-001",
+          "name": "Calabacín",
+          "amount": 400,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-ghee-022",
+          "name": "Ghee",
+          "amount": 1.5,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-caldo-011",
+          "name": "Caldo morno",
+          "amount": 100,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-028",
+          "name": "Sal marina",
+          "amount": 0.25,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte abobrinha em cubos",
+        "Cozinhe em caldo por 15 minutos",
+        "Amasse com garfo",
+        "Agregue ghee",
+        "Mezcle bien hasta que esté cremoso",
+        "Condimente con sal",
+        "Sirva tibio"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "nutritionTip": "El calabacín es hidratante y fácil de digerir. El ghee proporciona grasa antiinflamatoria.",
+      "gapsDifficulty": "easy",
+      "tags": ["acompanhamento", "abobrinha", "puré", "ebook"],
+      "publishedDate": "2026-03-01"
+    },
+    {
+      "id": "pure-cenoura-caldo",
+      "title": "Puré de Zanahoria con Caldo de Carne",
+      "description": "Acompanhamento nutritivo do e-book com cenoura em caldo.",
+      "ingredients": [
+        {
+          "id": "ing-cenoura-007",
+          "name": "Zanahoria",
+          "amount": 500,
+          "unit": "g",
+          "category": "Frutas y Verduras"
+        },
+        {
+          "id": "ing-caldo-012",
+          "name": "Caldo de carne",
+          "amount": 150,
+          "unit": "ml",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-ghee-023",
+          "name": "Ghee",
+          "amount": 1,
+          "unit": "cucharada",
+          "category": "Despensa GAPS"
+        },
+        {
+          "id": "ing-sal-029",
+          "name": "Sal marina",
+          "amount": 0.25,
+          "unit": "cucharadita",
+          "category": "Despensa GAPS"
+        }
+      ],
+      "instructions": [
+        "Corte cenoura em rodelas",
+        "Cozinhe em caldo por 20 minutos",
+        "Aplaste hasta que esté tibia",
+        "Agregue ghee",
+        "Mezcle bien",
+        "Condimente con sal",
+        "Sirva quente"
+      ],
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 20,
+      "nutritionTip": "Cenoura cozida libera beta-caroteno. Caldo fornece minerais e gelatina curativa.",
+      "gapsDifficulty": "easy",
+      "tags": ["acompanhamento", "cenoura", "puré", "ebook"],
+      "publishedDate": "2026-03-01"
+    }
+  ],
+  "weeklyMealPlan": [
+    {
+      "dayOfWeek": 0,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "ovos-cozidos-caldo" },
+        { "mealType": "refrigerio-mañana", "recipeId": "caldo-legumes" },
+        { "mealType": "almoco", "recipeId": "frango-curry-abobora" },
+        { "mealType": "refrigerio-tarde", "recipeId": "broto-oleo-coco" },
+        { "mealType": "cena", "recipeId": "carne-caldo" }
+      ]
+    },
+    {
+      "dayOfWeek": 1,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "mingau-abobora" },
+        { "mealType": "refrigerio-mañana", "recipeId": "caldo-frango-gengibre" },
+        { "mealType": "almoco", "recipeId": "fricasse-frango" },
+        { "mealType": "refrigerio-tarde", "recipeId": "suco-cenoura-beterraba" },
+        { "mealType": "cena", "recipeId": "frango-couve-flor" }
+      ]
+    },
+    {
+      "dayOfWeek": 2,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "frutas-cozidas" },
+        { "mealType": "refrigerio-mañana", "recipeId": "cha-maca" },
+        { "mealType": "almoco", "recipeId": "almondega-frango-hortela" },
+        { "mealType": "refrigerio-tarde", "recipeId": "agua-aromatizada" },
+        { "mealType": "cena", "recipeId": "peixe-aspargos" }
+      ]
+    },
+    {
+      "dayOfWeek": 3,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "omelete-ervas" },
+        { "mealType": "refrigerio-mañana", "recipeId": "broto-alfalfa" },
+        { "mealType": "almoco", "recipeId": "frango-grelhado-alecrim" },
+        { "mealType": "refrigerio-tarde", "recipeId": "caldo-frango-alecrim" },
+        { "mealType": "cena", "recipeId": "caldo-nutritivo-carne" }
+      ]
+    },
+    {
+      "dayOfWeek": 4,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "papa-banana" },
+        { "mealType": "refrigerio-mañana", "recipeId": "caldo-legumes" },
+        { "mealType": "almoco", "recipeId": "frango-mexicano-gaps" },
+        { "mealType": "refrigerio-tarde", "recipeId": "broto-oleo-coco" },
+        { "mealType": "cena", "recipeId": "peru-legumes-raiz" }
+      ]
+    },
+    {
+      "dayOfWeek": 5,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "ovos-cozidos-caldo" },
+        { "mealType": "refrigerio-mañana", "recipeId": "caldo-frango-gengibre" },
+        { "mealType": "almoco", "recipeId": "frango-recheado" },
+        { "mealType": "refrigerio-tarde", "recipeId": "suco-cenoura-beterraba" },
+        { "mealType": "cena", "recipeId": "lombo-recheado" }
+      ]
+    },
+    {
+      "dayOfWeek": 6,
+      "meals": [
+        { "mealType": "desayuno", "recipeId": "mingau-abobora" },
+        { "mealType": "refrigerio-mañana", "recipeId": "cha-maca" },
+        { "mealType": "almoco", "recipeId": "carne-porco-desfiada" },
+        { "mealType": "refrigerio-tarde", "recipeId": "agua-aromatizada" },
+        { "mealType": "cena", "recipeId": "camaroes-alho-ghee" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Today's Menu",
+  "subtitle": "Your meals for the day",
+  "date_format": "{date, date, full}",
+  "mark_as_done": "Mark as done",
+  "mark_as_undone": "Mark as not done",
+  "portions": "servings",
+  "prep_time": "Prep time",
+  "cook_time": "Cook time",
+  "total_time": "Total time",
+  "minutes": "min",
+  "empty_state": "No meals for today",
+  "add_meals": "Add meals to get started"
+}

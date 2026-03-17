@@ -1,0 +1,14 @@
+{
+  "title": "Cardápio de Hoje",
+  "subtitle": "Seus pratos para o dia",
+  "date_format": "{date, date, full}",
+  "mark_as_done": "Marcar como feita",
+  "mark_as_undone": "Marcar como não feita",
+  "portions": "porções",
+  "prep_time": "Tempo de preparo",
+  "cook_time": "Tempo de cozimento",
+  "total_time": "Tempo total",
+  "minutes": "min",
+  "empty_state": "Nenhuma refeição para hoje",
+  "add_meals": "Adicione refeições para começar"
+}

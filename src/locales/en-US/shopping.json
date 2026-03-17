@@ -1,0 +1,19 @@
+{
+  "title": "Shopping List",
+  "subtitle": "Weekly ingredients",
+  "empty_state": "No ingredients for this week",
+  "add_meals_hint": "Add meals to generate the shopping list",
+  "shopping_tips": "📝 Shopping Tips",
+  "items_count": "{count} of {total} items",
+  "all_items_checked": "Congratulations! All shopping done!",
+  "week_of": "Week of {date}",
+  "uncheck_all": "Uncheck all",
+  "check_all": "Check all",
+  "tips": [
+    "Check your fridge before leaving home",
+    "Keep a printed or digital list",
+    "Buy fresh products last",
+    "Prefer organic products when possible",
+    "Negotiate bulk discounts with the seller"
+  ]
+}
