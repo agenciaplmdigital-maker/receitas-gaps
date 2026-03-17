@@ -1,18 +1,19 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next-intl/navigation'
-import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import { Home, Calendar, ShoppingCart } from 'lucide-react'
 
 export function Navigation() {
   const pathname = usePathname()
-  const t = useTranslations('navigation')
+  const locale = useLocale()
 
   const links = [
-    { href: '/', label: t('dashboard'), icon: Home },
-    { href: '/week', label: t('week'), icon: Calendar },
-    { href: '/shopping-list', label: t('shopping'), icon: ShoppingCart },
+    { href: '/', label: getMessage(locale, 'navigation.dashboard', 'Dashboard'), icon: Home },
+    { href: '/week', label: getMessage(locale, 'navigation.week', 'Semana'), icon: Calendar },
+    { href: '/shopping-list', label: getMessage(locale, 'navigation.shopping', 'Compras'), icon: ShoppingCart },
   ]
 
   return (
