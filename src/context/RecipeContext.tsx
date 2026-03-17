@@ -1,9 +1,9 @@
 'use client'
 
 import React, { createContext, useContext, useEffect, useState } from 'react'
+import { useLocale } from 'next-intl'
 import type { Meal, Recipe, ShoppingListItem, WeeklyPlan } from '@/types/recipe'
 import { STORAGE_KEYS } from '@/utils/constants'
-import seedData from '@/data/seedRecipes.json'
 
 interface RecipeContextType {
   // Data
@@ -30,6 +30,7 @@ interface RecipeContextType {
 const RecipeContext = createContext<RecipeContextType | undefined>(undefined)
 
 export function RecipeProvider({ children }: { children: React.ReactNode }) {
+  const locale = useLocale() as 'pt-BR' | 'en-US' | 'es-ES'
   const [recipes, setRecipes] = useState<Recipe[]>([])
   const [weeklyMealPlan, setWeeklyMealPlan] = useState<Meal[]>([])
   const [shoppingList, setShoppingList] = useState<ShoppingListItem[]>([])
@@ -41,7 +42,7 @@ export function RecipeProvider({ children }: { children: React.ReactNode }) {
   // Load initial data
   useEffect(() => {
     loadWeeklyPlan()
-  }, [])
+  }, [locale])
 
   // Aggregate shopping list whenever meals change
   useEffect(() => {
@@ -52,17 +53,27 @@ export function RecipeProvider({ children }: { children: React.ReactNode }) {
     try {
       setIsLoading(true)
 
+      // Load seed data in the correct language
+      let seedData: any
+      try {
+        seedData = await import(`@/data/seedRecipes.${locale}.json`)
+      } catch {
+        // Fallback to Portuguese if language file not found
+        seedData = await import('@/data/seedRecipes.pt-BR.json')
+      }
+      seedData = seedData.default || seedData
+
       // Load recipes
       const storedRecipes = localStorage.getItem(STORAGE_KEYS.WEEKLY_MEAL_PLAN)
       if (storedRecipes) {
         const plan: WeeklyPlan = JSON.parse(storedRecipes)
-        setRecipes(plan.recipes || (seedData as any).recipes || [])
+        setRecipes(plan.recipes || seedData.recipes || [])
         setWeeklyMealPlan(plan.meals || [])
       } else {
         // Use seed data
-        setRecipes((seedData as any).recipes || [])
+        setRecipes(seedData.recipes || [])
         const meals: Meal[] = []
-        const weeklyStructure = (seedData as any).weeklyMealPlan || []
+        const weeklyStructure = seedData.weeklyMealPlan || []
 
         weeklyStructure.forEach((day: any, dayIndex: number) => {
           day.meals.forEach((meal: any) => {

@@ -1,17 +1,19 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next-intl/navigation'
+import { useTranslations } from 'next-intl'
 import { Home, Calendar, ShoppingCart } from 'lucide-react'
-
-const links = [
-  { href: '/', label: 'Dashboard', icon: Home },
-  { href: '/week', label: 'Semana', icon: Calendar },
-  { href: '/shopping-list', label: 'Compras', icon: ShoppingCart },
-]
 
 export function Navigation() {
   const pathname = usePathname()
+  const t = useTranslations('navigation')
+
+  const links = [
+    { href: '/', label: t('dashboard'), icon: Home },
+    { href: '/week', label: t('week'), icon: Calendar },
+    { href: '/shopping-list', label: t('shopping'), icon: ShoppingCart },
+  ]
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-40 border-t border-olive/10 bg-beige/95 backdrop-blur-sm">
