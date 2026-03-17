@@ -9,8 +9,6 @@ const withPWA = require('next-pwa')({
   cacheOnFrontEndNav: true,
 })
 
-const withNextIntl = require('next-intl/with-default-config');
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -19,4 +17,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPWA(withNextIntl(nextConfig))
+module.exports = withPWA(nextConfig)
