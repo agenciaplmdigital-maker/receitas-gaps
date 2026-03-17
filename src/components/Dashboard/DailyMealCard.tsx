@@ -1,6 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import type { Meal, Recipe, MealType } from '@/types/recipe'
 import { Check } from 'lucide-react'
 
@@ -17,8 +18,7 @@ export function DailyMealCard({
   onToggle,
   onSelectRecipe,
 }: DailyMealCardProps) {
-  const t = useTranslations('common')
-  const tDashboard = useTranslations('dashboard')
+  const locale = useLocale()
 
   if (!recipe) return null
 
@@ -30,13 +30,13 @@ export function DailyMealCard({
           onClick={() => onSelectRecipe(recipe)}
         >
           <h4 className="mb-2 font-serif text-lg font-semibold text-olive">
-            {t(`meal_types.${meal.mealType}`)}
+            {getMessage(locale, `meal_types.${meal.mealType}`, meal.mealType)}
           </h4>
           <p className="mb-2 font-medium text-gray-800">{recipe.title}</p>
           <p className="text-sm text-gray-600">{recipe.description}</p>
           <div className="mt-3 flex items-center gap-4 text-xs text-gray-500">
             <span>⏱️ {recipe.prepTime + recipe.cookTime}m</span>
-            <span>👥 {recipe.servings} {tDashboard('portions')}</span>
+            <span>👥 {recipe.servings} {getMessage(locale, 'dashboard.portions', 'porções')}</span>
           </div>
         </div>
         <button
@@ -49,7 +49,7 @@ export function DailyMealCard({
               ? 'border-olive bg-olive'
               : 'border-olive hover:bg-olive/5'
           }`}
-          aria-label={meal.isCompleted ? tDashboard('mark_as_undone') : tDashboard('mark_as_done')}
+          aria-label={meal.isCompleted ? getMessage(locale, 'dashboard.mark_as_undone', 'Marcar como não feita') : getMessage(locale, 'dashboard.mark_as_done', 'Marcar como feita')}
         >
           {meal.isCompleted && <Check size={16} className="text-white" />}
         </button>

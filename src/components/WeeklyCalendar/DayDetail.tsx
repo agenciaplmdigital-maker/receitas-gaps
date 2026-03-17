@@ -1,6 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import type { Meal, Recipe } from '@/types/recipe'
 import { MealList } from '../Dashboard/MealList'
 
@@ -19,13 +20,13 @@ export function DayDetail({
   onToggleMeal,
   onSelectRecipe,
 }: DayDetailProps) {
-  const t = useTranslations('common')
+  const locale = useLocale()
   const dayMeals = meals.filter((meal) => meal.dayOfWeek === dayOfWeek)
 
   if (dayMeals.length === 0) {
     return (
       <div className="rounded-lg border-2 border-dashed border-olive/20 p-6 text-center text-gray-500">
-        {t('week.no_meals')}
+        {getMessage(locale, 'week.no_meals', 'Sem refeições para este dia')}
       </div>
     )
   }

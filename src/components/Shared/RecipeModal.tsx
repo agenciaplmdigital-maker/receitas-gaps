@@ -1,6 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import { useRecipeContext } from '@/context/RecipeContext'
 import type { Recipe } from '@/types/recipe'
 import { X, Clock, Users } from 'lucide-react'
@@ -12,8 +13,7 @@ interface RecipeModalProps {
 }
 
 export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
-  const t = useTranslations('recipe_modal')
-  const tDifficulty = useTranslations('common')
+  const locale = useLocale()
 
   if (!isOpen || !recipe) return null
 
@@ -34,7 +34,7 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
           <button
             onClick={onClose}
             className="rounded-lg p-2 hover:bg-gray-100"
-            aria-label={t('close')}
+            aria-label={getMessage(locale, 'recipe_modal.close', 'Fechar')}
           >
             <X size={24} className="text-gray-600" />
           </button>
@@ -47,29 +47,29 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
               <Clock size={20} className="text-terracotta" />
               <span className="text-sm font-semibold text-sage">{totalTime}m</span>
             </div>
-            <p className="text-xs text-gray-600">{t('total_time')}</p>
+            <p className="text-xs text-gray-600">{getMessage(locale, 'recipe_modal.total_time', 'Tempo total')}</p>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2">
               <Users size={20} className="text-terracotta" />
               <span className="text-sm font-semibold text-sage">{recipe.servings}</span>
             </div>
-            <p className="text-xs text-gray-600">{t('servings')}</p>
+            <p className="text-xs text-gray-600">{getMessage(locale, 'recipe_modal.servings', 'Porções')}</p>
           </div>
           <div className="text-center">
             <span className="inline-block rounded-full bg-olive/10 px-3 py-1 text-xs font-semibold text-olive">
               {recipe.gapsDifficulty === 'easy'
-                ? tDifficulty('difficulty.easy')
+                ? getMessage(locale, 'difficulty.easy', 'Fácil')
                 : recipe.gapsDifficulty === 'medium'
-                  ? tDifficulty('difficulty.medium')
-                  : tDifficulty('difficulty.advanced')}
+                  ? getMessage(locale, 'difficulty.medium', 'Médio')
+                  : getMessage(locale, 'difficulty.advanced', 'Avançado')}
             </span>
           </div>
         </div>
 
         {/* Ingredients */}
         <div className="mb-6">
-          <h3 className="mb-3 text-xl font-bold text-olive">{t('ingredients')}</h3>
+          <h3 className="mb-3 text-xl font-bold text-olive">{getMessage(locale, 'recipe_modal.ingredients', 'Ingredientes')}</h3>
           <ul className="space-y-2">
             {recipe.ingredients.map((ingredient) => (
               <li key={ingredient.id} className="flex items-start gap-3">
@@ -88,7 +88,7 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
 
         {/* Instructions */}
         <div className="mb-6">
-          <h3 className="mb-3 text-xl font-bold text-olive">{t('instructions')}</h3>
+          <h3 className="mb-3 text-xl font-bold text-olive">{getMessage(locale, 'recipe_modal.instructions', 'Modo de Preparo')}</h3>
           <ol className="space-y-3">
             {recipe.instructions.map((instruction, index) => (
               <li key={index} className="flex gap-3">
@@ -103,7 +103,7 @@ export function RecipeModal({ recipe, isOpen, onClose }: RecipeModalProps) {
 
         {/* Nutrition Tip */}
         <div className="rounded-lg border-l-4 border-terracotta bg-cream p-4">
-          <h4 className="mb-2 font-bold text-olive">💡 {t('nutrition_tip')}</h4>
+          <h4 className="mb-2 font-bold text-olive">💡 {getMessage(locale, 'recipe_modal.nutrition_tip', 'Dica Nutritiva')}</h4>
           <p className="text-sm text-gray-700">{recipe.nutritionTip}</p>
         </div>
 

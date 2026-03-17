@@ -1,7 +1,7 @@
 'use client'
 
 import React, { createContext, useContext, useEffect, useState } from 'react'
-import { useLocale } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
 import type { Meal, Recipe, ShoppingListItem, WeeklyPlan } from '@/types/recipe'
 import { STORAGE_KEYS } from '@/utils/constants'
 

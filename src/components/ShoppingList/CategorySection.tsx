@@ -1,6 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import type { ShoppingListItem } from '@/types/recipe'
 import { CATEGORY_ICONS_BY_KEY } from '@/utils/constants'
 import { IngredientItem } from './IngredientItem'
@@ -18,7 +19,7 @@ export function CategorySection({
   items,
   onToggleItem,
 }: CategorySectionProps) {
-  const t = useTranslations('common')
+  const locale = useLocale()
   const [isExpanded, setIsExpanded] = useState(true)
 
   if (items.length === 0) return null
@@ -37,10 +38,10 @@ export function CategorySection({
             <span className="text-2xl">{icon}</span>
             <div>
               <h4 className="font-serif font-bold text-olive">
-                {t(`categories.${category}`)}
+                {getMessage(locale, `categories.${category}`, category)}
               </h4>
               <p className="text-sm text-gray-600">
-                {checkedCount} de {items.length} {items.length === 1 ? t('item') : t('items')}
+                {checkedCount} de {items.length} {items.length === 1 ? getMessage(locale, 'item', 'item') : getMessage(locale, 'items', 'items')}
               </p>
             </div>
           </div>

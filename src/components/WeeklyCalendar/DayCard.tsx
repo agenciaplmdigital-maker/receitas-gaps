@@ -1,6 +1,7 @@
 'use client'
 
-import { useTranslations, useLocale } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
 interface DayCardProps {
@@ -16,7 +17,6 @@ export function DayCard({
   isSelected,
   onClick,
 }: DayCardProps) {
-  const t = useTranslations('common')
   const locale = useLocale()
 
   const date = new Date()
@@ -42,11 +42,11 @@ export function DayCard({
       <div className="flex items-start justify-between">
         <div>
           <h3 className="font-serif text-lg font-bold text-olive">
-            {t(`days.${['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][dayOfWeek]}`)}
+            {getMessage(locale, `days.${['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][dayOfWeek]}`, ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek])}
           </h3>
           <p className="text-sm text-sage">{dayDate}</p>
           <p className="mt-2 text-xs text-gray-600">
-            {mealCount} {mealCount === 1 ? t('meal') : t('meals')}
+            {mealCount} {mealCount === 1 ? getMessage(locale, 'meal', 'refeição') : getMessage(locale, 'meals', 'refeições')}
           </p>
         </div>
         <div className="text-2xl">

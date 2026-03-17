@@ -1,7 +1,8 @@
 'use client'
 
 import { useRecipeContext } from '@/context/RecipeContext'
-import { useTranslations, useLocale } from 'next-intl'
+import { useLocale } from '@/context/LocaleContext'
+import { getMessage } from '@/lib/translations'
 import { RecipeModal } from '../Shared/RecipeModal'
 import { MealList } from './MealList'
 
@@ -17,8 +18,6 @@ export function DashboardContainer() {
     isLoading,
   } = useRecipeContext()
 
-  const t = useTranslations('dashboard')
-  const tDays = useTranslations('common')
   const locale = useLocale()
 
   if (isLoading) {
@@ -43,10 +42,10 @@ export function DashboardContainer() {
     <main className="mx-auto max-w-4xl px-4 pb-24 pt-6">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-olive capitalize">
-          {t('title')}
+          {getMessage(locale, 'dashboard.title', 'Cardápio de Hoje')}
         </h2>
         <p className="text-lg text-sage">
-          {tDays(`days.${dayNames[today]}`)}, {formattedDate}
+          {getMessage(locale, `days.${dayNames[today]}`, dayNames[today])}, {formattedDate}
         </p>
       </div>
 
