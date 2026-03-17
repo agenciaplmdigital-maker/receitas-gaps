@@ -75,11 +75,11 @@ export function RecipeProvider({ children }: { children: React.ReactNode }) {
         const meals: Meal[] = []
         const weeklyStructure = seedData.weeklyMealPlan || []
 
-        weeklyStructure.forEach((day: any, dayIndex: number) => {
+        weeklyStructure.forEach((day: any) => {
           day.meals.forEach((meal: any) => {
             meals.push({
-              id: `${dayIndex}-${meal.mealType}-${Date.now()}`,
-              dayOfWeek: dayIndex,
+              id: `${day.dayOfWeek}-${meal.mealType}-${Date.now()}`,
+              dayOfWeek: day.dayOfWeek,
               mealType: meal.mealType,
               recipeId: meal.recipeId,
               isCompleted: false,

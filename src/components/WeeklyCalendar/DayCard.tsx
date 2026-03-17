@@ -20,7 +20,12 @@ export function DayCard({
   const locale = useLocale()
 
   const date = new Date()
-  date.setDate(date.getDate() + (dayOfWeek - (date.getDay() === 0 ? 6 : date.getDay() - 1)))
+  const today = date.getDay()
+  // Calculate days to add: if dayOfWeek < today, it's next week
+  let daysToAdd = dayOfWeek - today
+  if (daysToAdd < 0) daysToAdd += 7
+  // If same day but we want to show this week's day, keep it as is
+  date.setDate(date.getDate() + daysToAdd)
 
   const dayDate = date.toLocaleDateString(
     locale === 'pt-BR' ? 'pt-BR' : locale === 'en-US' ? 'en-US' : 'es-ES',

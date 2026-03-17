@@ -28,7 +28,7 @@ export function DashboardContainer() {
     )
   }
 
-  const today = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1
+  const today = new Date().getDay()
   const todayMeals = weeklyMealPlan.filter((meal) => meal.dayOfWeek === today)
 
   const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
