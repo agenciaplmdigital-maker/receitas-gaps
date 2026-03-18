@@ -21,10 +21,9 @@ export function DayCard({
 
   const date = new Date()
   const today = date.getDay()
-  // Calculate days to add: if dayOfWeek < today, it's next week
-  let daysToAdd = dayOfWeek - today
-  if (daysToAdd < 0) daysToAdd += 7
-  // If same day but we want to show this week's day, keep it as is
+  // Calculate days to add to get the date for this day in the current week
+  // This shows days that may have already passed this week
+  const daysToAdd = dayOfWeek - today
   date.setDate(date.getDate() + daysToAdd)
 
   const dayDate = date.toLocaleDateString(
