@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLocale } from '@/context/LocaleContext'
 import { getMessage } from '@/lib/translations'
-import { Home, Calendar, ShoppingCart } from 'lucide-react'
+import { Home, Calendar, ShoppingCart, BookOpen } from 'lucide-react'
 
 export function Navigation() {
   const pathname = usePathname()
@@ -14,6 +14,7 @@ export function Navigation() {
     { href: '/', label: getMessage(locale, 'navigation.dashboard', 'Dashboard'), icon: Home },
     { href: '/week', label: getMessage(locale, 'navigation.week', 'Semana'), icon: Calendar },
     { href: '/shopping-list', label: getMessage(locale, 'navigation.shopping', 'Compras'), icon: ShoppingCart },
+    { href: '/materials', label: getMessage(locale, 'materials.title', 'Materiais'), icon: BookOpen },
   ]
 
   return (

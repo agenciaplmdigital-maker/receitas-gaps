@@ -74,6 +74,18 @@
     "medium": "Medium",
     "advanced": "Advanced"
   },
+  "materials": {
+    "title": "Materials to Download",
+    "subtitle": "Resources and supplementary guides",
+    "download": "Download",
+    "gaps_ebook": "GAPS Protocol E-book",
+    "gaps_description": "Complete guide to the GAPS Protocol with phases, allowed foods, recipes and practical tips",
+    "tips_title": "How to use the materials",
+    "tip1": "Download the e-book and study the protocol phases",
+    "tip2": "Start with the introduction phase according to recommendations",
+    "tip3": "Use the app to plan your weekly meals",
+    "tip4": "Combine the materials with professional guidance"
+  },
   "login": {
     "title": "Purchase Email",
     "subtitle": "Enter your email to access the app",
