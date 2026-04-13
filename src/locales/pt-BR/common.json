@@ -74,6 +74,16 @@
     "medium": "Médio",
     "advanced": "Avançado"
   },
+  "login": {
+    "title": "Email de Compra",
+    "subtitle": "Coloque seu email para acessar o app",
+    "email_label": "Seu email",
+    "email_placeholder": "seu@email.com",
+    "submit": "Entrar",
+    "error_empty": "Email é obrigatório",
+    "error_invalid": "Email inválido",
+    "info": "Seu email é utilizado para fins de compra"
+  },
   "meal": "refeição",
   "meals": "refeições",
   "item": "item",

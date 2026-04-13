@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { RecipeProvider } from '@/context/RecipeContext'
 import { LocaleProvider } from '@/context/LocaleContext'
+import { UserProvider } from '@/context/UserContext'
+import { UserInitializer } from '@/components/User/UserInitializer'
 import '@/styles/globals.css'
 
 const APP_NAME = 'Receitas GAPS'
@@ -67,9 +69,14 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-beige font-sans text-gray-800">
-        <LocaleProvider>
-          <RecipeProvider>{children}</RecipeProvider>
-        </LocaleProvider>
+        <UserProvider>
+          <LocaleProvider>
+            <RecipeProvider>
+              <UserInitializer />
+              {children}
+            </RecipeProvider>
+          </LocaleProvider>
+        </UserProvider>
       </body>
     </html>
   )

@@ -74,6 +74,16 @@
     "medium": "Medio",
     "advanced": "Avanzado"
   },
+  "login": {
+    "title": "Correo de Compra",
+    "subtitle": "Ingrese su correo para acceder a la aplicación",
+    "email_label": "Su correo",
+    "email_placeholder": "su@correo.com",
+    "submit": "Ingresar",
+    "error_empty": "El correo es obligatorio",
+    "error_invalid": "Correo inválido",
+    "info": "Su correo se utiliza para propósitos de compra"
+  },
   "meal": "comida",
   "meals": "comidas",
   "item": "artículo",
