@@ -77,7 +77,8 @@
   "materials": {
     "title": "Materiales para Descargar",
     "subtitle": "Recursos y guías complementarias",
-    "download": "Descargar",
+    "download": "Descargar PDF",
+    "view_interactive": "Ver Interactivo",
     "gaps_ebook": "E-book Protocolo GAPS",
     "gaps_description": "Guía completa del Protocolo GAPS con fases, alimentos permitidos, recetas y consejos prácticos",
     "tips_title": "Cómo usar los materiales",
@@ -85,6 +86,12 @@
     "tip2": "Comience con la fase de introducción según las recomendaciones",
     "tip3": "Use la aplicación para planificar sus comidas semanales",
     "tip4": "Combine los materiales con orientación profesional"
+  },
+  "download": {
+    "title": "Descargar E-book GAPS",
+    "subtitle": "Protocolo GAPS completo en PDF",
+    "generating": "Generando PDF...",
+    "button": "Descargar E-book en PDF"
   },
   "login": {
     "title": "Correo de Compra",
