@@ -54,24 +54,13 @@ export default function MaterialsPage() {
               </div>
             </div>
 
-            <div className="flex gap-3">
-              <a
-                href="/download-ebook"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-olive text-white rounded-lg font-semibold hover:bg-[#445025] transition"
-              >
-                <Download size={20} />
-                {getMessage(locale, 'materials.download', 'Baixar PDF')}
-              </a>
-              <a
-                href={material.downloadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-sage text-white rounded-lg font-semibold hover:bg-[#7a9668] transition"
-              >
-                <BookOpen size={20} />
-                {getMessage(locale, 'materials.view_interactive', 'Ver Interativo')}
-              </a>
-            </div>
+            <a
+              href={material.downloadUrl}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-olive text-white rounded-lg font-semibold hover:bg-[#445025] transition"
+            >
+              <BookOpen size={20} />
+              {getMessage(locale, 'materials.open_ebook', 'Abrir E-book')}
+            </a>
           </div>
         ))}
       </div>
