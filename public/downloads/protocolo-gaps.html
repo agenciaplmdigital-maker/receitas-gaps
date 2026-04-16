@@ -1,229 +1,1496 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Protocolo GAPS - E-book</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tudo Sobre o Protocolo GAPS — Ebook Interativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; color: #333; }
-.cover { text-align: center; page-break-after: always; padding: 100px 0; }
-h1 { color: #556B2F; font-size: 42px; margin: 20px 0; }
-h2 { color: #556B2F; font-size: 24px; margin: 30px 0 15px 0; border-bottom: 3px solid #9CAF88; padding-bottom: 10px; }
-h3 { color: #556B2F; font-size: 16px; }
-.subtitle { color: #9CAF88; font-size: 18px; }
-.subtitle2 { color: #C24B3E; font-style: italic; font-size: 14px; margin: 30px 0; }
-.section { page-break-inside: avoid; margin: 30px 0; }
-.allowed { color: green; font-weight: bold; margin-top: 20px; }
-.forbidden { color: #C24B3E; font-weight: bold; margin-top: 15px; }
-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-td { border: 1px solid #ddd; padding: 10px; }
-th { background-color: #F5F5DC; color: #556B2F; font-weight: bold; padding: 10px; }
-.tip { background-color: #F5F5DC; padding: 15px; margin: 15px 0; border-left: 4px solid #556B2F; }
-.page-break { page-break-after: always; }
-@media print { .page-break { page-break-after: always; } }
+  :root {
+    --bg-page: #f4ede0;
+    --bg-paper: #fbf6ec;
+    --bg-paper-shadow: rgba(60, 40, 20, 0.12);
+    --ink: #2a2418;
+    --ink-soft: #5a4f3d;
+    --ink-faint: #8a7e68;
+    --accent: #8b5a2b;
+    --accent-deep: #5d3a18;
+    --accent-soft: #c9a373;
+    --line: #d9cdb5;
+    --highlight: #f7e5b8;
+    --success: #4a7c4a;
+    --serif-display: 'Cormorant Garamond', Georgia, serif;
+    --serif-body: 'Lora', Georgia, serif;
+    --sans: 'Inter', -apple-system, sans-serif;
+    --font-scale: 1;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: var(--bg-page);
+    color: var(--ink);
+    font-family: var(--serif-body);
+    overflow-x: hidden;
+  }
+
+  body {
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(139, 90, 43, 0.04), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(93, 58, 24, 0.03), transparent 50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ============== PROGRESS BAR ============== */
+  .progress-container {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: rgba(0,0,0,0.06);
+    z-index: 100;
+  }
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-soft), var(--accent), var(--accent-deep));
+    width: 0%;
+    transition: width 0.4s ease;
+    box-shadow: 0 0 8px rgba(139, 90, 43, 0.4);
+  }
+
+  /* ============== TOP BAR ============== */
+  .topbar {
+    position: sticky;
+    top: 4px;
+    background: rgba(244, 237, 224, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+    gap: 16px;
+  }
+
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .book-title {
+    font-family: var(--serif-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .book-title em {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .read-counter {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    background: rgba(139, 90, 43, 0.08);
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(139, 90, 43, 0.15);
+    white-space: nowrap;
+  }
+
+  .read-counter strong { color: var(--accent-deep); font-weight: 600; }
+
+  .icon-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+  }
+  .icon-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  /* ============== MAIN LAYOUT ============== */
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 24px 120px;
+    perspective: 1200px;
+  }
+
+  .book {
+    width: 100%;
+    max-width: 720px;
+    background: var(--bg-paper);
+    border-radius: 4px;
+    box-shadow:
+      0 1px 2px var(--bg-paper-shadow),
+      0 10px 30px rgba(60, 40, 20, 0.10),
+      0 30px 60px rgba(60, 40, 20, 0.06);
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+  }
+
+  /* Subtle paper texture using gradients */
+  .book::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 100px,
+        rgba(139, 90, 43, 0.012) 100px,
+        rgba(139, 90, 43, 0.012) 101px
+      );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Spine effect */
+  .book::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.06), transparent);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .page {
+    padding: 64px 72px 80px;
+    min-height: 80vh;
+    display: none;
+    animation: pageIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 3;
+    font-size: calc(1.05rem * var(--font-scale));
+    line-height: 1.8;
+    color: var(--ink);
+  }
+
+  .page.active { display: block; }
+
+  @keyframes pageIn {
+    from { opacity: 0; transform: translateX(20px); filter: blur(4px); }
+    to { opacity: 1; transform: translateX(0); filter: blur(0); }
+  }
+
+  .page.flip-back { animation: pageInBack 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+  @keyframes pageInBack {
+    from { opacity: 0; transform: translateX(-20px); filter: blur(4px); }
+    to { opacity: 1; transform: translateX(0); filter: blur(0); }
+  }
+
+  /* ============== TYPOGRAPHY ============== */
+  .page h1 {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: calc(2.6rem * var(--font-scale));
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  .page h2 {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: calc(1.9rem * var(--font-scale));
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--accent-deep);
+    letter-spacing: -0.005em;
+  }
+
+  .page h3 {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    font-size: calc(1.4rem * var(--font-scale));
+    margin: 32px 0 14px;
+    color: var(--ink);
+  }
+
+  .page p {
+    margin-bottom: 18px;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .page p.lead {
+    font-family: var(--serif-display);
+    font-size: calc(1.3rem * var(--font-scale));
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+
+  .page strong { color: var(--accent-deep); font-weight: 600; }
+  .page em { color: var(--ink-soft); }
+
+  .chapter-tag {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent-soft);
+  }
+
+  .ornament {
+    text-align: center;
+    color: var(--accent-soft);
+    font-size: 1.5rem;
+    margin: 32px 0;
+    letter-spacing: 1em;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(247, 229, 184, 0.4), rgba(247, 229, 184, 0.15));
+    border-left: 4px solid var(--accent);
+    padding: 20px 24px;
+    margin: 28px 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .quote-box {
+    text-align: center;
+    margin: 32px 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .quote-box p {
+    font-family: var(--serif-display);
+    font-style: italic;
+    font-size: calc(1.25rem * var(--font-scale));
+    color: var(--ink-soft);
+    text-align: center;
+    margin: 0;
+  }
+  .quote-box::before {
+    content: '"';
+    font-family: var(--serif-display);
+    font-size: 3rem;
+    color: var(--accent-soft);
+    line-height: 0.5;
+    display: block;
+  }
+
+  .page ul, .page ol {
+    margin: 16px 0 24px 24px;
+    padding-left: 16px;
+  }
+  .page li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+  .page ul li::marker { color: var(--accent); }
+  .page ol li::marker { color: var(--accent); font-weight: 600; }
+
+  .warning-box {
+    background: rgba(196, 92, 64, 0.08);
+    border: 1px solid rgba(196, 92, 64, 0.25);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 24px 0;
+    font-size: calc(0.95rem * var(--font-scale));
+    color: #6e3a25;
+  }
+  .warning-box strong { color: #9c4523; }
+
+  /* ============== READ TAG ============== */
+  .read-tag {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: var(--success);
+    color: white;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 6px 12px;
+    border-radius: 999px;
+    display: none;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 8px rgba(74, 124, 74, 0.3);
+    z-index: 4;
+    animation: tagPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .read-tag.show { display: inline-flex; }
+  @keyframes tagPop {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  /* ============== COVER PAGE ============== */
+  .cover {
+    background: linear-gradient(160deg, #2a2418 0%, #4a3826 50%, #5d3a18 100%);
+    color: #f4ede0;
+    text-align: center;
+    padding: 100px 60px;
+    display: none;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover.active { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    border: 1px solid rgba(201, 163, 115, 0.4);
+    pointer-events: none;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    inset: 38px;
+    border: 1px solid rgba(201, 163, 115, 0.2);
+    pointer-events: none;
+  }
+
+  .cover-ornament-top, .cover-ornament-bottom {
+    color: var(--accent-soft);
+    font-size: 2rem;
+    letter-spacing: 0.5em;
+    margin: 24px 0;
+  }
+
+  .cover-eyebrow {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+    margin-bottom: 28px;
+  }
+
+  .cover h1 {
+    font-family: var(--serif-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.05;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #f4ede0;
+  }
+  .cover h1 em {
+    font-style: italic;
+    color: var(--accent-soft);
+    font-weight: 400;
+  }
+
+  .cover-subtitle {
+    font-family: var(--serif-display);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: rgba(244, 237, 224, 0.75);
+    max-width: 480px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+  }
+
+  .cover-meta {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(244, 237, 224, 0.5);
+    margin-top: 20px;
+  }
+
+  /* ============== INTERACTIVE QUESTIONS ============== */
+  .question-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(247, 229, 184, 0.2));
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 24px 0;
+    box-shadow: 0 2px 12px rgba(60, 40, 20, 0.05);
+  }
+  .question-card .q-label {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .question-card h4 {
+    font-family: var(--serif-display);
+    font-size: calc(1.25rem * var(--font-scale));
+    color: var(--ink);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .option-btn {
+    background: var(--bg-paper);
+    border: 1.5px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-align: left;
+    cursor: pointer;
+    font-family: var(--serif-body);
+    font-size: calc(1rem * var(--font-scale));
+    color: var(--ink);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .option-btn:hover {
+    border-color: var(--accent);
+    background: rgba(247, 229, 184, 0.3);
+    transform: translateX(4px);
+  }
+  .option-btn.selected {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, rgba(139, 90, 43, 0.12), rgba(201, 163, 115, 0.08));
+    color: var(--accent-deep);
+    font-weight: 500;
+  }
+  .option-btn::before {
+    content: '';
+    width: 16px; height: 16px;
+    border: 2px solid var(--line);
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .option-btn.selected::before {
+    border-color: var(--accent);
+    background: var(--accent);
+    box-shadow: inset 0 0 0 3px var(--bg-paper);
+  }
+
+  /* ============== SUMMARY ============== */
+  .summary-card {
+    background: linear-gradient(160deg, #fbf6ec, #f4ede0);
+    border: 2px solid var(--accent-soft);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 28px 0;
+    position: relative;
+  }
+  .summary-card h3 {
+    margin-top: 0;
+    color: var(--accent-deep);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .summary-item {
+    padding: 16px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .summary-item:last-child { border-bottom: none; }
+  .summary-label {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .summary-value {
+    font-family: var(--serif-display);
+    font-size: 1.15rem;
+    color: var(--ink);
+    font-style: italic;
+  }
+  .summary-recommendation {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(139, 90, 43, 0.06);
+    border-radius: 8px;
+    font-family: var(--serif-body);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  /* ============== CONTROLS / NAVIGATION ============== */
+  .controls {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(244, 237, 224, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--line);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 50;
+  }
+
+  .nav-btn {
+    background: var(--bg-paper);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav-btn:hover:not(:disabled) {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 90, 43, 0.25);
+  }
+  .nav-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .mark-read-btn {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  .mark-read-btn.is-read {
+    background: var(--success);
+    border-color: var(--success);
+  }
+  .mark-read-btn:hover:not(:disabled) {
+    background: var(--accent-deep);
+    border-color: var(--accent-deep);
+  }
+  .mark-read-btn.is-read:hover:not(:disabled) {
+    background: #3a6a3a;
+    border-color: #3a6a3a;
+  }
+
+  .page-indicator {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    padding: 0 12px;
+    min-width: 70px;
+    text-align: center;
+  }
+
+  /* ============== MENU MODAL ============== */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(42, 36, 24, 0.5);
+    backdrop-filter: blur(6px);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+  }
+  .menu-overlay.show { display: flex; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .menu-panel {
+    background: var(--bg-paper);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+    animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+  .menu-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-header h2 {
+    font-family: var(--serif-display);
+    font-size: 1.5rem;
+    color: var(--ink);
+  }
+
+  .menu-list {
+    padding: 12px 0;
+  }
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-left: 3px solid transparent;
+  }
+  .menu-item:hover {
+    background: rgba(139, 90, 43, 0.06);
+    border-left-color: var(--accent-soft);
+  }
+  .menu-item.current {
+    background: rgba(139, 90, 43, 0.1);
+    border-left-color: var(--accent);
+  }
+  .menu-item-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .menu-item-num {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .menu-item-title {
+    font-family: var(--serif-display);
+    font-size: 1.05rem;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .menu-check {
+    color: var(--success);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .menu-check.empty { color: var(--line); }
+
+  /* ============== RESPONSIVE ============== */
+  @media (max-width: 720px) {
+    .container { padding: 20px 12px 100px; }
+    .page { padding: 40px 28px 60px; }
+    .topbar { padding: 12px 16px; }
+    .book-title { font-size: 0.9rem; }
+    .read-counter { font-size: 0.7rem; padding: 5px 10px; }
+    .icon-btn { width: 32px; height: 32px; font-size: 0.78rem; }
+    .nav-btn { padding: 8px 14px; font-size: 0.8rem; }
+    .page-indicator { font-size: 0.75rem; min-width: 50px; }
+    .cover { padding: 60px 30px; }
+    .controls { padding: 12px 14px; gap: 8px; }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--accent-soft); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 </style>
 </head>
 <body>
 
-<div class="cover">
-<h1>PROTOCOLO GAPS</h1>
-<p class="subtitle">Guia Completo para Saúde Intestinal</p>
-<p class="subtitle2">Healing Your Gut, Healing Your Mind</p>
-<div style="margin-top: 100px;">
-<p><strong>Receitas GAPS</strong><br>Planejador de Refeições</p>
-<p style="margin-top: 50px; color: #999; font-size: 12px;">© 2024</p>
-</div>
+<!-- Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
 </div>
 
-<div class="page-break"></div>
+<!-- Top Bar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="icon-btn" id="menuBtn" title="Menu de capítulos">☰</button>
+    <div class="book-title">Tudo Sobre o <em>Protocolo GAPS</em></div>
+  </div>
+  <div class="topbar-right">
+    <span class="read-counter"><strong id="readCount">0</strong>/<span id="totalCount">13</span> lidas</span>
+    <button class="icon-btn" id="fontDecrease" title="Diminuir fonte">A−</button>
+    <button class="icon-btn" id="fontIncrease" title="Aumentar fonte">A+</button>
+    <button class="icon-btn" id="goHome" title="Voltar ao início">⌂</button>
+  </div>
+</header>
 
-<h2>ÍNDICE</h2>
-<ol style="line-height: 2;">
-<li>O que é GAPS?</li>
-<li>Por que GAPS funciona</li>
-<li>As Fases do Protocolo</li>
-<li>Alimentos Permitidos e Proibidos</li>
-<li>Benefícios do Protocolo GAPS</li>
-<li>Dicas Importantes</li>
-<li>Receitas Essenciais</li>
-<li>Próximos Passos</li>
-</ol>
+<!-- Main Book -->
+<main class="container">
+  <article class="book" id="book">
 
-<div class="page-break"></div>
+    <!-- ============== COVER (Page 0) ============== -->
+    <section class="page cover active" data-page="0" data-title="Capa">
+      <div class="cover-ornament-top">❦ ❦ ❦</div>
+      <div class="cover-eyebrow">Guia Completo · Edição Digital</div>
+      <h1>Tudo Sobre o<br><em>Protocolo GAPS</em></h1>
+      <p class="cover-subtitle">Um guia prático para entender a conexão entre o intestino, o cérebro e a saúde integral</p>
+      <div class="cover-ornament-bottom">❦ ❦ ❦</div>
+      <div class="cover-meta">Ebook Interativo · 2026</div>
+    </section>
 
-<div class="section">
-<h2>1. O QUE É GAPS?</h2>
-<p>GAPS significa <strong>Gut and Psychology Syndrome</strong> (Síndrome do Intestino e Psicologia). É um protocolo alimentar desenvolvido pela Dra. Natasha Campbell-McBride, baseado na ideia de que um intestino saudável é fundamental para a saúde mental, imunológica e geral.</p>
-<p>O protocolo reconhece que muitos problemas de saúde podem estar relacionados à permeabilidade intestinal (leaky gut) e desbalanceamento da microbiota.</p>
+    <!-- ============== INTRODUCTION (Page 1) ============== -->
+    <section class="page" data-page="1" data-title="Introdução">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Introdução</span>
+      <h1>Bem-vindo a esta jornada</h1>
+      <p class="lead">Este ebook foi criado para apresentar, de forma clara e acessível, um dos protocolos nutricionais mais comentados das últimas décadas: o GAPS.</p>
 
-<h3>Os Três Pilares do GAPS:</h3>
-<table>
-<tr style="background-color: #F5F5DC;">
-<th style="width: 25%;">Pilar</th>
-<th style="width: 75%;">Descrição</th>
-</tr>
-<tr>
-<td><strong>Nutrição</strong></td>
-<td>Alimentos ricos em aminoácidos e nutrientes essenciais</td>
-</tr>
-<tr>
-<td><strong>Microbiota</strong></td>
-<td>Restaurar bactérias benéficas através de alimentos fermentados</td>
-</tr>
-<tr>
-<td><strong>Digestão</strong></td>
-<td>Caldos de osso e alimentos fáceis de digerir</td>
-</tr>
-</table>
+      <p>A sigla <strong>GAPS</strong> significa <em>Gut and Psychology Syndrome</em> (Síndrome do Intestino e Psicologia) e também <em>Gut and Physiology Syndrome</em> (Síndrome do Intestino e Fisiologia). Foi desenvolvida pela médica e nutricionista russo-britânica <strong>Dra. Natasha Campbell-McBride</strong>, que estudou a relação entre a saúde do intestino e o funcionamento do corpo e da mente.</p>
+
+      <p>Ao longo das próximas páginas, você vai descobrir o que é o protocolo, como ele surgiu, suas etapas, alimentos permitidos e proibidos, e como ele se posiciona dentro do universo da nutrição funcional.</p>
+
+      <div class="quote-box">
+        <p>"Toda doença começa no intestino."<br>— atribuído a Hipócrates</p>
+      </div>
+
+      <h3>Como ler este ebook</h3>
+      <p>Use os botões <strong>Anterior</strong> e <strong>Próxima</strong> no rodapé para navegar. Marque cada capítulo como lido para acompanhar seu progresso. Em alguns capítulos, você encontrará perguntas interativas — suas respostas serão usadas para gerar um <strong>resumo personalizado</strong> ao final.</p>
+
+      <div class="warning-box">
+        <strong>⚠ Aviso importante:</strong> Este conteúdo tem caráter exclusivamente informativo e educacional. O Protocolo GAPS é uma intervenção nutricional intensa que pode não ser adequada para todas as pessoas. <strong>Sempre consulte um médico ou nutricionista qualificado</strong> antes de fazer mudanças significativas na sua alimentação, especialmente se você tem condições de saúde preexistentes, está grávida, amamentando, ou trata de uma criança.
+      </div>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 1 ============== -->
+    <section class="page" data-page="2" data-title="Capítulo 1 — O que é GAPS">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 1</span>
+      <h1>O que é o Protocolo GAPS?</h1>
+
+      <p class="lead">Antes de mergulharmos nas práticas, precisamos entender o conceito central que sustenta toda a proposta.</p>
+
+      <p>O <strong>Protocolo GAPS</strong> é uma abordagem nutricional terapêutica que parte de uma ideia simples e poderosa: <em>muitas condições crônicas — físicas e mentais — têm origem em um intestino desequilibrado</em>. Quando a barreira intestinal está comprometida e a microbiota (a comunidade de microrganismos que vive em nós) está em desordem, todo o organismo sofre as consequências.</p>
+
+      <h3>A proposta central</h3>
+      <p>O protocolo busca <strong>"selar"</strong> o intestino, restaurar a microbiota saudável e reduzir a inflamação sistêmica. Para isso, propõe um período de alimentação restritiva e cuidadosamente planejada, rica em nutrientes biodisponíveis e livre de alimentos considerados irritantes para o trato digestivo.</p>
+
+      <h3>Para quem foi pensado</h3>
+      <p>Originalmente, a Dra. Campbell-McBride desenvolveu o protocolo observando crianças com transtornos do espectro autista, TDAH, dislexia e outras condições neurológicas e comportamentais. Com o tempo, a abordagem foi sendo estudada também no contexto de:</p>
+      <ul>
+        <li>Doenças autoimunes</li>
+        <li>Alergias e intolerâncias alimentares</li>
+        <li>Problemas digestivos crônicos</li>
+        <li>Condições de pele como eczema e psoríase</li>
+        <li>Distúrbios de humor, como ansiedade e depressão</li>
+      </ul>
+
+      <div class="highlight-box">
+        É importante destacar que o GAPS é considerado uma <strong>dieta complementar</strong> e ainda carece de amplo respaldo em ensaios clínicos randomizados. Os relatos de melhora vêm sobretudo de experiências clínicas e testemunhos pessoais.
+      </div>
+
+      <p>Nos próximos capítulos, vamos explorar a origem do protocolo, sua relação com o eixo intestino-cérebro e as etapas práticas da sua aplicação.</p>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 2 ============== -->
+    <section class="page" data-page="3" data-title="Capítulo 2 — A origem">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 2</span>
+      <h1>A origem do protocolo</h1>
+
+      <p class="lead">Toda grande ideia tem uma história. A do GAPS começa de forma muito pessoal.</p>
+
+      <p>A <strong>Dra. Natasha Campbell-McBride</strong> formou-se em medicina na Rússia, com especialização em neurologia. Anos depois, mudou-se para o Reino Unido, onde também estudou nutrição humana. Sua trajetória profissional, no entanto, ganhou um novo capítulo quando seu próprio filho recebeu o diagnóstico de autismo.</p>
+
+      <p>Inconformada com as opções terapêuticas disponíveis na época, ela passou a estudar profundamente a literatura sobre microbiota intestinal, bioquímica nutricional e a chamada <strong>"síndrome do intestino permeável"</strong>. Combinando esses estudos com sua prática clínica, formulou as bases do que hoje conhecemos como Protocolo GAPS.</p>
+
+      <h3>Influências importantes</h3>
+      <p>O GAPS foi fortemente inspirado pela <strong>Specific Carbohydrate Diet (SCD)</strong>, uma dieta criada décadas antes pelo Dr. Sidney Haas para tratar pacientes com doença celíaca e doenças intestinais inflamatórias. A SCD propunha eliminar carboidratos complexos de difícil digestão, deixando apenas monossacarídeos.</p>
+
+      <p>Campbell-McBride pegou essa base e adicionou camadas: caldo de ossos, fermentados, etapas progressivas de reintrodução, e uma forte ênfase no eixo intestino-cérebro.</p>
+
+      <div class="quote-box">
+        <p>"Quando o intestino se cura, muitos sintomas que pareciam não ter relação com ele simplesmente desaparecem."<br>— Dra. Natasha Campbell-McBride</p>
+      </div>
+
+      <h3>O livro fundador</h3>
+      <p>Em 2004, ela publicou o livro <em>"Gut and Psychology Syndrome"</em>, que se tornou referência mundial sobre o tema e popularizou a sigla GAPS. Desde então, o protocolo ganhou seguidores em diversos países e gerou debate acadêmico, clínico e popular.</p>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 3 ============== -->
+    <section class="page" data-page="4" data-title="Capítulo 3 — Eixo intestino-cérebro">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 3</span>
+      <h1>O eixo intestino-cérebro</h1>
+
+      <p class="lead">Você já sentiu "borboletas no estômago" antes de uma situação importante? Essa não é uma metáfora — é fisiologia pura.</p>
+
+      <p>Hoje, a ciência reconhece que o intestino e o cérebro estão em <strong>comunicação constante</strong>, através de uma rede chamada <em>eixo intestino-cérebro</em>. Essa via inclui o sistema nervoso (sobretudo o nervo vago), o sistema imunológico, hormônios e os metabólitos produzidos pela microbiota.</p>
+
+      <h3>O segundo cérebro</h3>
+      <p>O intestino possui mais de <strong>100 milhões de neurônios</strong> em sua parede, formando o que cientistas chamam de <em>sistema nervoso entérico</em>. Por isso, o intestino é frequentemente apelidado de "segundo cérebro". Ele produz neurotransmissores essenciais como a <strong>serotonina</strong> — estima-se que cerca de 90% da serotonina do corpo seja produzida no intestino.</p>
+
+      <h3>Microbiota: protagonistas invisíveis</h3>
+      <p>Vivemos em parceria com trilhões de microrganismos. Quando essa comunidade está equilibrada, ela:</p>
+      <ul>
+        <li>Ajuda na digestão e absorção de nutrientes</li>
+        <li>Produz vitaminas (como K e algumas do complexo B)</li>
+        <li>Regula a inflamação e o sistema imune</li>
+        <li>Influencia humor, sono e cognição</li>
+      </ul>
+
+      <p>Quando há um desequilíbrio — chamado <strong>disbiose</strong> — bactérias oportunistas e fungos como a Candida podem se proliferar, gerando substâncias tóxicas que afetam o cérebro e o corpo todo.</p>
+
+      <div class="highlight-box">
+        A premissa central do GAPS é que, ao curar o intestino, é possível diminuir a sobrecarga tóxica que chega ao cérebro, aliviando sintomas neurológicos, comportamentais e emocionais.
+      </div>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 4 — INTERACTIVE QUESTION 1 ============== -->
+    <section class="page" data-page="5" data-title="Capítulo 4 — Sintomas comuns">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 4 · Interativo</span>
+      <h1>Sintomas que podem indicar um intestino em desequilíbrio</h1>
+
+      <p class="lead">Antes de continuar, vale uma pausa para reflexão. Como anda o seu corpo?</p>
+
+      <p>Adeptos do protocolo costumam observar uma combinação de sinais que, isolados, podem parecer desconectados — mas que, juntos, formam o quadro de um intestino sobrecarregado. Entre eles:</p>
+
+      <ul>
+        <li>Inchaço abdominal frequente</li>
+        <li>Constipação ou diarreia recorrentes</li>
+        <li>Cansaço sem motivo aparente</li>
+        <li>"Névoa mental" e dificuldade de concentração</li>
+        <li>Irritações de pele, acne adulta, eczema</li>
+        <li>Dores articulares sem causa identificada</li>
+        <li>Mudanças bruscas de humor</li>
+        <li>Sensibilidade a múltiplos alimentos</li>
+      </ul>
+
+      <p>Reconhecer esses sinais é o primeiro passo para investigar — sempre com apoio profissional — se há algo a ser ajustado.</p>
+
+      <div class="question-card" data-question="1">
+        <div class="q-label">Pergunta interativa · 1 de 2</div>
+        <h4>Qual área da saúde mais te motivou a aprender sobre o GAPS?</h4>
+        <div class="options">
+          <button class="option-btn" data-value="digestão">Digestão e bem-estar intestinal</button>
+          <button class="option-btn" data-value="energia">Energia, disposição e foco mental</button>
+          <button class="option-btn" data-value="pele">Saúde da pele e aparência</button>
+          <button class="option-btn" data-value="emocional">Equilíbrio emocional e humor</button>
+        </div>
+      </div>
+
+      <p>Sua resposta vai ajudar a personalizar o resumo que aparece no final do ebook. Não há certo ou errado — é apenas uma forma de tornar a leitura mais sua.</p>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 5 ============== -->
+    <section class="page" data-page="6" data-title="Capítulo 5 — As etapas do protocolo">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 5</span>
+      <h1>As etapas do protocolo</h1>
+
+      <p class="lead">O GAPS não é uma dieta única — é uma jornada em fases, com objetivos específicos em cada etapa.</p>
+
+      <p>O protocolo é dividido em duas grandes partes: a <strong>Dieta de Introdução</strong> (mais restritiva e curta) e a <strong>Dieta Completa</strong> (mais longa e flexível, podendo durar de meses a alguns anos). Ao final, há ainda uma <strong>fase de transição</strong> para uma alimentação ampla e equilibrada.</p>
+
+      <h3>A Dieta de Introdução</h3>
+      <p>Composta por <strong>seis estágios</strong>, esta fase começa com poucos alimentos e adiciona novos gradualmente. O objetivo é "limpar" o terreno e iniciar o reparo da mucosa intestinal.</p>
+      <ol>
+        <li><strong>Estágio 1:</strong> Caldo de ossos caseiro, sopas com legumes bem cozidos, gengibre, probióticos.</li>
+        <li><strong>Estágio 2:</strong> Inclusão de gemas de ovos cruas (de origem confiável) e ghee.</li>
+        <li><strong>Estágio 3:</strong> Abacate amassado, panquecas simples sem grãos, ovos cozidos.</li>
+        <li><strong>Estágio 4:</strong> Carnes assadas, sucos de vegetais frescos coados, azeite de oliva.</li>
+        <li><strong>Estágio 5:</strong> Frutas cozidas e maçã crua ralada, vegetais crus em pequenas quantidades.</li>
+        <li><strong>Estágio 6:</strong> Frutas cruas, mel cru, doces feitos com ingredientes permitidos.</li>
+      </ol>
+
+      <h3>A Dieta Completa</h3>
+      <p>Após a Introdução, a pessoa segue para a Dieta Completa, com um leque maior de alimentos, mantendo os princípios centrais: ausência de grãos, açúcar refinado, amido e processados.</p>
+
+      <div class="warning-box">
+        <strong>Atenção:</strong> Essas fases são fortemente restritivas e devem ser conduzidas com acompanhamento profissional, especialmente em crianças, gestantes, pessoas com histórico de transtornos alimentares ou condições crônicas.
+      </div>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 6 ============== -->
+    <section class="page" data-page="7" data-title="Capítulo 6 — Alimentos permitidos">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 6</span>
+      <h1>Alimentos permitidos e proibidos</h1>
+
+      <p class="lead">No GAPS, a escolha dos alimentos é cuidadosa: cada item entra ou sai por uma razão fisiológica.</p>
+
+      <h3>Alimentos incentivados</h3>
+      <ul>
+        <li><strong>Caldo de ossos caseiro:</strong> rico em minerais, gelatina e aminoácidos como glicina e prolina, ajuda na restauração da mucosa intestinal.</li>
+        <li><strong>Carnes, peixes e ovos:</strong> de preferência de fontes orgânicas, criados naturalmente.</li>
+        <li><strong>Vegetais:</strong> sobretudo os não-amiláceos (brócolis, couve, abobrinha, espinafre).</li>
+        <li><strong>Frutas:</strong> com moderação e nas fases adequadas.</li>
+        <li><strong>Gorduras boas:</strong> manteiga, ghee, azeite de oliva, óleo de coco, banha de qualidade.</li>
+        <li><strong>Fermentados caseiros:</strong> chucrute, kefir, kombucha, iogurte de 24 horas — fontes naturais de probióticos.</li>
+        <li><strong>Frutas oleaginosas e sementes:</strong> em quantidades controladas, frequentemente como farinhas.</li>
+        <li><strong>Mel cru:</strong> único adoçante incentivado, em pequenas quantidades.</li>
+      </ul>
+
+      <h3>Alimentos eliminados</h3>
+      <ul>
+        <li>Todos os <strong>cereais</strong> (trigo, arroz, milho, aveia etc.)</li>
+        <li><strong>Açúcar refinado</strong> e adoçantes artificiais</li>
+        <li><strong>Amidos</strong> em geral (batata, mandioca, inhame, durante a maior parte do protocolo)</li>
+        <li><strong>Leite líquido pasteurizado</strong> e derivados industrializados</li>
+        <li><strong>Alimentos processados</strong>, embutidos, conservantes</li>
+        <li><strong>Óleos vegetais refinados</strong> (soja, canola, milho, girassol)</li>
+        <li>Leguminosas (na maior parte do protocolo)</li>
+      </ul>
+
+      <div class="highlight-box">
+        A lógica é eliminar tudo o que possa irritar a parede intestinal ou alimentar microrganismos oportunistas, ao mesmo tempo em que se nutre o corpo com alimentos densos em nutrientes biodisponíveis.
+      </div>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 7 ============== -->
+    <section class="page" data-page="8" data-title="Capítulo 7 — Caldo de ossos e fermentados">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 7</span>
+      <h1>Os pilares: caldo de ossos e fermentados</h1>
+
+      <p class="lead">Se o GAPS tivesse dois símbolos, seriam estes: uma panela borbulhante de caldo e um pote de chucrute fermentando.</p>
+
+      <h3>Caldo de ossos: o "remédio" líquido</h3>
+      <p>Feito a partir de ossos com cartilagens, articulações e um pouco de carne, o caldo é cozinhado por longas horas (de 12 a 48), liberando minerais, aminoácidos e colágeno. No GAPS, ele é considerado um <strong>alimento medicinal</strong>, presente em praticamente todas as refeições, sobretudo nas fases iniciais.</p>
+
+      <p>Seus benefícios atribuídos incluem:</p>
+      <ul>
+        <li>Apoio à reparação da mucosa intestinal</li>
+        <li>Fornecimento de aminoácidos calmantes (como glicina)</li>
+        <li>Hidratação rica em eletrólitos naturais</li>
+        <li>Sensação de saciedade e conforto digestivo</li>
+      </ul>
+
+      <h3>Fermentados: probióticos vivos</h3>
+      <p>Os alimentos fermentados são introduzidos cedo no protocolo e mantidos para sempre. Eles contêm <strong>bactérias benéficas vivas</strong>, ácidos orgânicos e enzimas que ajudam a recolonizar a microbiota.</p>
+
+      <p>Os mais comuns no GAPS são:</p>
+      <ul>
+        <li><strong>Chucrute caseiro</strong> (repolho fermentado)</li>
+        <li><strong>Kefir</strong> de leite ou de água</li>
+        <li><strong>Iogurte caseiro fermentado por 24 horas</strong> (para reduzir lactose)</li>
+        <li><strong>Vegetais lacto-fermentados</strong> diversos</li>
+        <li><strong>Kombucha</strong>, com cautela e em pequenas doses</li>
+      </ul>
+
+      <div class="quote-box">
+        <p>"O caldo cura, o fermentado renova. Juntos, eles reconstroem o terreno onde a saúde floresce."</p>
+      </div>
+
+      <p>A introdução desses alimentos deve ser <strong>gradual</strong>, começando com colheradas pequenas, para evitar reações intensas de desintoxicação.</p>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 8 — INTERACTIVE QUESTION 2 ============== -->
+    <section class="page" data-page="9" data-title="Capítulo 8 — Estilo de vida">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 8 · Interativo</span>
+      <h1>Estilo de vida no GAPS</h1>
+
+      <p class="lead">A alimentação é o coração do protocolo, mas não é tudo. O GAPS propõe uma mudança de estilo de vida.</p>
+
+      <p>Para que o intestino se recupere, é importante reduzir a sobrecarga geral do organismo. Isso significa olhar para fatores que vão além do prato:</p>
+
+      <ul>
+        <li><strong>Sono:</strong> dormir bem é parte da cura, pois é durante o sono que muitos processos de reparo acontecem.</li>
+        <li><strong>Exposição solar moderada:</strong> fonte natural de vitamina D, importante para o sistema imune.</li>
+        <li><strong>Movimento:</strong> caminhadas, natureza, exercícios suaves a moderados.</li>
+        <li><strong>Redução de toxinas:</strong> trocar produtos de limpeza e higiene agressivos por opções mais simples.</li>
+        <li><strong>Gerenciamento do estresse:</strong> meditação, respiração consciente, vínculos sociais saudáveis.</li>
+        <li><strong>Cozinhar em casa:</strong> retomar o ato de preparar a própria comida como prática cotidiana.</li>
+      </ul>
+
+      <div class="highlight-box">
+        Adeptos do GAPS frequentemente relatam que a maior transformação não é só física — é também a mudança da relação com a comida, com o corpo e com o tempo.
+      </div>
+
+      <div class="question-card" data-question="2">
+        <div class="q-label">Pergunta interativa · 2 de 2</div>
+        <h4>Qual mudança de estilo de vida você sente que precisa mais agora?</h4>
+        <div class="options">
+          <button class="option-btn" data-value="sono">Dormir melhor e descansar de verdade</button>
+          <button class="option-btn" data-value="cozinha">Cozinhar mais em casa, com calma</button>
+          <button class="option-btn" data-value="estresse">Reduzir o estresse e desacelerar</button>
+          <button class="option-btn" data-value="movimento">Movimentar mais o corpo</button>
+        </div>
+      </div>
+
+      <p>Essa resposta também vai compor seu resumo final.</p>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 9 ============== -->
+    <section class="page" data-page="10" data-title="Capítulo 9 — Desafios e cuidados">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 9</span>
+      <h1>Desafios, cuidados e críticas</h1>
+
+      <p class="lead">Nenhuma abordagem é perfeita para todo mundo. Conhecer os desafios é parte de um julgamento maduro.</p>
+
+      <h3>Os desafios práticos</h3>
+      <p>O GAPS é, sem rodeios, <strong>exigente</strong>. Ele requer:</p>
+      <ul>
+        <li>Tempo para cozinhar quase tudo do zero</li>
+        <li>Acesso a ingredientes de qualidade (que podem ser caros)</li>
+        <li>Disciplina para manter restrições por meses ou anos</li>
+        <li>Apoio social e familiar</li>
+        <li>Acompanhamento profissional adequado</li>
+      </ul>
+
+      <h3>Possíveis riscos</h3>
+      <p>Por ser uma dieta restritiva, o GAPS pode levar a <strong>deficiências nutricionais</strong> se mal planejado, especialmente de fibras de cereais, certos minerais e vitaminas. Também pode ser problemático para pessoas com histórico de transtornos alimentares, pois aumenta o controle e a vigilância sobre a comida.</p>
+
+      <p>As fases iniciais podem provocar reações intensas — chamadas por adeptos de "crise de cura" — incluindo dores, alterações intestinais, mudanças de humor, dores de cabeça. Esses sintomas exigem atenção e, em muitos casos, ajuste do protocolo.</p>
+
+      <h3>O olhar crítico</h3>
+      <p>Boa parte da comunidade científica vê o GAPS com <strong>cautela</strong>. As evidências sobre sua eficácia para autismo e transtornos psiquiátricos, por exemplo, ainda são limitadas a estudos pequenos, relatos de caso e experiências clínicas — não a ensaios controlados de larga escala.</p>
+
+      <div class="warning-box">
+        <strong>Importante:</strong> O GAPS não substitui tratamentos médicos convencionais. Pessoas com diagnósticos psiquiátricos, neurológicos ou crônicos não devem abandonar terapias prescritas em favor exclusivo do protocolo. A abordagem mais segura é sempre a integrativa, com diálogo entre profissionais.
+      </div>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== CHAPTER 10 ============== -->
+    <section class="page" data-page="11" data-title="Capítulo 10 — Vida prática">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Capítulo 10</span>
+      <h1>O GAPS na vida real</h1>
+
+      <p class="lead">Como aplicar tudo isso no cotidiano, sem virar um eremita do caldo de ossos?</p>
+
+      <p>Entender o protocolo é uma coisa. Vivê-lo, com trabalho, família e rotina, é outra. Aqui vão alguns princípios que costumam ajudar quem decide trilhar esse caminho.</p>
+
+      <h3>1. Comece pelo realista</h3>
+      <p>Em vez de tentar fazer tudo perfeitamente do dia para a noite, alguns adeptos começam adotando elementos do GAPS — como o caldo de ossos diário, fermentados caseiros e a redução de processados — antes de embarcar nas fases formais.</p>
+
+      <h3>2. Cozinhe em lotes</h3>
+      <p>Preparar grandes panelas de caldo, sopas e fermentados durante o fim de semana economiza tempo e energia ao longo da semana. Congele em porções.</p>
+
+      <h3>3. Encontre comunidade</h3>
+      <p>Compartilhar receitas, dificuldades e vitórias com outras pessoas seguindo o protocolo (presencialmente ou online) torna a jornada mais leve.</p>
+
+      <h3>4. Ouça o corpo</h3>
+      <p>O GAPS valoriza muito a observação: como você se sente após cada refeição? Houve melhora, piora, neutralidade? Esse autoconhecimento é o melhor guia, ao lado do acompanhamento profissional.</p>
+
+      <h3>5. Lembre-se do propósito</h3>
+      <p>Quando a restrição pesar, reconecte-se ao motivo que te trouxe aqui. Saúde, energia, lucidez, alívio de sintomas — voltar ao "porquê" sustenta o "como".</p>
+
+      <div class="quote-box">
+        <p>"Não é sobre comer perfeito. É sobre comer com intenção."</p>
+      </div>
+
+      <h3>Considerações finais deste capítulo</h3>
+      <p>O GAPS pode ser visto não apenas como uma dieta, mas como um <strong>convite a reaprender a comer</strong>: mais devagar, mais perto da fonte, com mais consciência do que cada alimento provoca no corpo. Essa lente, mesmo para quem nunca aplique o protocolo na íntegra, já é valiosa.</p>
+
+      <div class="ornament">❖</div>
+    </section>
+
+    <!-- ============== FINAL — PERSONALIZED SUMMARY ============== -->
+    <section class="page" data-page="12" data-title="Conclusão e Resumo Personalizado">
+      <span class="read-tag">✓ Lida</span>
+      <span class="chapter-tag">Conclusão</span>
+      <h1>Sua jornada começa aqui</h1>
+
+      <p class="lead">Você chegou ao final deste ebook. Antes de fechá-lo, leve este momento para refletir.</p>
+
+      <p>Aprender sobre o Protocolo GAPS é abrir uma porta para uma forma diferente de pensar a saúde — uma que coloca o intestino no centro e enxerga a alimentação como um ato terapêutico. Você pode escolher seguir o protocolo na íntegra, adotar partes dele, ou simplesmente carregar consigo essa nova lente sobre o corpo.</p>
+
+      <p>O importante é que, agora, você tem informação para conversar com profissionais qualificados, fazer escolhas mais conscientes e cuidar de si com mais profundidade.</p>
+
+      <div class="summary-card" id="summaryCard">
+        <h3>✦ Seu resumo personalizado ✦</h3>
+        <div id="summaryContent">
+          <p style="text-align:center; color:var(--ink-faint); font-style:italic;">
+            Volte aos capítulos 4 e 8 e responda às perguntas interativas para gerar seu resumo personalizado.
+          </p>
+        </div>
+      </div>
+
+      <h3>Próximos passos sugeridos</h3>
+      <ul>
+        <li>Procure um <strong>nutricionista ou médico</strong> familiarizado com nutrição funcional para conversar sobre o que faz sentido para você.</li>
+        <li>Comece com <strong>pequenas mudanças</strong>: incluir caldo de ossos algumas vezes por semana, experimentar fermentados caseiros, reduzir industrializados.</li>
+        <li>Leia o livro original da Dra. Natasha Campbell-McBride para se aprofundar.</li>
+        <li>Observe seu corpo. <strong>Ele sempre dá pistas</strong>.</li>
+      </ul>
+
+      <div class="quote-box">
+        <p>"Cuidar do intestino é cuidar de si por inteiro."</p>
+      </div>
+
+      <p style="text-align:center; margin-top:40px; color:var(--ink-faint); font-style:italic;">
+        Obrigado por ler até aqui. Que sua jornada de saúde seja gentil consigo mesmo.
+      </p>
+
+      <div class="ornament" style="font-size:2rem;">❦ ❦ ❦</div>
+    </section>
+
+  </article>
+</main>
+
+<!-- Bottom Controls -->
+<nav class="controls">
+  <button class="nav-btn" id="prevBtn">← Anterior</button>
+  <button class="nav-btn mark-read-btn" id="markReadBtn">✓ Marcar como lida</button>
+  <span class="page-indicator" id="pageIndicator">1 / 13</span>
+  <button class="nav-btn" id="nextBtn">Próxima →</button>
+</nav>
+
+<!-- Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-panel">
+    <div class="menu-header">
+      <h2>Sumário</h2>
+      <button class="icon-btn" id="closeMenu">×</button>
+    </div>
+    <div class="menu-list" id="menuList"></div>
+  </div>
 </div>
 
-<div class="page-break"></div>
+<script>
+(function() {
+  'use strict';
 
-<div class="section">
-<h2>2. POR QUE GAPS FUNCIONA</h2>
+  const STORAGE_KEY = 'ebook_gaps_v1';
+  const pages = document.querySelectorAll('.page');
+  const totalPages = pages.length;
+  let currentPage = 0;
 
-<h3>O Intestino Permeável:</h3>
-<p>Um intestino saudável tem uma barreira que controla o que é absorvido. Quando essa barreira fica permeável (leaky gut), substâncias indesejadas entram na corrente sanguínea, causando inflamação crônica.</p>
+  // Load state
+  let state = {
+    currentPage: 0,
+    readPages: [],
+    fontScale: 1,
+    answers: {}
+  };
 
-<h3>O Papel da Microbiota:</h3>
-<p>Nossas bactérias intestinais produzem neurotransmissores que afetam o cérebro. Um desequilíbrio (disbiose) contribui para problemas emocionais e neurológicos.</p>
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) state = Object.assign(state, JSON.parse(saved));
+  } catch(e) { console.warn('localStorage unavailable'); }
 
-<h3>A Solução GAPS:</h3>
-<p>Ao remover alimentos inflamatórios e adicionar nutrientes curativos, o intestino se recupera. O corpo começa a se curar naturalmente.</p>
-</div>
+  function save() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch(e) {}
+  }
 
-<div class="page-break"></div>
+  // Element references
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const markReadBtn = document.getElementById('markReadBtn');
+  const pageIndicator = document.getElementById('pageIndicator');
+  const progressBar = document.getElementById('progressBar');
+  const readCount = document.getElementById('readCount');
+  const totalCount = document.getElementById('totalCount');
+  const goHome = document.getElementById('goHome');
+  const fontInc = document.getElementById('fontIncrease');
+  const fontDec = document.getElementById('fontDecrease');
+  const menuBtn = document.getElementById('menuBtn');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const closeMenu = document.getElementById('closeMenu');
+  const menuList = document.getElementById('menuList');
 
-<div class="section">
-<h2>3. AS FASES DO PROTOCOLO GAPS</h2>
+  totalCount.textContent = totalPages;
 
-<h3>Fase Introdução (2-4 semanas ou mais)</h3>
-<p>A fase mais restritiva, com objetivo de diminuir inflamação e curar o intestino rapidamente. Alimentos permitidos: caldos de osso, carnes cozidas, ovos, vegetais cozidos, frutas, ghee, alimentos fermentados.</p>
+  // Apply font scale
+  function applyFontScale() {
+    document.documentElement.style.setProperty('--font-scale', state.fontScale);
+  }
 
-<h3>Full GAPS (Semanas/Meses)</h3>
-<p>Versão completa do protocolo com mais variedade. Adições: mais vegetais crus, frutas, nozes, sementes.</p>
+  // Show page
+  function showPage(idx, direction) {
+    if (idx < 0 || idx >= totalPages) return;
+    pages.forEach(p => {
+      p.classList.remove('active');
+      p.classList.remove('flip-back');
+    });
+    const target = pages[idx];
+    target.classList.add('active');
+    if (direction === 'back') target.classList.add('flip-back');
 
-<h3>Manutenção (Longo prazo)</h3>
-<p>Reintrodução gradual de alimentos testados: grãos sem glúten, leguminosas bem cozidas, laticínios de qualidade.</p>
-</div>
+    currentPage = idx;
+    state.currentPage = idx;
+    save();
+    updateUI();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-<div class="page-break"></div>
+  function updateUI() {
+    pageIndicator.textContent = (currentPage + 1) + ' / ' + totalPages;
+    prevBtn.disabled = currentPage === 0;
+    nextBtn.disabled = currentPage === totalPages - 1;
 
-<div class="section">
-<h2>4. ALIMENTOS PERMITIDOS E PROIBIDOS</h2>
+    // Progress = read pages / total
+    const readRatio = state.readPages.length / totalPages;
+    progressBar.style.width = (readRatio * 100) + '%';
+    readCount.textContent = state.readPages.length;
 
-<p class="allowed">SEMPRE PERMITIDO:</p>
-<p>Ovos | Carnes | Peixes | Caldos caseiros | Vegetais cozidos | Frutas | Ghee | Óleo de coco | Mel | Alimentos fermentados</p>
+    // Mark read button state
+    const isRead = state.readPages.includes(currentPage);
+    if (isRead) {
+      markReadBtn.textContent = '✓ Página lida';
+      markReadBtn.classList.add('is-read');
+    } else {
+      markReadBtn.textContent = '✓ Marcar como lida';
+      markReadBtn.classList.remove('is-read');
+    }
 
-<p class="forbidden">SEMPRE PROIBIDO:</p>
-<p>Grãos | Açúcar processado | Óleos vegetais | Alimentos processados | Laticínios pasteurizados | Aditivos químicos</p>
-</div>
+    // Update read tags on all pages
+    pages.forEach((p, i) => {
+      const tag = p.querySelector('.read-tag');
+      if (tag) {
+        if (state.readPages.includes(i)) tag.classList.add('show');
+        else tag.classList.remove('show');
+      }
+    });
 
-<div class="page-break"></div>
+    // Update interactive answers
+    document.querySelectorAll('.question-card').forEach(card => {
+      const qNum = card.dataset.question;
+      const selected = state.answers[qNum];
+      card.querySelectorAll('.option-btn').forEach(btn => {
+        if (btn.dataset.value === selected) btn.classList.add('selected');
+        else btn.classList.remove('selected');
+      });
+    });
 
-<div class="section">
-<h2>5. BENEFÍCIOS DO PROTOCOLO GAPS</h2>
+    // Update summary if on last page
+    if (currentPage === totalPages - 1) {
+      renderSummary();
+    }
 
-<ul style="line-height: 2;">
-<li>Saúde Digestiva: Redução de inchaço, gases, constipação e diarreia</li>
-<li>Clareza Mental: Melhor foco, memória e concentração</li>
-<li>Estabilidade Emocional: Redução de ansiedade, depressão e oscilações de humor</li>
-<li>Saúde Autoimune: Alívio de inflamação e sintomas autoimunes</li>
-<li>Energia: Aumento geral de energia e disposição</li>
-<li>Saúde da Pele: Melhora de acne, eczema e outras condições</li>
-<li>Sistema Imunológico: Menos alergias, infecções e resfriados</li>
-<li>Qualidade de Sono: Melhor qualidade de sono e descanso</li>
-</ul>
-</div>
+    // Update menu state
+    renderMenu();
+  }
 
-<div class="page-break"></div>
+  // Navigation
+  prevBtn.addEventListener('click', () => showPage(currentPage - 1, 'back'));
+  nextBtn.addEventListener('click', () => showPage(currentPage + 1, 'forward'));
+  goHome.addEventListener('click', () => showPage(0, 'back'));
 
-<div class="section">
-<h2>6. DICAS IMPORTANTES</h2>
+  // Keyboard nav
+  document.addEventListener('keydown', (e) => {
+    if (menuOverlay.classList.contains('show')) return;
+    if (e.target.tagName === 'BUTTON') return;
+    if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+      e.preventDefault();
+      if (currentPage < totalPages - 1) showPage(currentPage + 1, 'forward');
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault();
+      if (currentPage > 0) showPage(currentPage - 1, 'back');
+    }
+  });
 
-<div class="tip">
-<strong>1. Comece com Caldo de Osso:</strong> Beba uma xícara todos os dias. É a base da cura intestinal.
-</div>
+  // Mark as read
+  markReadBtn.addEventListener('click', () => {
+    const idx = state.readPages.indexOf(currentPage);
+    if (idx === -1) {
+      state.readPages.push(currentPage);
+    } else {
+      state.readPages.splice(idx, 1);
+    }
+    save();
+    updateUI();
+  });
 
-<div class="tip">
-<strong>2. Mastigue Bem:</strong> A digestão começa na boca. Mastigue cada bocado 30+ vezes.
-</div>
+  // Font controls
+  fontInc.addEventListener('click', () => {
+    state.fontScale = Math.min(1.4, state.fontScale + 0.1);
+    save();
+    applyFontScale();
+  });
+  fontDec.addEventListener('click', () => {
+    state.fontScale = Math.max(0.85, state.fontScale - 0.1);
+    save();
+    applyFontScale();
+  });
 
-<div class="tip">
-<strong>3. Introduza Devagar:</strong> Espere 3-5 dias entre cada alimento novo.
-</div>
+  // Menu
+  menuBtn.addEventListener('click', () => menuOverlay.classList.add('show'));
+  closeMenu.addEventListener('click', () => menuOverlay.classList.remove('show'));
+  menuOverlay.addEventListener('click', (e) => {
+    if (e.target === menuOverlay) menuOverlay.classList.remove('show');
+  });
 
-<div class="tip">
-<strong>4. Escute Seu Corpo:</strong> O protocolo é um guia, não uma regra rígida.
-</div>
+  function renderMenu() {
+    menuList.innerHTML = '';
+    pages.forEach((p, i) => {
+      const title = p.dataset.title || ('Página ' + (i + 1));
+      const item = document.createElement('div');
+      item.className = 'menu-item' + (i === currentPage ? ' current' : '');
+      const isRead = state.readPages.includes(i);
+      item.innerHTML = `
+        <div class="menu-item-info">
+          <span class="menu-item-num">Página ${i + 1}</span>
+          <div class="menu-item-title">${title}</div>
+        </div>
+        <span class="menu-check ${isRead ? '' : 'empty'}">${isRead ? '✓' : '○'}</span>
+      `;
+      item.addEventListener('click', () => {
+        showPage(i, i < currentPage ? 'back' : 'forward');
+        menuOverlay.classList.remove('show');
+      });
+      menuList.appendChild(item);
+    });
+  }
 
-<div class="tip">
-<strong>5. Qualidade dos Alimentos:</strong> Priorize orgânicos, sem pesticidas, criados em pastos.
-</div>
+  // Interactive questions
+  document.querySelectorAll('.question-card').forEach(card => {
+    const qNum = card.dataset.question;
+    card.querySelectorAll('.option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.answers[qNum] = btn.dataset.value;
+        save();
+        card.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+  });
 
-<div class="tip">
-<strong>6. Paciência:</strong> A cura leva tempo (mínimo 3-6 meses). Seja consistente.
-</div>
+  // Personalized summary generator
+  function renderSummary() {
+    const sc = document.getElementById('summaryContent');
+    if (!sc) return;
+    const a1 = state.answers['1'];
+    const a2 = state.answers['2'];
 
-<div class="tip">
-<strong>7. Acompanhamento Profissional:</strong> Considere trabalhar com um profissional de saúde.
-</div>
+    if (!a1 || !a2) {
+      sc.innerHTML = `
+        <p style="text-align:center; color:var(--ink-faint); font-style:italic;">
+          Volte aos capítulos 4 e 8 e responda às perguntas interativas para gerar seu resumo personalizado.
+        </p>
+      `;
+      return;
+    }
 
-<div class="tip">
-<strong>8. Suplementos:</strong> Alguns podem ajudar, mas não são essenciais.
-</div>
-</div>
+    const focusMap = {
+      'digestão': {
+        label: 'Saúde digestiva',
+        text: 'Como sua maior motivação é melhorar a digestão e o bem-estar intestinal, vale dar atenção especial ao caldo de ossos diário, à introdução cuidadosa de fermentados caseiros e à observação atenta de quais alimentos disparam desconfortos. Os capítulos 6 e 7 deste ebook são especialmente úteis para você.'
+      },
+      'energia': {
+        label: 'Energia e foco mental',
+        text: 'Você procura mais disposição e clareza. O capítulo 3, sobre o eixo intestino-cérebro, mostra por que isso faz sentido: quando a microbiota está em ordem, o cérebro sente. Comece eliminando processados e açúcar, e observe se a "névoa mental" começa a se dissipar nas primeiras semanas.'
+      },
+      'pele': {
+        label: 'Saúde da pele',
+        text: 'Sua atenção está na pele — e isso é coerente com a abordagem GAPS, que vê a pele como reflexo do que acontece dentro. Foque em reduzir alimentos inflamatórios, incluir gorduras boas e fermentados, e dê tempo: mudanças cutâneas costumam aparecer após algumas semanas a meses de consistência.'
+      },
+      'emocional': {
+        label: 'Equilíbrio emocional',
+        text: 'Seu interesse no aspecto emocional conecta-se diretamente com a tese central do GAPS. Lembre-se: o protocolo é complementar e não substitui acompanhamento psicológico ou médico. Combinado a um cuidado integral, o foco no intestino pode ser um aliado importante para humor e ansiedade.'
+      }
+    };
 
-<div class="page-break"></div>
+    const lifestyleMap = {
+      'sono': {
+        label: 'Dormir melhor',
+        text: 'Comece criando uma rotina de descanso: tela longe da cama, luz baixa à noite, horário consistente. Sono profundo é quando boa parte da reparação intestinal acontece — sem ele, qualquer dieta rende menos.'
+      },
+      'cozinha': {
+        label: 'Cozinhar mais em casa',
+        text: 'Reservar tempo para preparar a comida é, talvez, o passo mais transformador do GAPS. Comece com um prato simples por dia. Em poucas semanas, você vai notar que o ato de cozinhar acalma tanto quanto o caldo aquece.'
+      },
+      'estresse': {
+        label: 'Reduzir o estresse',
+        text: 'O estresse crônico desregula a microbiota tanto quanto uma má alimentação. Práticas de respiração, caminhadas curtas ao ar livre, momentos sem celular — tudo isso é parte do "protocolo" no sentido amplo. Cuide do que digere o emocional, também.'
+      },
+      'movimento': {
+        label: 'Mover mais o corpo',
+        text: 'Movimento gentil e regular favorece a motilidade intestinal, o humor e o sono. Não precisa ser intenso: caminhadas diárias, alongamentos, atividades que você goste. O corpo agradece o ritmo, mais do que a intensidade.'
+      }
+    };
 
-<div class="section">
-<h2>7. RECEITAS ESSENCIAIS</h2>
+    const focus = focusMap[a1];
+    const lifestyle = lifestyleMap[a2];
 
-<h3>Caldo de Osso Básico</h3>
-<p><strong>Ingredientes:</strong> Ossos de carne, água, sal, vinagre de maçã</p>
-<p><strong>Modo de Preparo:</strong> Cozinhe em fogo baixo por 24-48 horas. Coe e resfrie.</p>
-<p><strong>Uso:</strong> Beba uma xícara por dia ou use como base para sopas.</p>
+    sc.innerHTML = `
+      <div class="summary-item">
+        <span class="summary-label">Seu foco principal</span>
+        <div class="summary-value">${focus.label}</div>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Mudança prioritária de estilo de vida</span>
+        <div class="summary-value">${lifestyle.label}</div>
+      </div>
+      <div class="summary-recommendation">
+        <strong style="display:block; margin-bottom:8px; color:var(--accent-deep);">Recomendação personalizada:</strong>
+        <p style="margin-bottom:14px;">${focus.text}</p>
+        <p>${lifestyle.text}</p>
+        <p style="margin-top:14px; font-style:italic; color:var(--ink-soft); font-size:0.95rem;">
+          Lembre-se: este resumo é educacional. Para um plano realmente seguro e adaptado a você, busque um profissional qualificado.
+        </p>
+      </div>
+    `;
+  }
 
-<h3>Sopa de Legumes com Caldo</h3>
-<p><strong>Ingredientes:</strong> Caldo de osso, cenoura, abóbora, beterraba, sal</p>
-<p><strong>Modo de Preparo:</strong> Cozinhe vegetais no caldo até ficarem macios.</p>
-<p><strong>Uso:</strong> Refeição nutritiva 2-3x por semana.</p>
-
-<h3>Ovos Cozidos em Caldo</h3>
-<p><strong>Ingredientes:</strong> Ovos, caldo de osso quente</p>
-<p><strong>Modo de Preparo:</strong> Cozinhe ovos no caldo em vez de água.</p>
-<p><strong>Uso:</strong> Café da manhã fácil de digerir e nutritivo.</p>
-</div>
-
-<div class="page-break"></div>
-
-<div class="section">
-<h2>8. PRÓXIMOS PASSOS</h2>
-
-<h3>Começar o GAPS:</h3>
-<ol>
-<li>Consulte um profissional de saúde</li>
-<li>Comece preparando caldo de osso caseiro</li>
-<li>Planeje suas refeições da fase Introdução</li>
-<li>Organize suas compras (alimentos de qualidade)</li>
-<li>Seja consistente e paciente com o processo</li>
-</ol>
-
-<h3>Usando o App Receitas GAPS:</h3>
-<ul>
-<li>Planeje suas refeições semanalmente</li>
-<li>Gere sua lista de compras automática</li>
-<li>Siga receitas testadas e GAPS-compliant</li>
-<li>Adapte conforme sua fase do protocolo</li>
-</ul>
-
-<p style="margin-top: 40px; text-align: center; color: #9CAF88; font-style: italic; font-size: 16px;">
-O GAPS é uma ferramenta de cura. Com tempo e consistência, você verá melhorias em sua saúde.
-</p>
-
-<p style="text-align: center; margin-top: 50px; color: #556B2F; font-weight: bold;">
-Receitas GAPS - Seu companheiro na jornada da saúde intestinal
-</p>
-</div>
-
+  // Init
+  applyFontScale();
+  showPage(state.currentPage || 0, 'forward');
+})();
+</script>
 </body>
 </html>
