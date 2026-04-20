@@ -13,9 +13,9 @@ export default function MaterialsPage() {
       icon: '📚',
       title: getMessage(locale, 'materials.gaps_ebook', 'E-book Protocolo GAPS'),
       description: getMessage(locale, 'materials.gaps_description', 'Guia completo sobre o Protocolo GAPS com fases, alimentos permitidos, receitas e dicas práticas'),
-      size: 'Interativo',
-      format: 'HTML',
-      downloadUrl: '/ebook'
+      size: '8.4 KB',
+      format: 'HTML/PDF',
+      downloadUrl: '/downloads/protocolo-gaps.html'
     }
   ]
 
