@@ -2,7 +2,8 @@
 
 import { useLocale } from '@/context/LocaleContext'
 import { getMessage } from '@/lib/translations'
-import { Download, BookOpen } from 'lucide-react'
+import { Download, BookOpen, ArrowLeft } from 'lucide-react'
+import Link from 'next/link'
 
 export default function MaterialsPage() {
   const locale = useLocale()
@@ -21,6 +22,14 @@ export default function MaterialsPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 pb-24 pt-6">
+      <Link
+        href="/"
+        className="inline-flex items-center gap-2 text-olive hover:text-[#445025] font-semibold mb-6 transition"
+      >
+        <ArrowLeft size={20} />
+        {getMessage(locale, 'materials.back', 'Voltar')}
+      </Link>
+
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-olive mb-2">
           {getMessage(locale, 'materials.title', 'Materiais para Baixar')}
